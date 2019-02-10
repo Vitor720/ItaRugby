@@ -1,5 +1,5 @@
 # ItaRugby
-App para gerenciamento de equipe de esporte.
+App para gerenciamento de equipe de esporte escrito todo em kotlin.
 
 Projetado para facilitar a logistica da equipe, o aplicativo conta com calendário
 de treinos e jogos, confirma presença dos atletas, realiza cadastro de equipe/locais
