@@ -10,8 +10,10 @@ na imagem o usuario é levado ao google maps para criação de uma rota de seu l
 até o evento.
 Navegação do app utiliza os padrões do android jetpack, não mais que uma activity.
 
-Abaixo algumas imagens do app:
+O app pode ser baixado direamente da Google Play: https://play.google.com/store/apps/details?id=com.ddapps.itarugby
+
+Abaixo algumas imagens:
+
 ![Image of Yaktocat](https://lh3.googleusercontent.com/3_Wt4iiO04WDtj0_sLUeTnUsXWAlA1GCV5NsM3MopUS1fCLVxkeCJf-XNQ8wpDKxIsU=w1920-h917) ![Image of Yaktocat](https://lh3.googleusercontent.com/3_Wt4iiO04WDtj0_sLUeTnUsXWAlA1GCV5NsM3MopUS1fCLVxkeCJf-XNQ8wpDKxIsU=w1920-h917) ![Image of Yaktocat](https://lh3.googleusercontent.com/qcaeA5tQ_LRDoBCKu-rVX5LmhUPoLrI9zxnkVQKNChQPB1nOpg5Ruoc1SOs33PoOnqQ=w1920-h917)
 
 
-O app pode ser baixado direamente da Google Play: https://play.google.com/store/apps/details?id=com.ddapps.itarugby
