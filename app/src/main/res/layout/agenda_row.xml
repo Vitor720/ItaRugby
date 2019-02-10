@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        >
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/agenda_row_layout"
+    >
+
+        <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+
+            <ImageView
+                    android:layout_width="79dp"
+                    android:layout_height="75dp"
+                    android:id="@+id/imageBackground"
+                    android:background="@color/test"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+            <TextView
+                    android:text="@string/event_day"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/event_day"
+                    android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                    android:textSize="18sp"
+                    app:layout_constraintTop_toTopOf="@+id/imageBackground"
+                    app:layout_constraintStart_toStartOf="@+id/imageBackground"
+                    app:layout_constraintEnd_toEndOf="@+id/imageBackground"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageBackground"
+                    app:layout_constraintHorizontal_bias="0.452" app:layout_constraintVertical_bias="0.156"/>
+            <TextView
+                    android:id="@+id/event_month"
+                    android:text="@string/event_mounth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/event_day"
+                    app:layout_constraintStart_toStartOf="@+id/imageBackground"
+                    app:layout_constraintEnd_toEndOf="@+id/imageBackground"
+                    app:layout_constraintHorizontal_bias="0.442"/>
+            <TextView
+                    android:text="08:00"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/event_start_hour"
+                    android:textSize="20sp" android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/imageBackground" android:layout_marginStart="8dp"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/event_day"/>
+            <TextView
+                    android:id="@+id/event_name"
+                    android:text="@string/event"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/event_start_hour"
+                    android:layout_marginTop="1dp" app:layout_constraintStart_toEndOf="@+id/imageBackground"
+                    android:layout_marginStart="8dp"/>
+            <TextView
+                    android:id="@+id/event_place"
+                    android:text="@string/location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/event_name"
+                     app:layout_constraintStart_toEndOf="@+id/imageBackground"
+                    android:layout_marginStart="8dp"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</layout>

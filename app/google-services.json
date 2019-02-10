@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "514568524636",
+    "firebase_url": "https://itarugby-720.firebaseio.com",
+    "project_id": "itarugby-720",
+    "storage_bucket": "itarugby-720.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:514568524636:android:fdb5254405218368",
+        "android_client_info": {
+          "package_name": "com.ddapps.itarugby"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "514568524636-8coojoo2ndp6berbviivklgl5sv431k3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ddapps.itarugby",
+            "certificate_hash": "5dfc88327219e99d062b5b1ebdf9fb92e8df9b8a"
+          }
+        },
+        {
+          "client_id": "514568524636-fmn52hhf2a9pf9n0itg24gma1afeoeml.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSDCWRTe-Mv7_t081pXtqcndhr_CQ1e9Y"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "514568524636-fmn52hhf2a9pf9n0itg24gma1afeoeml.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+    >
+
+        <TextView
+                android:id="@+id/player_txt_header"
+                android:text="@string/new_player"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:maxLines="2"
+                android:contentDescription="@string/new_player"
+                android:paddingBottom="4dp"
+                android:textSize="20sp"
+                android:layout_marginTop="8dp"
+                android:textStyle="bold"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+        >
+
+            <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/player_name_create"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/player_name"
+                    android:inputType="text"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+        >
+
+            <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/player_contact_create"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/player_phone"
+                    android:inputType="text"/>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+        >
+
+            <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/player_position_create"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/position"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/player_birthday_date_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+        >
+
+            <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/player_birthday_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/birthday"
+                    android:inputType="datetime"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+        >
+
+            <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/player_weight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/player_weight"
+                    android:inputType="numberDecimal"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+        >
+
+            <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/player_hight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/player_hight"
+                    android:inputType="numberDecimal"
+            />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+        >
+
+            <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/player_since_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/player_since"
+                    android:inputType="text"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+        >
+
+            <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/player_last_drill"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/last_drill"
+                    android:inputType="text"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+        >
+
+            <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/player_yellow_cards_create"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/yellow_cards"
+                    android:inputType="text"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+        >
+
+            <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/player_red_cards_create"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/red_cards"
+                    android:inputType="text"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+        >
+
+            <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/player_photo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/player_photo"
+                    android:inputType="text"
+            />
+        </com.google.android.material.textfield.TextInputLayout>
+        <Button
+                android:text="Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/register"/>
+
+
+    </LinearLayout>
+    </ScrollView>
+
+</layout>

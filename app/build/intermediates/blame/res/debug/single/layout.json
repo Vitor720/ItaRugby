@@ -1,0 +1,62 @@
+[
+    {
+        "merged": "/home/vitor/dev-projects/android/kotlin/ItaRugby/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_register_player.xml",
+        "source": "/home/vitor/dev-projects/android/kotlin/ItaRugby/app/src/main/res/layout/fragment_register_player.xml"
+    },
+    {
+        "merged": "/home/vitor/dev-projects/android/kotlin/ItaRugby/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/new_event_fragment.xml",
+        "source": "/home/vitor/dev-projects/android/kotlin/ItaRugby/app/src/main/res/layout/new_event_fragment.xml"
+    },
+    {
+        "merged": "/home/vitor/dev-projects/android/kotlin/ItaRugby/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_display_event.xml",
+        "source": "/home/vitor/dev-projects/android/kotlin/ItaRugby/app/src/main/res/layout/fragment_display_event.xml"
+    },
+    {
+        "merged": "/home/vitor/dev-projects/android/kotlin/ItaRugby/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_agenda.xml",
+        "source": "/home/vitor/dev-projects/android/kotlin/ItaRugby/app/src/main/res/layout/fragment_agenda.xml"
+    },
+    {
+        "merged": "/home/vitor/dev-projects/android/kotlin/ItaRugby/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/agenda_row.xml",
+        "source": "/home/vitor/dev-projects/android/kotlin/ItaRugby/app/src/main/res/layout/agenda_row.xml"
+    },
+    {
+        "merged": "/home/vitor/dev-projects/android/kotlin/ItaRugby/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_place_register.xml",
+        "source": "/home/vitor/dev-projects/android/kotlin/ItaRugby/app/src/main/res/layout/fragment_place_register.xml"
+    },
+    {
+        "merged": "/home/vitor/dev-projects/android/kotlin/ItaRugby/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/event_row.xml",
+        "source": "/home/vitor/dev-projects/android/kotlin/ItaRugby/app/src/main/res/layout/event_row.xml"
+    },
+    {
+        "merged": "/home/vitor/dev-projects/android/kotlin/ItaRugby/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_display_player.xml",
+        "source": "/home/vitor/dev-projects/android/kotlin/ItaRugby/app/src/main/res/layout/fragment_display_player.xml"
+    },
+    {
+        "merged": "/home/vitor/dev-projects/android/kotlin/ItaRugby/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_new_game.xml",
+        "source": "/home/vitor/dev-projects/android/kotlin/ItaRugby/app/src/main/res/layout/fragment_new_game.xml"
+    },
+    {
+        "merged": "/home/vitor/dev-projects/android/kotlin/ItaRugby/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/player_row.xml",
+        "source": "/home/vitor/dev-projects/android/kotlin/ItaRugby/app/src/main/res/layout/player_row.xml"
+    },
+    {
+        "merged": "/home/vitor/dev-projects/android/kotlin/ItaRugby/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_home.xml",
+        "source": "/home/vitor/dev-projects/android/kotlin/ItaRugby/app/src/main/res/layout/fragment_home.xml"
+    },
+    {
+        "merged": "/home/vitor/dev-projects/android/kotlin/ItaRugby/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_main.xml",
+        "source": "/home/vitor/dev-projects/android/kotlin/ItaRugby/app/src/main/res/layout/activity_main.xml"
+    },
+    {
+        "merged": "/home/vitor/dev-projects/android/kotlin/ItaRugby/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_display_game.xml",
+        "source": "/home/vitor/dev-projects/android/kotlin/ItaRugby/app/src/main/res/layout/fragment_display_game.xml"
+    },
+    {
+        "merged": "/home/vitor/dev-projects/android/kotlin/ItaRugby/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_team.xml",
+        "source": "/home/vitor/dev-projects/android/kotlin/ItaRugby/app/src/main/res/layout/fragment_team.xml"
+    },
+    {
+        "merged": "/home/vitor/dev-projects/android/kotlin/ItaRugby/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_login.xml",
+        "source": "/home/vitor/dev-projects/android/kotlin/ItaRugby/app/src/main/res/layout/fragment_login.xml"
+    }
+]

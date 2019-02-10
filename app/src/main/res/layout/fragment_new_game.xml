@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/new_game_layout"
+            android:orientation="vertical"
+    >
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <TextView
+                    android:id="@+id/event_txt_header"
+                    android:text="@string/new_event"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lines="1"
+                    android:maxLines="2"
+                    android:contentDescription="@string/new_game"
+                    android:paddingBottom="4dp"
+                    android:textSize="20sp"
+                    android:layout_marginTop="8dp"
+                    android:textStyle="bold"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+            >
+
+                <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/new_game_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/event_name"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+            >
+
+                <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/new_game_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/date"
+                        android:inputType="datetime"
+                />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+            >
+
+                <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/new_game_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/time"
+                        android:inputType="time"
+                />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/new_game_place"
+                    android:hint="@string/location"
+                    android:textColorHint="#05ab9a"
+            />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+            >
+
+                <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/new_game_location_details"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/location_details"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/new_event_duration"
+                    android:hint="@string/duration"
+                    android:textColorHint="#05ab9a"
+            />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+                android:paddingTop="10dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <TextView
+                    android:id="@+id/game_details_header"
+                    android:text="@string/new_game_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lines="1"
+                    android:maxLines="2"
+                    android:contentDescription="@string/new_game_details"
+                    android:paddingBottom="4dp"
+                    android:textSize="20sp"
+                    android:layout_marginTop="8dp"
+                    android:textStyle="bold"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+            >
+                <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/new_game_opponents"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/opponents"
+                />
+           </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+            >
+                <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/games_quantity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/games_quantity"
+                />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/game_arrive_early"
+                    android:hint="@string/arrive_early"
+                    android:textColorHint="#05ab9a"
+            />
+
+
+            <Button
+                    android:text="@string/add_event_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/add_event_button"/>
+
+            <TextView
+                    android:text=""
+                    android:visibility="invisible"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:id="@+id/dateEventID"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</layout>

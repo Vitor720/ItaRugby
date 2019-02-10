@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="orange_logo">#ee631e</color>
+    <color name="background_login">#EE631E</color>
+    <color name="test">#EEEEEE</color>
+    <color name="full_black">#222831</color>
+
+    <color name="shade_gray">#9E9E9E</color>
+
+    <color name="blue_grey">#607d8b</color>
+    <color name="emphasis">#31b6e7</color>
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/agenda"
+          android:id="@+id/agendaFragment"
+          android:icon="@drawable/ic_calendar"/>
+    <item android:title="@string/team"
+          android:id="@+id/teamFragment"
+          android:icon="@drawable/ic_users"/>
+</menu>

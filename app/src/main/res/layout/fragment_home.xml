@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+      <androidx.constraintlayout.widget.ConstraintLayout
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              tools:context=".HomeFragment"
+              android:id="@+id/linearLayout">
+
+          <com.wangjie.rapidfloatingactionbutton.RapidFloatingActionLayout
+                  xmlns:rfal="http://schemas.android.com/apk/res-auto"
+                  android:id="@+id/activity_main_rfal"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  rfal:rfal_frame_color="#ffffff"
+                  rfal:rfal_frame_alpha="0.7"
+
+          >
+              <com.wangjie.rapidfloatingactionbutton.RapidFloatingActionButton
+                      xmlns:rfab="http://schemas.android.com/apk/res-auto"
+                      android:id="@+id/activity_main_rfab"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_alignParentEnd="true"
+                      android:layout_alignParentBottom="true"
+                      android:layout_marginEnd="20dp"
+                      android:layout_marginBottom="14dp"
+                      android:padding="8dp"
+                      rfab:rfab_size="normal"
+                      rfab:rfab_drawable="@drawable/rfab__drawable_rfab_default"
+                      rfab:rfab_color_normal="#008577"
+                      rfab:rfab_color_pressed="#00574B"
+                      rfab:rfab_shadow_radius="7dp"
+                      rfab:rfab_shadow_color="#999999"
+                      rfab:rfab_shadow_dx="0dp"
+                      rfab:rfab_shadow_dy="5dp"
+              />
+          </com.wangjie.rapidfloatingactionbutton.RapidFloatingActionLayout>
+
+          <com.google.android.material.floatingactionbutton.FloatingActionButton
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:clickable="false"
+                  app:srcCompat="@android:drawable/ic_menu_my_calendar"
+                  android:id="@+id/trasitionFab"
+                  android:visibility="invisible"
+                  android:layout_marginBottom="8dp"
+                  app:layout_constraintBottom_toBottomOf="parent"
+                  android:layout_marginEnd="8dp"
+                  app:layout_constraintEnd_toEndOf="parent"/>
+
+          <com.github.fabtransitionactivity.SheetLayout
+                  android:id="@+id/bottom_sheet"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:layout_gravity="bottom"
+                  app:ft_container_gravity="center"
+                  app:ft_color="@color/colorPrimaryDark"
+                  android:elevation="2dp">
+
+          </com.github.fabtransitionactivity.SheetLayout>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:id="@+id/recyclerViewHome"
+                    android:layout_marginBottom="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="8dp"/>
+
+      </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

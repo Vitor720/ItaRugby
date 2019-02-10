@@ -1,0 +1,132 @@
+<resources>
+    <string name="app_name">ItaRugby</string>
+    <string name="about_itarugby">Sobre o ItaRugby</string>
+    <string name="agenda">Calendário</string>
+    <string name="team">Equipe</string>
+    <string name="itarugby">Logo</string>
+    <string name="shield">Escuto</string>
+    <string name="male_team">Time Masculino</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string name="add_button">Adicionar</string>
+
+    <!-- Strings do event_row-->
+
+    <string name="next_event">Próximo Evento</string>
+    <string name="event_name">Nome do Evento</string>
+    <string name="new_event">Informações do Evento</string>
+
+    <string name="details">Detalhes</string>
+    <string name="day_fulldate">SÁBADO - 02/01/2019</string>
+    <string name="date">Data</string>
+    <string name="flag">Flag Prioriadade</string>
+    <string name="confirm">Confirmar</string>
+    <string name="maybe">Talvez</string>
+    <string name="decline">Não posso</string>
+    <string name="campo_de_treino">-22.740861, -42.866392</string>
+    <string name="canceled">Cancelado</string>
+    <string name="place_name">Nome do Local</string>
+    <string name="event">Evento</string>
+    <string name="time">Horário de Inicio</string>
+    <string name="add_event_button">Criar Evento</string>
+
+
+    <string name="register_new_place">Cadastrar Local</string>
+    <string name="location">Local</string>
+    <string name="location_details">Detalhes do local</string>
+    <string name="new_event_details">Detalhes do Evento (Opcional)</string>
+    <string name="duration">Horário de Término</string>
+    <string name="notes">Detalhes adicionais sobre o evento</string>
+
+    <string name="first_opponent">Primeiro Adversário</string>
+    <string name="second_opponent">Segundo Adversário</string>
+    <string name="thierd_opponent">Terceiro Adversário</string>
+    <string name="forth_opponent">Quarto Adversário</string>
+    <string name="fifth_opponent">Quinto Adversário</string>
+    <string name="sixth_opponent">Sexto Adversário</string>
+    <string name="unknown_opponent">A definir</string>
+
+    <string name="line_up">Escalação</string>
+    <string name="games_notes">Detalhes adicionais sobre o jogo</string>
+
+    <!-- Strings do agenda fragment-->
+
+    <string name="event_day">Dia</string>
+    <string name="event_mounth">Mês</string>
+    <string name="until">até</string>
+
+
+    <!-- Strings do new game fragment-->
+
+    <string name="new_game">Novo Jogo</string>
+    <string name="new_game_details">Informações do Jogo</string>
+    <string name="opponents">Adversários</string>
+    <string name="games_quantity">Quantidade de Jogos</string>
+    <string name="arrive_early">Horário de Chegada</string>
+
+    <!-- Strings do display player fragment-->
+    <string name="player_name">Nome do Jogador</string>
+    <string name="player_phone">Telefone do jogador</string>
+
+
+    <!-- Create Location-->
+    <string name="search_location">Digite nome do local para pesquisar</string>
+    <string name="new_location_name">Nome do local a registrar</string>
+    <string name="new_location_detail">Detalhes do Local</string>
+
+
+    <!-- Facebook-->
+
+    <string name="facebook_login">Facebook LogIn</string>
+
+    <string name="facebook_app_id"></string>
+    <string name="fb_login_protocol_scheme"></string>
+
+    <!-- Google -->
+
+    <string name="googleMapsAPI"></string>
+
+
+    <string name="permission_denied">Oops! You denied permission!!</string>
+    <string name="itaRugby_history">O Clube Ita Rugby foi fundado no dia 30 de outubro de 2015 após
+        a ideia surgir em uma conversa despretensiosa entre o Romullo, o Renan, a Larissa e a Fabíola
+        na praia de Camboinhas - Niterói/RJ. \n \n
+        Somos o primeiro time de rugby em Itaboraí/RJ. Atualmente contamos com mais
+        de 50 atletas em nosso elenco (dentre time masculino e feminino).
+        Temos como objetivo desenvolver e estimular a prática do rugby em nossa região.\n
+        \n
+        Venha fazer parte desta família! Venha para o Ita Rugby! Treinos todo sábado às 8h no Campo do Retiro.
+        #AVANTEITARUGBY 🏉
+    </string>
+    <string name="position">Posição</string>
+    <string name="birthday">Data Nascimento</string>
+    <string name="contact">Telefone Contato</string>
+    <string name="player_body">Altura | Peso</string>
+    <string name="player_stats">Estatísticas do Jogador</string>
+    <string name="player_since">Jogador desde</string>
+    <string name="yellow_cards">Cartões Amarelos</string>
+    <string name="red_cards">Cartões Vermelhos</string>
+    <string name="last_drill">Ultimo Treino</string>
+    <string name="lineUpButton">Criar Escalação</string>
+    <string name="adress">Endereço do Evento</string>
+    <string name="random_time">08:00</string>
+    <string name="start_end_time">08:00 - 11:00</string>
+    <string name="full_random_date">sabado, fevereiro 13</string>
+    <string name="player_photo">Foto do Jogador</string>
+    <string name="games">Jogos</string>
+    <string name="arrive_early_time">Horario de chegada</string>
+    <string name="random_early_time">07:45</string>
+    <string name="confirmation_header">Jogadores Disponiveis</string>
+    <string name="line_up_undone">Time ainda não escalado</string>
+    <string name="nostring">vazio</string>
+    <string name="confirmed_players">Jogadores confirmados</string>
+    <string name="maybe_players">Jogadores que talvez compareçam</string>
+    <string name="declined_player">Jogares que não podem comparecer</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="new_player">Informações do Jogador</string>
+    <string name="player_weight">Peso do Jogador</string>
+    <string name="player_hight">Altura do Jogador</string>
+    <string name="event_sucess">Evento criado</string>
+    <string name="event_error">Erro</string>
+</resources>

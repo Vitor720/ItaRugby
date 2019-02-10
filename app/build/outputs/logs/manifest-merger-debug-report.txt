@@ -1,0 +1,590 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/vitor/dev-projects/android/kotlin/ItaRugby/app/src/main/AndroidManifest.xml:2:1-60:12
+INJECTED from /home/vitor/dev-projects/android/kotlin/ItaRugby/app/src/main/AndroidManifest.xml:2:1-60:12
+INJECTED from /home/vitor/dev-projects/android/kotlin/ItaRugby/app/src/main/AndroidManifest.xml:2:1-60:12
+INJECTED from /home/vitor/dev-projects/android/kotlin/ItaRugby/app/src/main/AndroidManifest.xml:2:1-60:12
+MERGED from [androidx.databinding:databinding-adapters:3.3.1] /home/vitor/.gradle/caches/transforms-1/files-1.1/databinding-adapters-3.3.1.aar/0146842edfcca54acb345287126073b4/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.databinding:databinding-runtime:3.3.1] /home/vitor/.gradle/caches/transforms-1/files-1.1/databinding-runtime-3.3.1.aar/fffa7b406c29dc6a2e49d8511d40b754/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.0-alpha3] /home/vitor/.gradle/caches/transforms-1/files-1.1/constraintlayout-2.0.0-alpha3.aar/8913be2a6843d7a656403f248ee55be9/AndroidManifest.xml:2:1-11:12
+MERGED from [com.firebaseui:firebase-ui-firestore:4.3.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-firebase-ui-firestore-4.3.0.aar/072bdede0508cf9c41a52d52c854ae92/AndroidManifest.xml:2:1-13:12
+MERGED from [com.facebook.android:facebook-android-sdk:4.39.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.39.0.aar/2ea1e9f7e4cd6463e10089ae7105ad52/AndroidManifest.xml:21:1-31:12
+MERGED from [com.facebook.android:facebook-login:4.39.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-facebook-login-4.39.0.aar/949175a135383f52a5fd3ab585082ea0/AndroidManifest.xml:21:1-31:12
+MERGED from [com.facebook.android:facebook-share:4.39.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-facebook-share-4.39.0.aar/1b8feb92d744dc21a90d76dedab0bdaf/AndroidManifest.xml:21:1-31:12
+MERGED from [com.facebook.android:facebook-common:4.39.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-facebook-common-4.39.0.aar/73532ca5f8825fbd0f56b3a7defe7fe4/AndroidManifest.xml:21:1-37:12
+MERGED from [com.google.android.gms:play-services-places:16.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-play-services-places-16.0.0.aar/f2e5fa9a85f529d63a6d845d790a6a3d/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-maps:16.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-play-services-maps-16.0.0.aar/424a97a79e303fc725fcc663b042d62b/AndroidManifest.xml:17:1-32:12
+MERGED from [com.google.android.gms:play-services-location:16.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-play-services-location-16.0.0.aar/a7a12d823923cc2d34d3d6338df4fb0c/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-auth:16.1.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-firebase-auth-16.1.0.aar/d98fcd4e653ef16fbdc2f2774333e9a9/AndroidManifest.xml:17:1-42:12
+MERGED from [com.google.firebase:firebase-database:16.0.6] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-firebase-database-16.0.6.aar/1374257c8e54e91f09d3ad227a3fed87/AndroidManifest.xml:15:1-27:12
+MERGED from [com.google.firebase:firebase-firestore:18.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-firebase-firestore-18.0.0.aar/9a8d86f85d57170eaf9c13e8af931e65/AndroidManifest.xml:2:1-23:12
+MERGED from [com.google.android.gms:play-services-flags:16.0.1] /home/vitor/.gradle/caches/transforms-1/files-1.1/play-services-flags-16.0.1.aar/bdfd6311c5af83e3cd6eb986db194df8/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.firebase:firebase-auth-interop:16.0.1] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-firebase-auth-interop-16.0.1.aar/65924f20330e7b9a95e37fab78e4f3c3/AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-16.0.1.aar/7b524446896cd44c3f9ee102993e6796/AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-16.0.0.aar/28f0f1a713df4e1c09e6c8d9fc895479/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.firebase:firebase-common:16.0.4] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-firebase-common-16.0.4.aar/fdaf193f5683d2df45e37683684cb2a2/AndroidManifest.xml:2:1-17:12
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-play-services-tasks-16.0.1.aar/70272c743916f9e962a25b1c5b67231e/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:16.1.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-16.1.0.aar/9883a15b328c833ce0d926d19051b291/AndroidManifest.xml:17:1-28:12
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/legacy-support-v4-1.0.0.aar/3964ee1e1fc8d82a4820befefec251c0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.1.0-alpha02] /home/vitor/.gradle/caches/transforms-1/files-1.1/lifecycle-extensions-2.1.0-alpha02.aar/9d7ccf7090c673e7e22ddfc41735a089/AndroidManifest.xml:17:1-25:12
+MERGED from [com.github.wangjiegulu:rfab:2.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-rfab-2.0.0.aar/2be87ddde66aedb4e5b17cc1cd565eb0/AndroidManifest.xml:2:1-11:12
+MERGED from [com.github.wangjiegulu:AndroidBucket:1.0.4] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-AndroidBucket-1.0.4.aar/e5fc1934c6aefb852b8d81bcc19b7022/AndroidManifest.xml:2:1-11:12
+MERGED from [com.github.coyarzun89:fabtransitionactivity:0.2.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-fabtransitionactivity-0.2.0.aar/c04cc7f4b1ad39dc26e51ccd6d7ad523/AndroidManifest.xml:2:1-11:12
+MERGED from [de.hdodenhof:circleimageview:3.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/circleimageview-3.0.0.aar/241e2aa1f73c6cc47352e0131a3cabf5/AndroidManifest.xml:2:1-11:12
+MERGED from [com.weiwangcn.betterspinner:library-material:1.1.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-library-material-1.1.0.aar/4fa2a276bd53a41455482d5095387bd3/AndroidManifest.xml:2:1-16:12
+MERGED from [com.bignerdranch.android:simple-item-decoration:1.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-simple-item-decoration-1.0.0.aar/d74fb4470a9f4a17968799d617a70e26/AndroidManifest.xml:2:1-16:12
+MERGED from [jp.wasabeef:recyclerview-animators:3.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/recyclerview-animators-3.0.0.aar/71596e63efa81690956213a7bbaef5f5/AndroidManifest.xml:2:1-9:12
+MERGED from [android.arch.navigation:navigation-ui-ktx:1.0.0-alpha05] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-navigation-ui-ktx-1.0.0-alpha05.aar/063c64b6811b475c5cb1e7065b44ab5c/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.navigation:navigation-ui:1.0.0-alpha05] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-navigation-ui-1.0.0-alpha05.aar/f06522ad896c2a4ae72cd1f9e874dcce/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.material:material:1.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/material-1.0.0.aar/ed1a8ba0523d8bea387039697fc2b227/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/recyclerview-1.0.0.aar/48e75de629ea632489c29ae4418ed8ed/AndroidManifest.xml:17:1-22:12
+MERGED from [com.squareup.picasso:picasso:2.71828] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-picasso-2.71828.aar/216f18d96fb5de360e118e4b6b5979bd/AndroidManifest.xml:2:1-14:12
+MERGED from [com.rengwuxian.materialedittext:library:2.0.3] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-library-2.0.3.aar/99a377050f01021094005fb51a0f3cac/AndroidManifest.xml:2:1-10:12
+MERGED from [androidx.appcompat:appcompat:1.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0.aar/6c05a0d774cd0e6f1ef9d704f8bc2003/AndroidManifest.xml:17:1-22:12
+MERGED from [com.jakewharton.timber:timber:4.7.1] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-timber-4.7.1.aar/887ba7d24f6c58d56d8170159b26ce79/AndroidManifest.xml:2:1-9:12
+MERGED from [android.arch.navigation:navigation-fragment-ktx:1.0.0-alpha05] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-navigation-fragment-ktx-1.0.0-alpha05.aar/96db0733c1eac96b5df6e8b428bb5f58/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.navigation:navigation-fragment:1.0.0-alpha05] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-navigation-fragment-1.0.0-alpha05.aar/d8c6dc7ee8154764bd5f89ccf920ecf3/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cardview:cardview:1.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/cardview-1.0.0.aar/7d6f16e2c283736a1be24e5bd2650289/AndroidManifest.xml:17:1-22:12
+MERGED from [:library] /home/vitor/dev-projects/android/kotlin/ItaRugby/library/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-13:12
+MERGED from [androidx.media:media:1.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/media-1.0.0.aar/55aa1964e92fe6ab65798df84a1fd83f/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.fragment:fragment:1.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/fragment-1.0.0.aar/d356b15867db5168cbd2f36447a876cf/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/vectordrawable-animated-1.0.0.aar/aa44dcaaabd8eb1b1c8bf1fe04f6e22d/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.browser:browser:1.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/browser-1.0.0.aar/8e62f9862b86fe5fdfb921fc5ad33bcc/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/legacy-support-core-ui-1.0.0.aar/4a7b8311032fede0f03df6eff258c655/AndroidManifest.xml:17:1-22:12
+MERGED from [com.facebook.android:facebook-places:4.39.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/facebook-places-4.39.0.aar/90529149b60f049641af76e0565ff551/AndroidManifest.xml:21:1-31:12
+MERGED from [com.facebook.android:facebook-applinks:4.39.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/facebook-applinks-4.39.0.aar/0e64bf6c35443efe3891fd21c26be7a7/AndroidManifest.xml:21:1-31:12
+MERGED from [com.facebook.android:facebook-messenger:4.39.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.39.0.aar/159c4ec8b4255b2e07c7f06e02027e0c/AndroidManifest.xml:21:1-31:12
+MERGED from [com.facebook.android:facebook-marketing:4.39.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-facebook-marketing-4.39.0.aar/9c44942d7a87c8092c29b4f8325f126c/AndroidManifest.xml:21:1-35:12
+MERGED from [com.facebook.android:facebook-core:4.39.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-facebook-core-4.39.0.aar/5a81ee9d789ebb41e88d26a2ed58376b/AndroidManifest.xml:21:1-53:12
+MERGED from [android.arch.navigation:navigation-runtime-ktx:1.0.0-alpha05] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-navigation-runtime-ktx-1.0.0-alpha05.aar/9cc456600809a2e34e9d1fe4b6f226a2/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.navigation:navigation-runtime:1.0.0-alpha05] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-navigation-runtime-1.0.0-alpha05.aar/bf76c14a3f7c3f637364f72468f36422/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/legacy-support-core-utils-1.0.0.aar/5107ce0bbd732dd12def77d31d3cefe9/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/vectordrawable-1.0.0.aar/fc13bd2bd6d43854d7272e3840df1fdd/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.transition:transition:1.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/transition-1.0.0.aar/d8805d1b4fd780e84b8c719f51ef11f1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/loader-1.0.0.aar/4e0ba2b2cc55428bffb63ed3c271133b/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/viewpager-1.0.0.aar/91a203e91d61d3a4eff9f7e805bfb449/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-1.0.0.aar/b4f22fefea5c162554651a9ff36aa6ee/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/drawerlayout-1.0.0.aar/31b3f24de07855378d27b3ee3c1f8be6/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-1.0.0.aar/3818ac66031b5bdd5f8d7f5608b64088/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/customview-1.0.0.aar/438dcb9b343f0c08390ead7f7e00e44d/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-1.0.0.aar/700c222e5de911d34aa0de512b0d946b/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-1.0.0.aar/7633942095d160a3a9fa863ec3b662de/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.navigation:navigation-common-ktx:1.0.0-alpha05] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-navigation-common-ktx-1.0.0-alpha05.aar/d777c9ac02e666fb6eb67a66782a9589/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.navigation:navigation-common:1.0.0-alpha05] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-navigation-common-1.0.0-alpha05.aar/9c05f5d8161d4893ad42f81edc49e6e1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/fab55195518f04615e2e6ac4dcbee859/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.1.0-alpha02] /home/vitor/.gradle/caches/transforms-1/files-1.1/lifecycle-process-2.1.0-alpha02.aar/3bf283020a3ebe110b602f2ec0d7c9f1/AndroidManifest.xml:17:1-30:12
+MERGED from [androidx.lifecycle:lifecycle-service:2.1.0-alpha02] /home/vitor/.gradle/caches/transforms-1/files-1.1/lifecycle-service-2.1.0-alpha02.aar/51c9554381c66f711ddef55a13d07a90/AndroidManifest.xml:17:1-22:12
+MERGED from [com.firebaseui:firebase-ui-common:4.3.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-firebase-ui-common-4.3.0.aar/305c45d982e69e3b2c2dca33afcb5cdf/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0-alpha02] /home/vitor/.gradle/caches/transforms-1/files-1.1/lifecycle-runtime-2.1.0-alpha02.aar/0f5024f5cc0bfb83af66aa6447006a51/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/versionedparcelable-1.0.0.aar/71291b010abee036bb9361558ec5effa/AndroidManifest.xml:17:1-25:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.1.0-alpha02] /home/vitor/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-2.1.0-alpha02.aar/468319207fe21a73cdd50809b0b63795/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.1.0-alpha02] /home/vitor/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-core-2.1.0-alpha02.aar/5724f9a2e839051eeb40153d9383df8d/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.1-alpha01] /home/vitor/.gradle/caches/transforms-1/files-1.1/core-runtime-2.0.1-alpha01.aar/96618b8085e1ce9ccba5708eb8c74744/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0-alpha02] /home/vitor/.gradle/caches/transforms-1/files-1.1/lifecycle-viewmodel-2.1.0-alpha02.aar/ba1cb011caf697c3a2fec5c91891bfbb/AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.ozodrukh:CircularReveal:1.3.1] /home/vitor/.gradle/caches/transforms-1/files-1.1/CircularReveal-1.3.1.aar/0cb5b6c126b8943be62b6f19eb9186f0/AndroidManifest.xml:2:1-12:12
+MERGED from [androidx.exifinterface:exifinterface:1.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/exifinterface-1.0.0.aar/3b5c9e48cab7c85e99751b71ad0f1d33/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/cursoradapter-1.0.0.aar/ce1fa05506565cab2d66abf7a7dde40f/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/documentfile-1.0.0.aar/90bdf19c9a1fdcb8d2d12b3ea3424629/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-1.0.0.aar/64db349be5be37e6ae88ab111661808b/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/print-1.0.0.aar/9c896d7d1a4a8372c38dd45e2229dde5/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/interpolator-1.0.0.aar/d69c26e181dc92e529d439379aa35140/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.firebase:firebase-database-collection:16.0.1] /home/vitor/.gradle/caches/transforms-1/files-1.1/firebase-database-collection-16.0.1.aar/7674292929d2dc19d40724fa8d6dda99/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.firebase:protolite-well-known-types:16.0.1] /home/vitor/.gradle/caches/transforms-1/files-1.1/protolite-well-known-types-16.0.1.aar/9e93139c250f6b113a681ebfbcf49f5a/AndroidManifest.xml:2:1-11:12
+MERGED from [io.grpc:grpc-android:1.16.1] /home/vitor/.gradle/caches/transforms-1/files-1.1/grpc-android-1.16.1.aar/25d455e2340b13d2cb14e262e71ee9f6/AndroidManifest.xml:2:1-13:12
+INJECTED from /home/vitor/dev-projects/android/kotlin/ItaRugby/app/src/main/AndroidManifest.xml:2:1-60:12
+INJECTED from /home/vitor/dev-projects/android/kotlin/ItaRugby/app/src/main/AndroidManifest.xml:2:1-60:12
+INJECTED from /home/vitor/dev-projects/android/kotlin/ItaRugby/app/src/main/AndroidManifest.xml:2:1-60:12
+	package
+		ADDED from /home/vitor/dev-projects/android/kotlin/ItaRugby/app/src/main/AndroidManifest.xml:3:11-40
+		INJECTED from /home/vitor/dev-projects/android/kotlin/ItaRugby/app/src/main/AndroidManifest.xml
+		INJECTED from /home/vitor/dev-projects/android/kotlin/ItaRugby/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /home/vitor/dev-projects/android/kotlin/ItaRugby/app/src/main/AndroidManifest.xml
+		ADDED from /home/vitor/dev-projects/android/kotlin/ItaRugby/app/src/main/AndroidManifest.xml:2:1-60:12
+		INJECTED from /home/vitor/dev-projects/android/kotlin/ItaRugby/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /home/vitor/dev-projects/android/kotlin/ItaRugby/app/src/main/AndroidManifest.xml
+		ADDED from /home/vitor/dev-projects/android/kotlin/ItaRugby/app/src/main/AndroidManifest.xml:2:1-60:12
+		INJECTED from /home/vitor/dev-projects/android/kotlin/ItaRugby/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/vitor/dev-projects/android/kotlin/ItaRugby/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from /home/vitor/dev-projects/android/kotlin/ItaRugby/app/src/main/AndroidManifest.xml:5:5-78
+	android:name
+		ADDED from /home/vitor/dev-projects/android/kotlin/ItaRugby/app/src/main/AndroidManifest.xml:5:22-76
+uses-permission#android.permission.INTERNET
+ADDED from /home/vitor/dev-projects/android/kotlin/ItaRugby/app/src/main/AndroidManifest.xml:6:5-66
+MERGED from [com.firebaseui:firebase-ui-firestore:4.3.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-firebase-ui-firestore-4.3.0.aar/072bdede0508cf9c41a52d52c854ae92/AndroidManifest.xml:11:5-67
+MERGED from [com.firebaseui:firebase-ui-firestore:4.3.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-firebase-ui-firestore-4.3.0.aar/072bdede0508cf9c41a52d52c854ae92/AndroidManifest.xml:11:5-67
+MERGED from [com.google.android.gms:play-services-maps:16.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-play-services-maps-16.0.0.aar/424a97a79e303fc725fcc663b042d62b/AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-maps:16.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-play-services-maps-16.0.0.aar/424a97a79e303fc725fcc663b042d62b/AndroidManifest.xml:24:5-67
+MERGED from [com.google.firebase:firebase-database:16.0.6] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-firebase-database-16.0.6.aar/1374257c8e54e91f09d3ad227a3fed87/AndroidManifest.xml:25:5-67
+MERGED from [com.google.firebase:firebase-database:16.0.6] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-firebase-database-16.0.6.aar/1374257c8e54e91f09d3ad227a3fed87/AndroidManifest.xml:25:5-67
+MERGED from [com.google.firebase:firebase-firestore:18.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-firebase-firestore-18.0.0.aar/9a8d86f85d57170eaf9c13e8af931e65/AndroidManifest.xml:13:5-67
+MERGED from [com.google.firebase:firebase-firestore:18.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-firebase-firestore-18.0.0.aar/9a8d86f85d57170eaf9c13e8af931e65/AndroidManifest.xml:13:5-67
+	android:name
+		ADDED from /home/vitor/dev-projects/android/kotlin/ItaRugby/app/src/main/AndroidManifest.xml:6:22-64
+application
+ADDED from /home/vitor/dev-projects/android/kotlin/ItaRugby/app/src/main/AndroidManifest.xml:10:5-56:19
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.0-alpha3] /home/vitor/.gradle/caches/transforms-1/files-1.1/constraintlayout-2.0.0-alpha3.aar/8913be2a6843d7a656403f248ee55be9/AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.0-alpha3] /home/vitor/.gradle/caches/transforms-1/files-1.1/constraintlayout-2.0.0-alpha3.aar/8913be2a6843d7a656403f248ee55be9/AndroidManifest.xml:9:5-20
+MERGED from [com.facebook.android:facebook-android-sdk:4.39.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.39.0.aar/2ea1e9f7e4cd6463e10089ae7105ad52/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-android-sdk:4.39.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.39.0.aar/2ea1e9f7e4cd6463e10089ae7105ad52/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-login:4.39.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-facebook-login-4.39.0.aar/949175a135383f52a5fd3ab585082ea0/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-login:4.39.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-facebook-login-4.39.0.aar/949175a135383f52a5fd3ab585082ea0/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-share:4.39.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-facebook-share-4.39.0.aar/1b8feb92d744dc21a90d76dedab0bdaf/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-share:4.39.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-facebook-share-4.39.0.aar/1b8feb92d744dc21a90d76dedab0bdaf/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-common:4.39.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-facebook-common-4.39.0.aar/73532ca5f8825fbd0f56b3a7defe7fe4/AndroidManifest.xml:28:5-35:19
+MERGED from [com.facebook.android:facebook-common:4.39.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-facebook-common-4.39.0.aar/73532ca5f8825fbd0f56b3a7defe7fe4/AndroidManifest.xml:28:5-35:19
+MERGED from [com.google.android.gms:play-services-places:16.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-play-services-places-16.0.0.aar/f2e5fa9a85f529d63a6d845d790a6a3d/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-places:16.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-play-services-places-16.0.0.aar/f2e5fa9a85f529d63a6d845d790a6a3d/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-maps:16.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-play-services-maps-16.0.0.aar/424a97a79e303fc725fcc663b042d62b/AndroidManifest.xml:30:5-20
+MERGED from [com.google.android.gms:play-services-maps:16.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-play-services-maps-16.0.0.aar/424a97a79e303fc725fcc663b042d62b/AndroidManifest.xml:30:5-20
+MERGED from [com.google.android.gms:play-services-location:16.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-play-services-location-16.0.0.aar/a7a12d823923cc2d34d3d6338df4fb0c/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-location:16.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-play-services-location-16.0.0.aar/a7a12d823923cc2d34d3d6338df4fb0c/AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-auth:16.1.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-firebase-auth-16.1.0.aar/d98fcd4e653ef16fbdc2f2774333e9a9/AndroidManifest.xml:23:5-40:19
+MERGED from [com.google.firebase:firebase-auth:16.1.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-firebase-auth-16.1.0.aar/d98fcd4e653ef16fbdc2f2774333e9a9/AndroidManifest.xml:23:5-40:19
+MERGED from [com.google.firebase:firebase-firestore:18.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-firebase-firestore-18.0.0.aar/9a8d86f85d57170eaf9c13e8af931e65/AndroidManifest.xml:15:5-21:19
+MERGED from [com.google.firebase:firebase-firestore:18.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-firebase-firestore-18.0.0.aar/9a8d86f85d57170eaf9c13e8af931e65/AndroidManifest.xml:15:5-21:19
+MERGED from [com.google.firebase:firebase-auth-interop:16.0.1] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-firebase-auth-interop-16.0.1.aar/65924f20330e7b9a95e37fab78e4f3c3/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-auth-interop:16.0.1] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-firebase-auth-interop-16.0.1.aar/65924f20330e7b9a95e37fab78e4f3c3/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-16.0.1.aar/7b524446896cd44c3f9ee102993e6796/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-16.0.1.aar/7b524446896cd44c3f9ee102993e6796/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-16.0.0.aar/28f0f1a713df4e1c09e6c8d9fc895479/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-16.0.0.aar/28f0f1a713df4e1c09e6c8d9fc895479/AndroidManifest.xml:22:5-20
+MERGED from [com.google.firebase:firebase-common:16.0.4] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-firebase-common-16.0.4.aar/fdaf193f5683d2df45e37683684cb2a2/AndroidManifest.xml:9:5-15:19
+MERGED from [com.google.firebase:firebase-common:16.0.4] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-firebase-common-16.0.4.aar/fdaf193f5683d2df45e37683684cb2a2/AndroidManifest.xml:9:5-15:19
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-play-services-tasks-16.0.1.aar/70272c743916f9e962a25b1c5b67231e/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-play-services-tasks-16.0.1.aar/70272c743916f9e962a25b1c5b67231e/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:16.1.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-16.1.0.aar/9883a15b328c833ce0d926d19051b291/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:16.1.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-16.1.0.aar/9883a15b328c833ce0d926d19051b291/AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.1.0-alpha02] /home/vitor/.gradle/caches/transforms-1/files-1.1/lifecycle-extensions-2.1.0-alpha02.aar/9d7ccf7090c673e7e22ddfc41735a089/AndroidManifest.xml:22:5-23:19
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.1.0-alpha02] /home/vitor/.gradle/caches/transforms-1/files-1.1/lifecycle-extensions-2.1.0-alpha02.aar/9d7ccf7090c673e7e22ddfc41735a089/AndroidManifest.xml:22:5-23:19
+MERGED from [de.hdodenhof:circleimageview:3.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/circleimageview-3.0.0.aar/241e2aa1f73c6cc47352e0131a3cabf5/AndroidManifest.xml:9:5-20
+MERGED from [de.hdodenhof:circleimageview:3.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/circleimageview-3.0.0.aar/241e2aa1f73c6cc47352e0131a3cabf5/AndroidManifest.xml:9:5-20
+MERGED from [com.weiwangcn.betterspinner:library-material:1.1.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-library-material-1.1.0.aar/4fa2a276bd53a41455482d5095387bd3/AndroidManifest.xml:11:5-14:19
+MERGED from [com.weiwangcn.betterspinner:library-material:1.1.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-library-material-1.1.0.aar/4fa2a276bd53a41455482d5095387bd3/AndroidManifest.xml:11:5-14:19
+MERGED from [com.bignerdranch.android:simple-item-decoration:1.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-simple-item-decoration-1.0.0.aar/d74fb4470a9f4a17968799d617a70e26/AndroidManifest.xml:11:5-14:19
+MERGED from [com.bignerdranch.android:simple-item-decoration:1.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-simple-item-decoration-1.0.0.aar/d74fb4470a9f4a17968799d617a70e26/AndroidManifest.xml:11:5-14:19
+MERGED from [com.google.android.material:material:1.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/material-1.0.0.aar/ed1a8ba0523d8bea387039697fc2b227/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/material-1.0.0.aar/ed1a8ba0523d8bea387039697fc2b227/AndroidManifest.xml:22:5-20
+MERGED from [com.squareup.picasso:picasso:2.71828] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-picasso-2.71828.aar/216f18d96fb5de360e118e4b6b5979bd/AndroidManifest.xml:7:5-12:19
+MERGED from [com.squareup.picasso:picasso:2.71828] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-picasso-2.71828.aar/216f18d96fb5de360e118e4b6b5979bd/AndroidManifest.xml:7:5-12:19
+MERGED from [com.jakewharton.timber:timber:4.7.1] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-timber-4.7.1.aar/887ba7d24f6c58d56d8170159b26ce79/AndroidManifest.xml:7:5-20
+MERGED from [com.jakewharton.timber:timber:4.7.1] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-timber-4.7.1.aar/887ba7d24f6c58d56d8170159b26ce79/AndroidManifest.xml:7:5-20
+MERGED from [:library] /home/vitor/dev-projects/android/kotlin/ItaRugby/library/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-20
+MERGED from [:library] /home/vitor/dev-projects/android/kotlin/ItaRugby/library/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.android:facebook-places:4.39.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/facebook-places-4.39.0.aar/90529149b60f049641af76e0565ff551/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-places:4.39.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/facebook-places-4.39.0.aar/90529149b60f049641af76e0565ff551/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-applinks:4.39.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/facebook-applinks-4.39.0.aar/0e64bf6c35443efe3891fd21c26be7a7/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-applinks:4.39.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/facebook-applinks-4.39.0.aar/0e64bf6c35443efe3891fd21c26be7a7/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-messenger:4.39.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.39.0.aar/159c4ec8b4255b2e07c7f06e02027e0c/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-messenger:4.39.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.39.0.aar/159c4ec8b4255b2e07c7f06e02027e0c/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-marketing:4.39.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-facebook-marketing-4.39.0.aar/9c44942d7a87c8092c29b4f8325f126c/AndroidManifest.xml:28:5-33:19
+MERGED from [com.facebook.android:facebook-marketing:4.39.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-facebook-marketing-4.39.0.aar/9c44942d7a87c8092c29b4f8325f126c/AndroidManifest.xml:28:5-33:19
+MERGED from [com.facebook.android:facebook-core:4.39.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-facebook-core-4.39.0.aar/5a81ee9d789ebb41e88d26a2ed58376b/AndroidManifest.xml:28:5-51:19
+MERGED from [com.facebook.android:facebook-core:4.39.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-facebook-core-4.39.0.aar/5a81ee9d789ebb41e88d26a2ed58376b/AndroidManifest.xml:28:5-51:19
+MERGED from [androidx.core:core:1.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/fab55195518f04615e2e6ac4dcbee859/AndroidManifest.xml:22:5-89
+MERGED from [androidx.core:core:1.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/fab55195518f04615e2e6ac4dcbee859/AndroidManifest.xml:22:5-89
+MERGED from [androidx.lifecycle:lifecycle-process:2.1.0-alpha02] /home/vitor/.gradle/caches/transforms-1/files-1.1/lifecycle-process-2.1.0-alpha02.aar/3bf283020a3ebe110b602f2ec0d7c9f1/AndroidManifest.xml:22:5-28:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.1.0-alpha02] /home/vitor/.gradle/caches/transforms-1/files-1.1/lifecycle-process-2.1.0-alpha02.aar/3bf283020a3ebe110b602f2ec0d7c9f1/AndroidManifest.xml:22:5-28:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/versionedparcelable-1.0.0.aar/71291b010abee036bb9361558ec5effa/AndroidManifest.xml:22:5-23:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/versionedparcelable-1.0.0.aar/71291b010abee036bb9361558ec5effa/AndroidManifest.xml:22:5-23:19
+MERGED from [com.github.ozodrukh:CircularReveal:1.3.1] /home/vitor/.gradle/caches/transforms-1/files-1.1/CircularReveal-1.3.1.aar/0cb5b6c126b8943be62b6f19eb9186f0/AndroidManifest.xml:10:5-20
+MERGED from [com.github.ozodrukh:CircularReveal:1.3.1] /home/vitor/.gradle/caches/transforms-1/files-1.1/CircularReveal-1.3.1.aar/0cb5b6c126b8943be62b6f19eb9186f0/AndroidManifest.xml:10:5-20
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/fab55195518f04615e2e6ac4dcbee859/AndroidManifest.xml:22:18-86
+	android:supportsRtl
+		ADDED from /home/vitor/dev-projects/android/kotlin/ItaRugby/app/src/main/AndroidManifest.xml:15:13-39
+	android:label
+		ADDED from /home/vitor/dev-projects/android/kotlin/ItaRugby/app/src/main/AndroidManifest.xml:13:13-45
+	android:roundIcon
+		ADDED from /home/vitor/dev-projects/android/kotlin/ItaRugby/app/src/main/AndroidManifest.xml:14:13-54
+	android:icon
+		ADDED from /home/vitor/dev-projects/android/kotlin/ItaRugby/app/src/main/AndroidManifest.xml:12:13-43
+	android:allowBackup
+		ADDED from /home/vitor/dev-projects/android/kotlin/ItaRugby/app/src/main/AndroidManifest.xml:11:13-39
+	android:theme
+		ADDED from /home/vitor/dev-projects/android/kotlin/ItaRugby/app/src/main/AndroidManifest.xml:16:13-44
+	android:usesCleartextTraffic
+		ADDED from /home/vitor/dev-projects/android/kotlin/ItaRugby/app/src/main/AndroidManifest.xml:18:13-48
+	android:name
+		ADDED from /home/vitor/dev-projects/android/kotlin/ItaRugby/app/src/main/AndroidManifest.xml:17:13-46
+meta-data#com.facebook.sdk.ApplicationId
+ADDED from /home/vitor/dev-projects/android/kotlin/ItaRugby/app/src/main/AndroidManifest.xml:21:9-23:60
+	android:value
+		ADDED from /home/vitor/dev-projects/android/kotlin/ItaRugby/app/src/main/AndroidManifest.xml:23:19-58
+	android:name
+		ADDED from /home/vitor/dev-projects/android/kotlin/ItaRugby/app/src/main/AndroidManifest.xml:22:19-64
+activity#com.facebook.FacebookActivity
+ADDED from /home/vitor/dev-projects/android/kotlin/ItaRugby/app/src/main/AndroidManifest.xml:26:9-29:54
+MERGED from [com.facebook.android:facebook-common:4.39.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-facebook-common-4.39.0.aar/73532ca5f8825fbd0f56b3a7defe7fe4/AndroidManifest.xml:29:9-32:66
+MERGED from [com.facebook.android:facebook-common:4.39.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-facebook-common-4.39.0.aar/73532ca5f8825fbd0f56b3a7defe7fe4/AndroidManifest.xml:29:9-32:66
+	android:label
+		ADDED from /home/vitor/dev-projects/android/kotlin/ItaRugby/app/src/main/AndroidManifest.xml:29:19-51
+	android:configChanges
+		ADDED from /home/vitor/dev-projects/android/kotlin/ItaRugby/app/src/main/AndroidManifest.xml:28:19-103
+	android:theme
+		ADDED from [com.facebook.android:facebook-common:4.39.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-facebook-common-4.39.0.aar/73532ca5f8825fbd0f56b3a7defe7fe4/AndroidManifest.xml:32:13-63
+	android:name
+		ADDED from /home/vitor/dev-projects/android/kotlin/ItaRugby/app/src/main/AndroidManifest.xml:27:19-63
+activity#com.facebook.CustomTabActivity
+ADDED from /home/vitor/dev-projects/android/kotlin/ItaRugby/app/src/main/AndroidManifest.xml:30:9-39:20
+MERGED from [com.facebook.android:facebook-common:4.39.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-facebook-common-4.39.0.aar/73532ca5f8825fbd0f56b3a7defe7fe4/AndroidManifest.xml:34:9-67
+MERGED from [com.facebook.android:facebook-common:4.39.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-facebook-common-4.39.0.aar/73532ca5f8825fbd0f56b3a7defe7fe4/AndroidManifest.xml:34:9-67
+	android:exported
+		ADDED from /home/vitor/dev-projects/android/kotlin/ItaRugby/app/src/main/AndroidManifest.xml:32:19-42
+	android:name
+		ADDED from /home/vitor/dev-projects/android/kotlin/ItaRugby/app/src/main/AndroidManifest.xml:31:19-64
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:scheme:@string/fb_login_protocol_scheme
+ADDED from /home/vitor/dev-projects/android/kotlin/ItaRugby/app/src/main/AndroidManifest.xml:33:19-38:35
+action#android.intent.action.VIEW
+ADDED from /home/vitor/dev-projects/android/kotlin/ItaRugby/app/src/main/AndroidManifest.xml:34:23-75
+	android:name
+		ADDED from /home/vitor/dev-projects/android/kotlin/ItaRugby/app/src/main/AndroidManifest.xml:34:31-72
+category#android.intent.category.DEFAULT
+ADDED from /home/vitor/dev-projects/android/kotlin/ItaRugby/app/src/main/AndroidManifest.xml:35:23-82
+	android:name
+		ADDED from /home/vitor/dev-projects/android/kotlin/ItaRugby/app/src/main/AndroidManifest.xml:35:33-79
+category#android.intent.category.BROWSABLE
+ADDED from /home/vitor/dev-projects/android/kotlin/ItaRugby/app/src/main/AndroidManifest.xml:36:23-84
+	android:name
+		ADDED from /home/vitor/dev-projects/android/kotlin/ItaRugby/app/src/main/AndroidManifest.xml:36:33-81
+data
+ADDED from /home/vitor/dev-projects/android/kotlin/ItaRugby/app/src/main/AndroidManifest.xml:37:23-81
+	android:scheme
+		ADDED from /home/vitor/dev-projects/android/kotlin/ItaRugby/app/src/main/AndroidManifest.xml:37:29-78
+meta-data#com.google.android.geo.API_KEY
+ADDED from /home/vitor/dev-projects/android/kotlin/ItaRugby/app/src/main/AndroidManifest.xml:41:9-43:56
+	android:value
+		ADDED from /home/vitor/dev-projects/android/kotlin/ItaRugby/app/src/main/AndroidManifest.xml:43:17-54
+	android:name
+		ADDED from /home/vitor/dev-projects/android/kotlin/ItaRugby/app/src/main/AndroidManifest.xml:42:17-62
+activity#com.ddapps.itarugby.MainActivity
+ADDED from /home/vitor/dev-projects/android/kotlin/ItaRugby/app/src/main/AndroidManifest.xml:46:9-52:20
+	android:name
+		ADDED from /home/vitor/dev-projects/android/kotlin/ItaRugby/app/src/main/AndroidManifest.xml:46:19-47
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /home/vitor/dev-projects/android/kotlin/ItaRugby/app/src/main/AndroidManifest.xml:47:13-51:29
+action#android.intent.action.MAIN
+ADDED from /home/vitor/dev-projects/android/kotlin/ItaRugby/app/src/main/AndroidManifest.xml:48:17-68
+	android:name
+		ADDED from /home/vitor/dev-projects/android/kotlin/ItaRugby/app/src/main/AndroidManifest.xml:48:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /home/vitor/dev-projects/android/kotlin/ItaRugby/app/src/main/AndroidManifest.xml:49:17-50:19
+	android:name
+		ADDED from /home/vitor/dev-projects/android/kotlin/ItaRugby/app/src/main/AndroidManifest.xml:49:27-74
+uses-sdk
+INJECTED from /home/vitor/dev-projects/android/kotlin/ItaRugby/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/vitor/dev-projects/android/kotlin/ItaRugby/app/src/main/AndroidManifest.xml
+INJECTED from /home/vitor/dev-projects/android/kotlin/ItaRugby/app/src/main/AndroidManifest.xml
+MERGED from [androidx.databinding:databinding-adapters:3.3.1] /home/vitor/.gradle/caches/transforms-1/files-1.1/databinding-adapters-3.3.1.aar/0146842edfcca54acb345287126073b4/AndroidManifest.xml:22:5-44
+MERGED from [androidx.databinding:databinding-adapters:3.3.1] /home/vitor/.gradle/caches/transforms-1/files-1.1/databinding-adapters-3.3.1.aar/0146842edfcca54acb345287126073b4/AndroidManifest.xml:22:5-44
+MERGED from [androidx.databinding:databinding-runtime:3.3.1] /home/vitor/.gradle/caches/transforms-1/files-1.1/databinding-runtime-3.3.1.aar/fffa7b406c29dc6a2e49d8511d40b754/AndroidManifest.xml:22:5-44
+MERGED from [androidx.databinding:databinding-runtime:3.3.1] /home/vitor/.gradle/caches/transforms-1/files-1.1/databinding-runtime-3.3.1.aar/fffa7b406c29dc6a2e49d8511d40b754/AndroidManifest.xml:22:5-44
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.0-alpha3] /home/vitor/.gradle/caches/transforms-1/files-1.1/constraintlayout-2.0.0-alpha3.aar/8913be2a6843d7a656403f248ee55be9/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.0-alpha3] /home/vitor/.gradle/caches/transforms-1/files-1.1/constraintlayout-2.0.0-alpha3.aar/8913be2a6843d7a656403f248ee55be9/AndroidManifest.xml:5:5-7:41
+MERGED from [com.firebaseui:firebase-ui-firestore:4.3.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-firebase-ui-firestore-4.3.0.aar/072bdede0508cf9c41a52d52c854ae92/AndroidManifest.xml:7:5-9:41
+MERGED from [com.firebaseui:firebase-ui-firestore:4.3.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-firebase-ui-firestore-4.3.0.aar/072bdede0508cf9c41a52d52c854ae92/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.android:facebook-android-sdk:4.39.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.39.0.aar/2ea1e9f7e4cd6463e10089ae7105ad52/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-android-sdk:4.39.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.39.0.aar/2ea1e9f7e4cd6463e10089ae7105ad52/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-login:4.39.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-facebook-login-4.39.0.aar/949175a135383f52a5fd3ab585082ea0/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-login:4.39.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-facebook-login-4.39.0.aar/949175a135383f52a5fd3ab585082ea0/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-share:4.39.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-facebook-share-4.39.0.aar/1b8feb92d744dc21a90d76dedab0bdaf/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-share:4.39.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-facebook-share-4.39.0.aar/1b8feb92d744dc21a90d76dedab0bdaf/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-common:4.39.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-facebook-common-4.39.0.aar/73532ca5f8825fbd0f56b3a7defe7fe4/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-common:4.39.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-facebook-common-4.39.0.aar/73532ca5f8825fbd0f56b3a7defe7fe4/AndroidManifest.xml:24:5-26:41
+MERGED from [com.google.android.gms:play-services-places:16.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-play-services-places-16.0.0.aar/f2e5fa9a85f529d63a6d845d790a6a3d/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places:16.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-play-services-places-16.0.0.aar/f2e5fa9a85f529d63a6d845d790a6a3d/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:16.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-play-services-maps-16.0.0.aar/424a97a79e303fc725fcc663b042d62b/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:16.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-play-services-maps-16.0.0.aar/424a97a79e303fc725fcc663b042d62b/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-location:16.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-play-services-location-16.0.0.aar/a7a12d823923cc2d34d3d6338df4fb0c/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-location:16.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-play-services-location-16.0.0.aar/a7a12d823923cc2d34d3d6338df4fb0c/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-auth:16.1.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-firebase-auth-16.1.0.aar/d98fcd4e653ef16fbdc2f2774333e9a9/AndroidManifest.xml:21:5-44
+MERGED from [com.google.firebase:firebase-auth:16.1.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-firebase-auth-16.1.0.aar/d98fcd4e653ef16fbdc2f2774333e9a9/AndroidManifest.xml:21:5-44
+MERGED from [com.google.firebase:firebase-database:16.0.6] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-firebase-database-16.0.6.aar/1374257c8e54e91f09d3ad227a3fed87/AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.firebase:firebase-database:16.0.6] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-firebase-database-16.0.6.aar/1374257c8e54e91f09d3ad227a3fed87/AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.firebase:firebase-firestore:18.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-firebase-firestore-18.0.0.aar/9a8d86f85d57170eaf9c13e8af931e65/AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-firestore:18.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-firebase-firestore-18.0.0.aar/9a8d86f85d57170eaf9c13e8af931e65/AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.android.gms:play-services-flags:16.0.1] /home/vitor/.gradle/caches/transforms-1/files-1.1/play-services-flags-16.0.1.aar/bdfd6311c5af83e3cd6eb986db194df8/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-flags:16.0.1] /home/vitor/.gradle/caches/transforms-1/files-1.1/play-services-flags-16.0.1.aar/bdfd6311c5af83e3cd6eb986db194df8/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-auth-interop:16.0.1] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-firebase-auth-interop-16.0.1.aar/65924f20330e7b9a95e37fab78e4f3c3/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-auth-interop:16.0.1] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-firebase-auth-interop-16.0.1.aar/65924f20330e7b9a95e37fab78e4f3c3/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-16.0.1.aar/7b524446896cd44c3f9ee102993e6796/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-16.0.1.aar/7b524446896cd44c3f9ee102993e6796/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-16.0.0.aar/28f0f1a713df4e1c09e6c8d9fc895479/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-16.0.0.aar/28f0f1a713df4e1c09e6c8d9fc895479/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-common:16.0.4] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-firebase-common-16.0.4.aar/fdaf193f5683d2df45e37683684cb2a2/AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.firebase:firebase-common:16.0.4] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-firebase-common-16.0.4.aar/fdaf193f5683d2df45e37683684cb2a2/AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-play-services-tasks-16.0.1.aar/70272c743916f9e962a25b1c5b67231e/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-play-services-tasks-16.0.1.aar/70272c743916f9e962a25b1c5b67231e/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:16.1.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-16.1.0.aar/9883a15b328c833ce0d926d19051b291/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:16.1.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-16.1.0.aar/9883a15b328c833ce0d926d19051b291/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/legacy-support-v4-1.0.0.aar/3964ee1e1fc8d82a4820befefec251c0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/legacy-support-v4-1.0.0.aar/3964ee1e1fc8d82a4820befefec251c0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.1.0-alpha02] /home/vitor/.gradle/caches/transforms-1/files-1.1/lifecycle-extensions-2.1.0-alpha02.aar/9d7ccf7090c673e7e22ddfc41735a089/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.1.0-alpha02] /home/vitor/.gradle/caches/transforms-1/files-1.1/lifecycle-extensions-2.1.0-alpha02.aar/9d7ccf7090c673e7e22ddfc41735a089/AndroidManifest.xml:20:5-44
+MERGED from [com.github.wangjiegulu:rfab:2.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-rfab-2.0.0.aar/2be87ddde66aedb4e5b17cc1cd565eb0/AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.wangjiegulu:rfab:2.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-rfab-2.0.0.aar/2be87ddde66aedb4e5b17cc1cd565eb0/AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.wangjiegulu:AndroidBucket:1.0.4] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-AndroidBucket-1.0.4.aar/e5fc1934c6aefb852b8d81bcc19b7022/AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.wangjiegulu:AndroidBucket:1.0.4] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-AndroidBucket-1.0.4.aar/e5fc1934c6aefb852b8d81bcc19b7022/AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.coyarzun89:fabtransitionactivity:0.2.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-fabtransitionactivity-0.2.0.aar/c04cc7f4b1ad39dc26e51ccd6d7ad523/AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.coyarzun89:fabtransitionactivity:0.2.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-fabtransitionactivity-0.2.0.aar/c04cc7f4b1ad39dc26e51ccd6d7ad523/AndroidManifest.xml:7:5-9:41
+MERGED from [de.hdodenhof:circleimageview:3.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/circleimageview-3.0.0.aar/241e2aa1f73c6cc47352e0131a3cabf5/AndroidManifest.xml:5:5-7:41
+MERGED from [de.hdodenhof:circleimageview:3.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/circleimageview-3.0.0.aar/241e2aa1f73c6cc47352e0131a3cabf5/AndroidManifest.xml:5:5-7:41
+MERGED from [com.weiwangcn.betterspinner:library-material:1.1.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-library-material-1.1.0.aar/4fa2a276bd53a41455482d5095387bd3/AndroidManifest.xml:7:5-9:41
+MERGED from [com.weiwangcn.betterspinner:library-material:1.1.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-library-material-1.1.0.aar/4fa2a276bd53a41455482d5095387bd3/AndroidManifest.xml:7:5-9:41
+MERGED from [com.bignerdranch.android:simple-item-decoration:1.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-simple-item-decoration-1.0.0.aar/d74fb4470a9f4a17968799d617a70e26/AndroidManifest.xml:7:5-9:41
+MERGED from [com.bignerdranch.android:simple-item-decoration:1.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-simple-item-decoration-1.0.0.aar/d74fb4470a9f4a17968799d617a70e26/AndroidManifest.xml:7:5-9:41
+MERGED from [jp.wasabeef:recyclerview-animators:3.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/recyclerview-animators-3.0.0.aar/71596e63efa81690956213a7bbaef5f5/AndroidManifest.xml:5:5-7:41
+MERGED from [jp.wasabeef:recyclerview-animators:3.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/recyclerview-animators-3.0.0.aar/71596e63efa81690956213a7bbaef5f5/AndroidManifest.xml:5:5-7:41
+MERGED from [android.arch.navigation:navigation-ui-ktx:1.0.0-alpha05] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-navigation-ui-ktx-1.0.0-alpha05.aar/063c64b6811b475c5cb1e7065b44ab5c/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.navigation:navigation-ui-ktx:1.0.0-alpha05] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-navigation-ui-ktx-1.0.0-alpha05.aar/063c64b6811b475c5cb1e7065b44ab5c/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.navigation:navigation-ui:1.0.0-alpha05] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-navigation-ui-1.0.0-alpha05.aar/f06522ad896c2a4ae72cd1f9e874dcce/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.navigation:navigation-ui:1.0.0-alpha05] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-navigation-ui-1.0.0-alpha05.aar/f06522ad896c2a4ae72cd1f9e874dcce/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/material-1.0.0.aar/ed1a8ba0523d8bea387039697fc2b227/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/material-1.0.0.aar/ed1a8ba0523d8bea387039697fc2b227/AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/recyclerview-1.0.0.aar/48e75de629ea632489c29ae4418ed8ed/AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/recyclerview-1.0.0.aar/48e75de629ea632489c29ae4418ed8ed/AndroidManifest.xml:20:5-44
+MERGED from [com.squareup.picasso:picasso:2.71828] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-picasso-2.71828.aar/216f18d96fb5de360e118e4b6b5979bd/AndroidManifest.xml:5:5-44
+MERGED from [com.squareup.picasso:picasso:2.71828] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-picasso-2.71828.aar/216f18d96fb5de360e118e4b6b5979bd/AndroidManifest.xml:5:5-44
+MERGED from [com.rengwuxian.materialedittext:library:2.0.3] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-library-2.0.3.aar/99a377050f01021094005fb51a0f3cac/AndroidManifest.xml:6:5-8:41
+MERGED from [com.rengwuxian.materialedittext:library:2.0.3] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-library-2.0.3.aar/99a377050f01021094005fb51a0f3cac/AndroidManifest.xml:6:5-8:41
+MERGED from [androidx.appcompat:appcompat:1.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0.aar/6c05a0d774cd0e6f1ef9d704f8bc2003/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0.aar/6c05a0d774cd0e6f1ef9d704f8bc2003/AndroidManifest.xml:20:5-44
+MERGED from [com.jakewharton.timber:timber:4.7.1] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-timber-4.7.1.aar/887ba7d24f6c58d56d8170159b26ce79/AndroidManifest.xml:5:5-43
+MERGED from [com.jakewharton.timber:timber:4.7.1] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-timber-4.7.1.aar/887ba7d24f6c58d56d8170159b26ce79/AndroidManifest.xml:5:5-43
+MERGED from [android.arch.navigation:navigation-fragment-ktx:1.0.0-alpha05] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-navigation-fragment-ktx-1.0.0-alpha05.aar/96db0733c1eac96b5df6e8b428bb5f58/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.navigation:navigation-fragment-ktx:1.0.0-alpha05] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-navigation-fragment-ktx-1.0.0-alpha05.aar/96db0733c1eac96b5df6e8b428bb5f58/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.navigation:navigation-fragment:1.0.0-alpha05] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-navigation-fragment-1.0.0-alpha05.aar/d8c6dc7ee8154764bd5f89ccf920ecf3/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.navigation:navigation-fragment:1.0.0-alpha05] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-navigation-fragment-1.0.0-alpha05.aar/d8c6dc7ee8154764bd5f89ccf920ecf3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/cardview-1.0.0.aar/7d6f16e2c283736a1be24e5bd2650289/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/cardview-1.0.0.aar/7d6f16e2c283736a1be24e5bd2650289/AndroidManifest.xml:20:5-44
+MERGED from [:library] /home/vitor/dev-projects/android/kotlin/ItaRugby/library/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:library] /home/vitor/dev-projects/android/kotlin/ItaRugby/library/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.media:media:1.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/media-1.0.0.aar/55aa1964e92fe6ab65798df84a1fd83f/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/media-1.0.0.aar/55aa1964e92fe6ab65798df84a1fd83f/AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/fragment-1.0.0.aar/d356b15867db5168cbd2f36447a876cf/AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/fragment-1.0.0.aar/d356b15867db5168cbd2f36447a876cf/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/vectordrawable-animated-1.0.0.aar/aa44dcaaabd8eb1b1c8bf1fe04f6e22d/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/vectordrawable-animated-1.0.0.aar/aa44dcaaabd8eb1b1c8bf1fe04f6e22d/AndroidManifest.xml:20:5-44
+MERGED from [androidx.browser:browser:1.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/browser-1.0.0.aar/8e62f9862b86fe5fdfb921fc5ad33bcc/AndroidManifest.xml:20:5-44
+MERGED from [androidx.browser:browser:1.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/browser-1.0.0.aar/8e62f9862b86fe5fdfb921fc5ad33bcc/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/legacy-support-core-ui-1.0.0.aar/4a7b8311032fede0f03df6eff258c655/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/legacy-support-core-ui-1.0.0.aar/4a7b8311032fede0f03df6eff258c655/AndroidManifest.xml:20:5-44
+MERGED from [com.facebook.android:facebook-places:4.39.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/facebook-places-4.39.0.aar/90529149b60f049641af76e0565ff551/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-places:4.39.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/facebook-places-4.39.0.aar/90529149b60f049641af76e0565ff551/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-applinks:4.39.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/facebook-applinks-4.39.0.aar/0e64bf6c35443efe3891fd21c26be7a7/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-applinks:4.39.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/facebook-applinks-4.39.0.aar/0e64bf6c35443efe3891fd21c26be7a7/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-messenger:4.39.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.39.0.aar/159c4ec8b4255b2e07c7f06e02027e0c/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-messenger:4.39.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.39.0.aar/159c4ec8b4255b2e07c7f06e02027e0c/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-marketing:4.39.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-facebook-marketing-4.39.0.aar/9c44942d7a87c8092c29b4f8325f126c/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-marketing:4.39.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-facebook-marketing-4.39.0.aar/9c44942d7a87c8092c29b4f8325f126c/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-core:4.39.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-facebook-core-4.39.0.aar/5a81ee9d789ebb41e88d26a2ed58376b/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-core:4.39.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-facebook-core-4.39.0.aar/5a81ee9d789ebb41e88d26a2ed58376b/AndroidManifest.xml:24:5-26:41
+MERGED from [android.arch.navigation:navigation-runtime-ktx:1.0.0-alpha05] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-navigation-runtime-ktx-1.0.0-alpha05.aar/9cc456600809a2e34e9d1fe4b6f226a2/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.navigation:navigation-runtime-ktx:1.0.0-alpha05] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-navigation-runtime-ktx-1.0.0-alpha05.aar/9cc456600809a2e34e9d1fe4b6f226a2/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.navigation:navigation-runtime:1.0.0-alpha05] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-navigation-runtime-1.0.0-alpha05.aar/bf76c14a3f7c3f637364f72468f36422/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.navigation:navigation-runtime:1.0.0-alpha05] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-navigation-runtime-1.0.0-alpha05.aar/bf76c14a3f7c3f637364f72468f36422/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/legacy-support-core-utils-1.0.0.aar/5107ce0bbd732dd12def77d31d3cefe9/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/legacy-support-core-utils-1.0.0.aar/5107ce0bbd732dd12def77d31d3cefe9/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/vectordrawable-1.0.0.aar/fc13bd2bd6d43854d7272e3840df1fdd/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/vectordrawable-1.0.0.aar/fc13bd2bd6d43854d7272e3840df1fdd/AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/transition-1.0.0.aar/d8805d1b4fd780e84b8c719f51ef11f1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/transition-1.0.0.aar/d8805d1b4fd780e84b8c719f51ef11f1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/loader-1.0.0.aar/4e0ba2b2cc55428bffb63ed3c271133b/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/loader-1.0.0.aar/4e0ba2b2cc55428bffb63ed3c271133b/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/viewpager-1.0.0.aar/91a203e91d61d3a4eff9f7e805bfb449/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/viewpager-1.0.0.aar/91a203e91d61d3a4eff9f7e805bfb449/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-1.0.0.aar/b4f22fefea5c162554651a9ff36aa6ee/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-1.0.0.aar/b4f22fefea5c162554651a9ff36aa6ee/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/drawerlayout-1.0.0.aar/31b3f24de07855378d27b3ee3c1f8be6/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/drawerlayout-1.0.0.aar/31b3f24de07855378d27b3ee3c1f8be6/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-1.0.0.aar/3818ac66031b5bdd5f8d7f5608b64088/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-1.0.0.aar/3818ac66031b5bdd5f8d7f5608b64088/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/customview-1.0.0.aar/438dcb9b343f0c08390ead7f7e00e44d/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/customview-1.0.0.aar/438dcb9b343f0c08390ead7f7e00e44d/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-1.0.0.aar/700c222e5de911d34aa0de512b0d946b/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-1.0.0.aar/700c222e5de911d34aa0de512b0d946b/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-1.0.0.aar/7633942095d160a3a9fa863ec3b662de/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-1.0.0.aar/7633942095d160a3a9fa863ec3b662de/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.navigation:navigation-common-ktx:1.0.0-alpha05] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-navigation-common-ktx-1.0.0-alpha05.aar/d777c9ac02e666fb6eb67a66782a9589/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.navigation:navigation-common-ktx:1.0.0-alpha05] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-navigation-common-ktx-1.0.0-alpha05.aar/d777c9ac02e666fb6eb67a66782a9589/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.navigation:navigation-common:1.0.0-alpha05] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-navigation-common-1.0.0-alpha05.aar/9c05f5d8161d4893ad42f81edc49e6e1/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.navigation:navigation-common:1.0.0-alpha05] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-navigation-common-1.0.0-alpha05.aar/9c05f5d8161d4893ad42f81edc49e6e1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/fab55195518f04615e2e6ac4dcbee859/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/fab55195518f04615e2e6ac4dcbee859/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.1.0-alpha02] /home/vitor/.gradle/caches/transforms-1/files-1.1/lifecycle-process-2.1.0-alpha02.aar/3bf283020a3ebe110b602f2ec0d7c9f1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.1.0-alpha02] /home/vitor/.gradle/caches/transforms-1/files-1.1/lifecycle-process-2.1.0-alpha02.aar/3bf283020a3ebe110b602f2ec0d7c9f1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-service:2.1.0-alpha02] /home/vitor/.gradle/caches/transforms-1/files-1.1/lifecycle-service-2.1.0-alpha02.aar/51c9554381c66f711ddef55a13d07a90/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-service:2.1.0-alpha02] /home/vitor/.gradle/caches/transforms-1/files-1.1/lifecycle-service-2.1.0-alpha02.aar/51c9554381c66f711ddef55a13d07a90/AndroidManifest.xml:20:5-44
+MERGED from [com.firebaseui:firebase-ui-common:4.3.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-firebase-ui-common-4.3.0.aar/305c45d982e69e3b2c2dca33afcb5cdf/AndroidManifest.xml:7:5-9:41
+MERGED from [com.firebaseui:firebase-ui-common:4.3.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-firebase-ui-common-4.3.0.aar/305c45d982e69e3b2c2dca33afcb5cdf/AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0-alpha02] /home/vitor/.gradle/caches/transforms-1/files-1.1/lifecycle-runtime-2.1.0-alpha02.aar/0f5024f5cc0bfb83af66aa6447006a51/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0-alpha02] /home/vitor/.gradle/caches/transforms-1/files-1.1/lifecycle-runtime-2.1.0-alpha02.aar/0f5024f5cc0bfb83af66aa6447006a51/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/versionedparcelable-1.0.0.aar/71291b010abee036bb9361558ec5effa/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/versionedparcelable-1.0.0.aar/71291b010abee036bb9361558ec5effa/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.1.0-alpha02] /home/vitor/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-2.1.0-alpha02.aar/468319207fe21a73cdd50809b0b63795/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.1.0-alpha02] /home/vitor/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-2.1.0-alpha02.aar/468319207fe21a73cdd50809b0b63795/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.1.0-alpha02] /home/vitor/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-core-2.1.0-alpha02.aar/5724f9a2e839051eeb40153d9383df8d/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.1.0-alpha02] /home/vitor/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-core-2.1.0-alpha02.aar/5724f9a2e839051eeb40153d9383df8d/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.1-alpha01] /home/vitor/.gradle/caches/transforms-1/files-1.1/core-runtime-2.0.1-alpha01.aar/96618b8085e1ce9ccba5708eb8c74744/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.1-alpha01] /home/vitor/.gradle/caches/transforms-1/files-1.1/core-runtime-2.0.1-alpha01.aar/96618b8085e1ce9ccba5708eb8c74744/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0-alpha02] /home/vitor/.gradle/caches/transforms-1/files-1.1/lifecycle-viewmodel-2.1.0-alpha02.aar/ba1cb011caf697c3a2fec5c91891bfbb/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0-alpha02] /home/vitor/.gradle/caches/transforms-1/files-1.1/lifecycle-viewmodel-2.1.0-alpha02.aar/ba1cb011caf697c3a2fec5c91891bfbb/AndroidManifest.xml:20:5-44
+MERGED from [com.github.ozodrukh:CircularReveal:1.3.1] /home/vitor/.gradle/caches/transforms-1/files-1.1/CircularReveal-1.3.1.aar/0cb5b6c126b8943be62b6f19eb9186f0/AndroidManifest.xml:6:5-8:41
+MERGED from [com.github.ozodrukh:CircularReveal:1.3.1] /home/vitor/.gradle/caches/transforms-1/files-1.1/CircularReveal-1.3.1.aar/0cb5b6c126b8943be62b6f19eb9186f0/AndroidManifest.xml:6:5-8:41
+MERGED from [androidx.exifinterface:exifinterface:1.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/exifinterface-1.0.0.aar/3b5c9e48cab7c85e99751b71ad0f1d33/AndroidManifest.xml:20:5-44
+MERGED from [androidx.exifinterface:exifinterface:1.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/exifinterface-1.0.0.aar/3b5c9e48cab7c85e99751b71ad0f1d33/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/cursoradapter-1.0.0.aar/ce1fa05506565cab2d66abf7a7dde40f/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/cursoradapter-1.0.0.aar/ce1fa05506565cab2d66abf7a7dde40f/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/documentfile-1.0.0.aar/90bdf19c9a1fdcb8d2d12b3ea3424629/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/documentfile-1.0.0.aar/90bdf19c9a1fdcb8d2d12b3ea3424629/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-1.0.0.aar/64db349be5be37e6ae88ab111661808b/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-1.0.0.aar/64db349be5be37e6ae88ab111661808b/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/print-1.0.0.aar/9c896d7d1a4a8372c38dd45e2229dde5/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/print-1.0.0.aar/9c896d7d1a4a8372c38dd45e2229dde5/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/interpolator-1.0.0.aar/d69c26e181dc92e529d439379aa35140/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/interpolator-1.0.0.aar/d69c26e181dc92e529d439379aa35140/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-database-collection:16.0.1] /home/vitor/.gradle/caches/transforms-1/files-1.1/firebase-database-collection-16.0.1.aar/7674292929d2dc19d40724fa8d6dda99/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-database-collection:16.0.1] /home/vitor/.gradle/caches/transforms-1/files-1.1/firebase-database-collection-16.0.1.aar/7674292929d2dc19d40724fa8d6dda99/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:protolite-well-known-types:16.0.1] /home/vitor/.gradle/caches/transforms-1/files-1.1/protolite-well-known-types-16.0.1.aar/9e93139c250f6b113a681ebfbcf49f5a/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.firebase:protolite-well-known-types:16.0.1] /home/vitor/.gradle/caches/transforms-1/files-1.1/protolite-well-known-types-16.0.1.aar/9e93139c250f6b113a681ebfbcf49f5a/AndroidManifest.xml:7:5-9:41
+MERGED from [io.grpc:grpc-android:1.16.1] /home/vitor/.gradle/caches/transforms-1/files-1.1/grpc-android-1.16.1.aar/25d455e2340b13d2cb14e262e71ee9f6/AndroidManifest.xml:7:5-9:41
+MERGED from [io.grpc:grpc-android:1.16.1] /home/vitor/.gradle/caches/transforms-1/files-1.1/grpc-android-1.16.1.aar/25d455e2340b13d2cb14e262e71ee9f6/AndroidManifest.xml:7:5-9:41
+INJECTED from /home/vitor/dev-projects/android/kotlin/ItaRugby/app/src/main/AndroidManifest.xml
+INJECTED from /home/vitor/dev-projects/android/kotlin/ItaRugby/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /home/vitor/dev-projects/android/kotlin/ItaRugby/app/src/main/AndroidManifest.xml
+		ADDED from /home/vitor/dev-projects/android/kotlin/ItaRugby/app/src/main/AndroidManifest.xml
+		INJECTED from /home/vitor/dev-projects/android/kotlin/ItaRugby/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/vitor/dev-projects/android/kotlin/ItaRugby/app/src/main/AndroidManifest.xml
+		ADDED from /home/vitor/dev-projects/android/kotlin/ItaRugby/app/src/main/AndroidManifest.xml
+		INJECTED from /home/vitor/dev-projects/android/kotlin/ItaRugby/app/src/main/AndroidManifest.xml
+activity#com.facebook.CustomTabMainActivity
+ADDED from [com.facebook.android:facebook-common:4.39.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-facebook-common-4.39.0.aar/73532ca5f8825fbd0f56b3a7defe7fe4/AndroidManifest.xml:33:9-71
+	android:name
+		ADDED from [com.facebook.android:facebook-common:4.39.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-facebook-common-4.39.0.aar/73532ca5f8825fbd0f56b3a7defe7fe4/AndroidManifest.xml:33:19-68
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [com.google.android.gms:play-services-maps:16.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-play-services-maps-16.0.0.aar/424a97a79e303fc725fcc663b042d62b/AndroidManifest.xml:23:5-79
+MERGED from [com.google.firebase:firebase-database:16.0.6] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-firebase-database-16.0.6.aar/1374257c8e54e91f09d3ad227a3fed87/AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-database:16.0.6] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-firebase-database-16.0.6.aar/1374257c8e54e91f09d3ad227a3fed87/AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-firestore:18.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-firebase-firestore-18.0.0.aar/9a8d86f85d57170eaf9c13e8af931e65/AndroidManifest.xml:12:5-79
+MERGED from [com.google.firebase:firebase-firestore:18.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-firebase-firestore-18.0.0.aar/9a8d86f85d57170eaf9c13e8af931e65/AndroidManifest.xml:12:5-79
+MERGED from [io.grpc:grpc-android:1.16.1] /home/vitor/.gradle/caches/transforms-1/files-1.1/grpc-android-1.16.1.aar/25d455e2340b13d2cb14e262e71ee9f6/AndroidManifest.xml:11:5-79
+MERGED from [io.grpc:grpc-android:1.16.1] /home/vitor/.gradle/caches/transforms-1/files-1.1/grpc-android-1.16.1.aar/25d455e2340b13d2cb14e262e71ee9f6/AndroidManifest.xml:11:5-79
+	android:name
+		ADDED from [com.google.android.gms:play-services-maps:16.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-play-services-maps-16.0.0.aar/424a97a79e303fc725fcc663b042d62b/AndroidManifest.xml:23:22-76
+uses-feature#0x00020000
+ADDED from [com.google.android.gms:play-services-maps:16.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-play-services-maps-16.0.0.aar/424a97a79e303fc725fcc663b042d62b/AndroidManifest.xml:26:5-28:35
+	android:glEsVersion
+		ADDED from [com.google.android.gms:play-services-maps:16.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-play-services-maps-16.0.0.aar/424a97a79e303fc725fcc663b042d62b/AndroidManifest.xml:27:9-41
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:16.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-play-services-maps-16.0.0.aar/424a97a79e303fc725fcc663b042d62b/AndroidManifest.xml:28:9-32
+activity#com.google.firebase.auth.internal.FederatedSignInActivity
+ADDED from [com.google.firebase:firebase-auth:16.1.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-firebase-auth-16.1.0.aar/d98fcd4e653ef16fbdc2f2774333e9a9/AndroidManifest.xml:24:9-31:50
+	android:excludeFromRecents
+		ADDED from [com.google.firebase:firebase-auth:16.1.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-firebase-auth-16.1.0.aar/d98fcd4e653ef16fbdc2f2774333e9a9/AndroidManifest.xml:26:13-46
+	android:launchMode
+		ADDED from [com.google.firebase:firebase-auth:16.1.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-firebase-auth-16.1.0.aar/d98fcd4e653ef16fbdc2f2774333e9a9/AndroidManifest.xml:28:13-44
+	android:exported
+		ADDED from [com.google.firebase:firebase-auth:16.1.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-firebase-auth-16.1.0.aar/d98fcd4e653ef16fbdc2f2774333e9a9/AndroidManifest.xml:27:13-36
+	android:permission
+		ADDED from [com.google.firebase:firebase-auth:16.1.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-firebase-auth-16.1.0.aar/d98fcd4e653ef16fbdc2f2774333e9a9/AndroidManifest.xml:29:13-102
+	android:theme
+		ADDED from [com.google.firebase:firebase-auth:16.1.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-firebase-auth-16.1.0.aar/d98fcd4e653ef16fbdc2f2774333e9a9/AndroidManifest.xml:30:13-72
+	tools:replace
+		ADDED from [com.google.firebase:firebase-auth:16.1.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-firebase-auth-16.1.0.aar/d98fcd4e653ef16fbdc2f2774333e9a9/AndroidManifest.xml:31:13-47
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:16.1.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-firebase-auth-16.1.0.aar/d98fcd4e653ef16fbdc2f2774333e9a9/AndroidManifest.xml:25:13-85
+service#com.google.firebase.components.ComponentDiscoveryService
+ADDED from [com.google.firebase:firebase-auth:16.1.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-firebase-auth-16.1.0.aar/d98fcd4e653ef16fbdc2f2774333e9a9/AndroidManifest.xml:33:9-39:19
+MERGED from [com.google.firebase:firebase-firestore:18.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-firebase-firestore-18.0.0.aar/9a8d86f85d57170eaf9c13e8af931e65/AndroidManifest.xml:16:9-20:19
+MERGED from [com.google.firebase:firebase-firestore:18.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-firebase-firestore-18.0.0.aar/9a8d86f85d57170eaf9c13e8af931e65/AndroidManifest.xml:16:9-20:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-auth:16.1.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-firebase-auth-16.1.0.aar/d98fcd4e653ef16fbdc2f2774333e9a9/AndroidManifest.xml:35:13-37
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:16.1.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-firebase-auth-16.1.0.aar/d98fcd4e653ef16fbdc2f2774333e9a9/AndroidManifest.xml:34:13-84
+meta-data#com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar
+ADDED from [com.google.firebase:firebase-auth:16.1.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-firebase-auth-16.1.0.aar/d98fcd4e653ef16fbdc2f2774333e9a9/AndroidManifest.xml:36:13-38:85
+	android:value
+		ADDED from [com.google.firebase:firebase-auth:16.1.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-firebase-auth-16.1.0.aar/d98fcd4e653ef16fbdc2f2774333e9a9/AndroidManifest.xml:38:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:16.1.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-firebase-auth-16.1.0.aar/d98fcd4e653ef16fbdc2f2774333e9a9/AndroidManifest.xml:37:17-109
+meta-data#com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar
+ADDED from [com.google.firebase:firebase-firestore:18.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-firebase-firestore-18.0.0.aar/9a8d86f85d57170eaf9c13e8af931e65/AndroidManifest.xml:17:13-19:85
+	android:value
+		ADDED from [com.google.firebase:firebase-firestore:18.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-firebase-firestore-18.0.0.aar/9a8d86f85d57170eaf9c13e8af931e65/AndroidManifest.xml:19:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-firestore:18.0.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-firebase-firestore-18.0.0.aar/9a8d86f85d57170eaf9c13e8af931e65/AndroidManifest.xml:18:17-111
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:16.0.1] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-16.0.1.aar/7b524446896cd44c3f9ee102993e6796/AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-16.0.1.aar/7b524446896cd44c3f9ee102993e6796/AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-16.0.1.aar/7b524446896cd44c3f9ee102993e6796/AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-16.0.1.aar/7b524446896cd44c3f9ee102993e6796/AndroidManifest.xml:24:13-79
+provider#com.google.firebase.provider.FirebaseInitProvider
+ADDED from [com.google.firebase:firebase-common:16.0.4] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-firebase-common-16.0.4.aar/fdaf193f5683d2df45e37683684cb2a2/AndroidManifest.xml:10:9-14:39
+	android:authorities
+		ADDED from [com.google.firebase:firebase-common:16.0.4] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-firebase-common-16.0.4.aar/fdaf193f5683d2df45e37683684cb2a2/AndroidManifest.xml:12:13-72
+	android:exported
+		ADDED from [com.google.firebase:firebase-common:16.0.4] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-firebase-common-16.0.4.aar/fdaf193f5683d2df45e37683684cb2a2/AndroidManifest.xml:13:13-37
+	android:initOrder
+		ADDED from [com.google.firebase:firebase-common:16.0.4] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-firebase-common-16.0.4.aar/fdaf193f5683d2df45e37683684cb2a2/AndroidManifest.xml:14:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-common:16.0.4] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-firebase-common-16.0.4.aar/fdaf193f5683d2df45e37683684cb2a2/AndroidManifest.xml:11:13-77
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:16.1.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-16.1.0.aar/9883a15b328c833ce0d926d19051b291/AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:16.1.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-16.1.0.aar/9883a15b328c833ce0d926d19051b291/AndroidManifest.xml:25:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:16.1.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-16.1.0.aar/9883a15b328c833ce0d926d19051b291/AndroidManifest.xml:24:13-58
+provider#com.squareup.picasso.PicassoProvider
+ADDED from [com.squareup.picasso:picasso:2.71828] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-picasso-2.71828.aar/216f18d96fb5de360e118e4b6b5979bd/AndroidManifest.xml:8:9-11:40
+	android:authorities
+		ADDED from [com.squareup.picasso:picasso:2.71828] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-picasso-2.71828.aar/216f18d96fb5de360e118e4b6b5979bd/AndroidManifest.xml:10:13-72
+	android:exported
+		ADDED from [com.squareup.picasso:picasso:2.71828] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-picasso-2.71828.aar/216f18d96fb5de360e118e4b6b5979bd/AndroidManifest.xml:11:13-37
+	android:name
+		ADDED from [com.squareup.picasso:picasso:2.71828] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-picasso-2.71828.aar/216f18d96fb5de360e118e4b6b5979bd/AndroidManifest.xml:9:13-64
+provider#com.facebook.marketing.internal.MarketingInitProvider
+ADDED from [com.facebook.android:facebook-marketing:4.39.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-facebook-marketing-4.39.0.aar/9c44942d7a87c8092c29b4f8325f126c/AndroidManifest.xml:29:9-32:40
+	android:authorities
+		ADDED from [com.facebook.android:facebook-marketing:4.39.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-facebook-marketing-4.39.0.aar/9c44942d7a87c8092c29b4f8325f126c/AndroidManifest.xml:31:13-73
+	android:exported
+		ADDED from [com.facebook.android:facebook-marketing:4.39.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-facebook-marketing-4.39.0.aar/9c44942d7a87c8092c29b4f8325f126c/AndroidManifest.xml:32:13-37
+	android:name
+		ADDED from [com.facebook.android:facebook-marketing:4.39.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-facebook-marketing-4.39.0.aar/9c44942d7a87c8092c29b4f8325f126c/AndroidManifest.xml:30:13-81
+provider#com.facebook.internal.FacebookInitProvider
+ADDED from [com.facebook.android:facebook-core:4.39.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-facebook-core-4.39.0.aar/5a81ee9d789ebb41e88d26a2ed58376b/AndroidManifest.xml:39:9-42:40
+	android:authorities
+		ADDED from [com.facebook.android:facebook-core:4.39.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-facebook-core-4.39.0.aar/5a81ee9d789ebb41e88d26a2ed58376b/AndroidManifest.xml:41:13-72
+	android:exported
+		ADDED from [com.facebook.android:facebook-core:4.39.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-facebook-core-4.39.0.aar/5a81ee9d789ebb41e88d26a2ed58376b/AndroidManifest.xml:42:13-37
+	android:name
+		ADDED from [com.facebook.android:facebook-core:4.39.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-facebook-core-4.39.0.aar/5a81ee9d789ebb41e88d26a2ed58376b/AndroidManifest.xml:40:13-70
+receiver#com.facebook.CurrentAccessTokenExpirationBroadcastReceiver
+ADDED from [com.facebook.android:facebook-core:4.39.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-facebook-core-4.39.0.aar/5a81ee9d789ebb41e88d26a2ed58376b/AndroidManifest.xml:44:9-50:20
+	android:exported
+		ADDED from [com.facebook.android:facebook-core:4.39.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-facebook-core-4.39.0.aar/5a81ee9d789ebb41e88d26a2ed58376b/AndroidManifest.xml:46:13-37
+	android:name
+		ADDED from [com.facebook.android:facebook-core:4.39.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-facebook-core-4.39.0.aar/5a81ee9d789ebb41e88d26a2ed58376b/AndroidManifest.xml:45:13-86
+intent-filter#action:name:com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED
+ADDED from [com.facebook.android:facebook-core:4.39.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-facebook-core-4.39.0.aar/5a81ee9d789ebb41e88d26a2ed58376b/AndroidManifest.xml:47:13-49:29
+action#com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED
+ADDED from [com.facebook.android:facebook-core:4.39.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-facebook-core-4.39.0.aar/5a81ee9d789ebb41e88d26a2ed58376b/AndroidManifest.xml:48:17-95
+	android:name
+		ADDED from [com.facebook.android:facebook-core:4.39.0] /home/vitor/.gradle/caches/transforms-1/files-1.1/jetified-facebook-core-4.39.0.aar/5a81ee9d789ebb41e88d26a2ed58376b/AndroidManifest.xml:48:25-92
+provider#androidx.lifecycle.ProcessLifecycleOwnerInitializer
+ADDED from [androidx.lifecycle:lifecycle-process:2.1.0-alpha02] /home/vitor/.gradle/caches/transforms-1/files-1.1/lifecycle-process-2.1.0-alpha02.aar/3bf283020a3ebe110b602f2ec0d7c9f1/AndroidManifest.xml:23:9-27:43
+	android:authorities
+		ADDED from [androidx.lifecycle:lifecycle-process:2.1.0-alpha02] /home/vitor/.gradle/caches/transforms-1/files-1.1/lifecycle-process-2.1.0-alpha02.aar/3bf283020a3ebe110b602f2ec0d7c9f1/AndroidManifest.xml:25:13-69
+	android:multiprocess
+		ADDED from [androidx.lifecycle:lifecycle-process:2.1.0-alpha02] /home/vitor/.gradle/caches/transforms-1/files-1.1/lifecycle-process-2.1.0-alpha02.aar/3bf283020a3ebe110b602f2ec0d7c9f1/AndroidManifest.xml:27:13-40
+	android:exported
+		ADDED from [androidx.lifecycle:lifecycle-process:2.1.0-alpha02] /home/vitor/.gradle/caches/transforms-1/files-1.1/lifecycle-process-2.1.0-alpha02.aar/3bf283020a3ebe110b602f2ec0d7c9f1/AndroidManifest.xml:26:13-37
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.1.0-alpha02] /home/vitor/.gradle/caches/transforms-1/files-1.1/lifecycle-process-2.1.0-alpha02.aar/3bf283020a3ebe110b602f2ec0d7c9f1/AndroidManifest.xml:24:13-79

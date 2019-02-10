@@ -1,0 +1,53 @@
+[debug] [2019-02-05T14:26:44.663Z] ----------------------------------------------------------------------
+[debug] [2019-02-05T14:26:44.665Z] Command:       /usr/bin/node /usr/bin/firebase init
+[debug] [2019-02-05T14:26:44.665Z] CLI Version:   6.3.1
+[debug] [2019-02-05T14:26:44.665Z] Platform:      linux
+[debug] [2019-02-05T14:26:44.665Z] Node Version:  v11.9.0
+[debug] [2019-02-05T14:26:44.666Z] Time:          Tue Feb 05 2019 12:26:44 GMT-0200 (GMT-02:00)
+[debug] [2019-02-05T14:26:44.666Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-02-05T14:26:44.671Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-02-05T14:26:44.671Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/vitor/dev-projects/android/kotlin/ItaRugby
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2019-02-05T14:27:12.006Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2019-02-05T14:27:12.006Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2019-02-05T14:27:12.199Z] <<< HTTP RESPONSE 200
+[debug] [2019-02-05T14:27:12.205Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects?page_size=100  
+ 
+[debug] [2019-02-05T14:27:13.583Z] <<< HTTP RESPONSE 200
+[info] i  Using project itarugby-720 (itarugby)
+[info] 
+=== Functions Setup
+[info] 
+[info] A functions directory will be created in your project with a Node.js
+[info] package pre-configured. Functions can be deployed with firebase deploy.
+[info] 
+[debug] [2019-02-05T14:27:21.041Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-02-05T14:27:21.041Z] > authorizing via signed-in user
+[debug] [2019-02-05T14:27:21.042Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/itarugby-720  
+ 
+[debug] [2019-02-05T14:27:22.193Z] <<< HTTP RESPONSE 200
+[debug] [2019-02-05T14:27:22.196Z] >>> HTTP REQUEST PATCH https://servicemanagement.googleapis.com/v1/services/cloudfunctions.googleapis.com/projectSettings/itarugby-720?updateMask=usageSettings  
+
+[debug] [2019-02-05T14:27:22.197Z] >>> HTTP REQUEST PATCH https://servicemanagement.googleapis.com/v1/services/runtimeconfig.googleapis.com/projectSettings/itarugby-720?updateMask=usageSettings  
+
+[debug] [2019-02-05T14:27:24.264Z] <<< HTTP RESPONSE 200
+[debug] [2019-02-05T14:27:24.908Z] <<< HTTP RESPONSE 200
