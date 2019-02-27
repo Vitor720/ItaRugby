@@ -110,7 +110,7 @@
                         android:id="@+id/textView10"
                         android:textSize="12sp"
                         android:layout_marginStart="12dp"
-                        android:textColor="@color/place_autocomplete_prediction_primary_text"
+                        android:textColor="@color/blue_grey"
                         android:layout_marginTop="4dp"
                         app:layout_constraintStart_toEndOf="@+id/imageViewTime"
                         app:layout_constraintTop_toBottomOf="@+id/event_arrive_time"
@@ -160,7 +160,7 @@
                         app:layout_constraintStart_toEndOf="@+id/imageViewGps"
                         android:layout_marginStart="12dp"
                         android:textSize="12sp"
-                        android:textColor="@color/place_autocomplete_prediction_primary_text"
+                        android:textColor="@color/blue_grey"
                         android:layout_marginTop="3dp"
                 />
 
@@ -196,7 +196,7 @@
                         android:id="@+id/note_explicit"
                         app:layout_constraintTop_toBottomOf="@+id/display_event_notes"
                         android:textSize="12sp"
-                        android:textColor="@color/place_autocomplete_prediction_primary_text"
+                        android:textColor="@color/blue_grey"
                         app:layout_constraintStart_toEndOf="@+id/imageViewCalendar"
                         android:layout_marginStart="8dp"
                         android:layout_marginTop="4dp"

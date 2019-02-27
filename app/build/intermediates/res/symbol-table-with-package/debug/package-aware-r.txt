@@ -790,6 +790,7 @@ attr uiCompass
 attr uiMapToolbar
 attr uiRotateGestures
 attr uiScrollGestures
+attr uiScrollGesturesDuringRotateOrZoom
 attr uiTiltGestures
 attr uiZoomControls
 attr uiZoomGestures
@@ -984,12 +985,6 @@ color notification_action_color_filter
 color notification_icon_bg_color
 color notification_material_background_media_default_color
 color orange_logo
-color place_autocomplete_prediction_primary_text
-color place_autocomplete_prediction_primary_text_highlight
-color place_autocomplete_prediction_secondary_text
-color place_autocomplete_search_hint
-color place_autocomplete_search_text
-color place_autocomplete_separator
 color primary_dark_material_dark
 color primary_dark_material_light
 color primary_material_dark
@@ -1260,16 +1255,6 @@ dimen notification_small_icon_size_as_large
 dimen notification_subtext_size
 dimen notification_top_pad
 dimen notification_top_pad_large_text
-dimen place_autocomplete_button_padding
-dimen place_autocomplete_powered_by_google_height
-dimen place_autocomplete_powered_by_google_start
-dimen place_autocomplete_prediction_height
-dimen place_autocomplete_prediction_horizontal_margin
-dimen place_autocomplete_prediction_primary_text
-dimen place_autocomplete_prediction_secondary_text
-dimen place_autocomplete_progress_horizontal_margin
-dimen place_autocomplete_progress_size
-dimen place_autocomplete_separator_start
 dimen subtitle_corner_radius
 dimen subtitle_outline_width
 dimen subtitle_shadow_offset
@@ -1461,11 +1446,13 @@ drawable ic_playlist_add_check_black_48dp
 drawable ic_speaker_notes
 drawable ic_star_border
 drawable ic_users
+drawable icon_location_48
 drawable icons8_calendar_plus_48
 drawable icons8_close_window_48
 drawable icons8_google_maps_48
 drawable icons8_query_48
 drawable icons8_right_2_filled_48
+drawable icons8_rugby_sevens_48
 drawable idle_state_selector
 drawable login_background
 drawable messenger_bubble_large_blue
@@ -1494,10 +1481,6 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
-drawable places_ic_clear
-drawable places_ic_search
-drawable powered_by_google_dark
-drawable powered_by_google_light
 drawable red_card
 drawable rfab__drawable_rfab_default
 drawable rfab__shape_corners_background_label_shadow_normal
@@ -1566,6 +1549,8 @@ id action_homeFragment_to_displayEventFragment
 id action_homeFragment_to_displayGameFragment
 id action_homeFragment_to_loginFragment
 id action_homeFragment_to_newEventFragment
+id action_homeFragment_to_placeRegisterFragment
+id action_homeFragment_to_registerPlayerFragment
 id action_image
 id action_loginFragment_to_homeFragment
 id action_menu_divider
@@ -1575,6 +1560,8 @@ id action_mode_bar_stub
 id action_mode_close_button
 id action_newEventFragment_to_agendaFragment
 id action_newEventFragment_to_homeFragment
+id action_placeRegisterFragment_to_homeFragment
+id action_registerPlayerFragment_to_homeFragment
 id action_registerPlayerFragment_to_teamFragment
 id action_teamFragment_to_displayPlayerFragment
 id action_teamFragment_to_registerPlayerFragment
@@ -1788,6 +1775,7 @@ id listMode
 id list_item
 id location_line_divider
 id loginFragment
+id map_marker_button
 id map_view
 id masked
 id mayBe_list
@@ -1848,16 +1836,10 @@ id path
 id pathRelative
 id percent
 id pin
-id place_autocomplete_clear_button
-id place_autocomplete_fragment
-id place_autocomplete_powered_by_google
-id place_autocomplete_prediction_primary_text
-id place_autocomplete_prediction_secondary_text
-id place_autocomplete_progress
-id place_autocomplete_search_button
-id place_autocomplete_search_input
-id place_autocomplete_separator
+id placeRegisterFragment
+id place_details
 id place_name
+id places_name
 id player_birthday
 id player_birthday_date
 id player_birthday_date_layout
@@ -1900,7 +1882,9 @@ id red_cards
 id red_cards_divider
 id register
 id registerPlayerFragment
+id register_map
 id register_new_place
+id register_place_button
 id reverseSawtooth
 id rfab__content_label_list_icon_iv
 id rfab__content_label_list_label_tv
@@ -1972,8 +1956,6 @@ id teamFragment
 id terrain
 id text
 id text2
-id textInputLayout2
-id textInputLayout3
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
@@ -2134,10 +2116,6 @@ layout notification_template_media
 layout notification_template_media_custom
 layout notification_template_part_chronometer
 layout notification_template_part_time
-layout place_autocomplete_fragment
-layout place_autocomplete_item_powered_by_google
-layout place_autocomplete_item_prediction
-layout place_autocomplete_progress
 layout player_row
 layout rfab__content_label_list_item
 layout rfab__content_text
@@ -2158,6 +2136,7 @@ mipmap ic_logo_foreground
 mipmap ic_logo_round
 mipmap icons8_calendar_plus_48
 navigation navigation
+raw map_style_retro
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description
@@ -2333,8 +2312,6 @@ string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
 string permission_denied
-string place_autocomplete_clear_button
-string place_autocomplete_search_hint
 string place_name
 string player_body
 string player_hight
@@ -2362,6 +2339,7 @@ string tag_fragment_tab_click_only
 string team
 string thierd_opponent
 string time
+string title_activity_maps
 string unknown_opponent
 string until
 string yellow_cards
@@ -2961,7 +2939,7 @@ styleable LinearLayoutCompat android_gravity android_orientation android_baselin
 styleable LinearLayoutCompat_Layout android_layout_gravity android_layout_width android_layout_height android_layout_weight
 styleable ListPopupWindow android_dropDownHorizontalOffset android_dropDownVerticalOffset
 styleable LoadingImageView circleCrop imageAspectRatio imageAspectRatioAdjust
-styleable MapAttrs ambientEnabled cameraBearing cameraMaxZoomPreference cameraMinZoomPreference cameraTargetLat cameraTargetLng cameraTilt cameraZoom latLngBoundsNorthEastLatitude latLngBoundsNorthEastLongitude latLngBoundsSouthWestLatitude latLngBoundsSouthWestLongitude liteMode mapType uiCompass uiMapToolbar uiRotateGestures uiScrollGestures uiTiltGestures uiZoomControls uiZoomGestures useViewLifecycle zOrderOnTop
+styleable MapAttrs ambientEnabled cameraBearing cameraMaxZoomPreference cameraMinZoomPreference cameraTargetLat cameraTargetLng cameraTilt cameraZoom latLngBoundsNorthEastLatitude latLngBoundsNorthEastLongitude latLngBoundsSouthWestLatitude latLngBoundsSouthWestLongitude liteMode mapType uiCompass uiMapToolbar uiRotateGestures uiScrollGestures uiScrollGesturesDuringRotateOrZoom uiTiltGestures uiZoomControls uiZoomGestures useViewLifecycle zOrderOnTop
 styleable MaterialButton android_insetLeft android_insetRight android_insetTop android_insetBottom backgroundTint backgroundTintMode cornerRadius icon iconGravity iconPadding iconSize iconTint iconTintMode rippleColor strokeColor strokeWidth
 styleable MaterialCardView strokeColor strokeWidth
 styleable MaterialComponentsTheme bottomSheetDialogTheme bottomSheetStyle chipGroupStyle chipStandaloneStyle chipStyle colorAccent colorBackgroundFloating colorPrimary colorPrimaryDark colorSecondary editTextStyle floatingActionButtonStyle materialButtonStyle materialCardViewStyle navigationViewStyle scrimBackground snackbarButtonStyle tabStyle textAppearanceBody1 textAppearanceBody2 textAppearanceButton textAppearanceCaption textAppearanceHeadline1 textAppearanceHeadline2 textAppearanceHeadline3 textAppearanceHeadline4 textAppearanceHeadline5 textAppearanceHeadline6 textAppearanceOverline textAppearanceSubtitle1 textAppearanceSubtitle2 textInputStyle

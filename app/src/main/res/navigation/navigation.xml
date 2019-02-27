@@ -3,7 +3,7 @@
             xmlns:app="http://schemas.android.com/apk/res-auto"
             xmlns:tools="http://schemas.android.com/tools" android:id="@+id/navigation" app:startDestination="@id/homeFragment">
 
-    <fragment android:name="com.ddapps.itarugby.HomeFragment"
+    <fragment android:name="com.ddapps.itarugby.ui.fragments.HomeFragment"
               android:id="@+id/homeFragment">
         <action android:id="@+id/action_homeFragment_to_loginFragment" app:destination="@id/loginFragment"
                 app:popUpToInclusive="false"
@@ -15,8 +15,12 @@
         <action android:id="@+id/action_homeFragment_to_displayEventFragment"
                 app:destination="@id/displayEventFragment"/>
         <action android:id="@+id/action_homeFragment_to_displayGameFragment" app:destination="@id/displayGameFragment"/>
+        <action android:id="@+id/action_homeFragment_to_registerPlayerFragment"
+                app:destination="@id/registerPlayerFragment"/>
+        <action android:id="@+id/action_homeFragment_to_placeRegisterFragment"
+                app:destination="@id/placeRegisterFragment"/>
     </fragment>
-    <fragment android:id="@+id/agendaFragment" android:name="com.ddapps.itarugby.AgendaFragment"
+    <fragment android:id="@+id/agendaFragment" android:name="com.ddapps.itarugby.ui.fragments.AgendaFragment"
               android:label="fragment_agenda" tools:layout="@layout/fragment_agenda">
         <action android:id="@+id/action_agendaFragment_to_displayEventFragment"
                 app:destination="@id/displayEventFragment"/>
@@ -24,28 +28,28 @@
                 app:destination="@id/displayGameFragment"/>
         <action android:id="@+id/action_agendaFragment_to_newEventFragment" app:destination="@id/newEventFragment"/>
     </fragment>
-    <fragment android:id="@+id/aboutFragment" android:name="com.ddapps.itarugby.AboutFragment"
+    <fragment android:id="@+id/aboutFragment" android:name="com.ddapps.itarugby.ui.fragments.AboutFragment"
               android:label="@string/about_itarugby" tools:layout="@layout/fragment_about"/>
-    <fragment android:id="@+id/teamFragment" android:name="com.ddapps.itarugby.TeamFragment"
+    <fragment android:id="@+id/teamFragment" android:name="com.ddapps.itarugby.ui.fragments.TeamFragment"
               android:label="fragment_team" tools:layout="@layout/fragment_team">
         <action android:id="@+id/action_teamFragment_to_displayPlayerFragment"
                 app:destination="@id/displayPlayerFragment"/>
         <action android:id="@+id/action_teamFragment_to_registerPlayerFragment"
                 app:destination="@id/registerPlayerFragment"/>
     </fragment>
-    <fragment android:id="@+id/loginFragment" android:name="com.ddapps.itarugby.LoginFragment"
+    <fragment android:id="@+id/loginFragment" android:name="com.ddapps.itarugby.ui.fragments.LoginFragment"
               android:label="fragment_login" tools:layout="@layout/fragment_login">
         <action android:id="@+id/action_loginFragment_to_homeFragment" app:destination="@id/homeFragment"
                 app:enterAnim="@anim/fade_in" app:exitAnim="@anim/fade_out" app:popUpTo="@+id/homeFragment"/>
     </fragment>
-    <fragment android:id="@+id/newEventFragment" android:name="com.ddapps.itarugby.NewEventFragment"
+    <fragment android:id="@+id/newEventFragment" android:name="com.ddapps.itarugby.ui.fragments.NewEventFragment"
               android:label="NewEventFragment">
         <action android:id="@+id/action_newEventFragment_to_homeFragment" app:destination="@id/homeFragment"
                 app:enterAnim="@anim/fade_out" app:exitAnim="@anim/fade_in" app:popEnterAnim="@anim/fade_out"
                 app:popExitAnim="@anim/fade_in" app:popUpTo="@+id/homeFragment" app:popUpToInclusive="false"/>
         <action android:id="@+id/action_newEventFragment_to_agendaFragment" app:destination="@id/agendaFragment"/>
     </fragment>
-    <fragment android:id="@+id/displayEventFragment" android:name="com.ddapps.itarugby.DisplayEventFragment"
+    <fragment android:id="@+id/displayEventFragment" android:name="com.ddapps.itarugby.ui.fragments.DisplayEventFragment"
               android:label="fragment_display_event" tools:layout="@layout/fragment_display_event">
         <argument android:name="docID" app:argType="string"/>
         <action android:id="@+id/action_displayEventFragment_to_agendaFragment" app:destination="@id/agendaFragment"/>
@@ -53,7 +57,7 @@
                 app:enterAnim="@anim/fade_in" app:exitAnim="@anim/fade_out" app:popEnterAnim="@anim/fade_in"
                 app:popExitAnim="@anim/fade_out"/>
     </fragment>
-    <fragment android:id="@+id/displayGameFragment" android:name="com.ddapps.itarugby.DisplayGameFragment"
+    <fragment android:id="@+id/displayGameFragment" android:name="com.ddapps.itarugby.ui.fragments.DisplayGameFragment"
               android:label="DisplayGameFragment">
         <action android:id="@+id/action_displayGameFragment_to_agendaFragment" app:destination="@id/agendaFragment"/>
         <argument android:name="docID"/>
@@ -61,13 +65,18 @@
                 app:enterAnim="@anim/fade_in" app:exitAnim="@anim/fade_out" app:popEnterAnim="@anim/fade_in"
                 app:popExitAnim="@anim/fade_out"/>
     </fragment>
-    <fragment android:id="@+id/displayPlayerFragment" android:name="com.ddapps.itarugby.DisplayPlayerFragment"
+    <fragment android:id="@+id/displayPlayerFragment" android:name="com.ddapps.itarugby.ui.fragments.DisplayPlayerFragment"
               android:label="DisplayPlayerFragment">
         <action android:id="@+id/action_displayPlayerFragment_to_teamFragment" app:destination="@id/teamFragment"/>
         <argument android:name="player_name" app:argType="string"/>
     </fragment>
-    <fragment android:id="@+id/registerPlayerFragment" android:name="com.ddapps.itarugby.RegisterPlayerFragment"
+    <fragment android:id="@+id/registerPlayerFragment" android:name="com.ddapps.itarugby.ui.fragments.RegisterPlayerFragment"
               android:label="RegisterPlayerFragment">
         <action android:id="@+id/action_registerPlayerFragment_to_teamFragment" app:destination="@id/teamFragment"/>
+        <action android:id="@+id/action_registerPlayerFragment_to_homeFragment" app:destination="@id/homeFragment"/>
+    </fragment>
+    <fragment android:id="@+id/placeRegisterFragment" android:name="com.ddapps.itarugby.ui.fragments.PlaceRegisterFragment"
+              android:label="PlaceRegisterFragment">
+        <action android:id="@+id/action_placeRegisterFragment_to_homeFragment" app:destination="@id/homeFragment"/>
     </fragment>
 </navigation>

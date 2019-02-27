@@ -15,27 +15,33 @@ public class FragmentPlaceRegisterBindingImpl extends FragmentPlaceRegisterBindi
         sIncludes = null;
         sViewsWithIds = new android.util.SparseIntArray();
         sViewsWithIds.put(R.id.search_location, 1);
-        sViewsWithIds.put(R.id.textInputLayout3, 2);
-        sViewsWithIds.put(R.id.textInputLayout2, 3);
+        sViewsWithIds.put(R.id.places_name, 2);
+        sViewsWithIds.put(R.id.place_details, 3);
+        sViewsWithIds.put(R.id.register_place_button, 4);
+        sViewsWithIds.put(R.id.map_marker_button, 5);
+        sViewsWithIds.put(R.id.register_map, 6);
     }
     // views
     @NonNull
-    private final androidx.constraintlayout.widget.ConstraintLayout mboundView0;
+    private final android.widget.LinearLayout mboundView0;
     // variables
     // values
     // listeners
     // Inverse Binding Event Handlers
 
     public FragmentPlaceRegisterBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
-        this(bindingComponent, root, mapBindings(bindingComponent, root, 4, sIncludes, sViewsWithIds));
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 7, sIncludes, sViewsWithIds));
     }
     private FragmentPlaceRegisterBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
-            , (android.widget.AutoCompleteTextView) bindings[1]
-            , (com.google.android.material.textfield.TextInputLayout) bindings[3]
-            , (com.google.android.material.textfield.TextInputLayout) bindings[2]
+            , (android.widget.Button) bindings[5]
+            , (com.google.android.material.textfield.TextInputEditText) bindings[3]
+            , (com.google.android.material.textfield.TextInputEditText) bindings[2]
+            , (com.google.android.gms.maps.MapView) bindings[6]
+            , (android.widget.Button) bindings[4]
+            , (com.google.android.material.textfield.TextInputEditText) bindings[1]
             );
-        this.mboundView0 = (androidx.constraintlayout.widget.ConstraintLayout) bindings[0];
+        this.mboundView0 = (android.widget.LinearLayout) bindings[0];
         this.mboundView0.setTag(null);
         setRootTag(root);
         // listeners

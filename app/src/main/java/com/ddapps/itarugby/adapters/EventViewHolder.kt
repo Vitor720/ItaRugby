@@ -10,9 +10,6 @@ import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.Navigation
 import androidx.recyclerview.widget.RecyclerView
-import com.ddapps.itarugby.AgendaFragmentDirections
-import com.ddapps.itarugby.HomeFragmentDirections
-import com.ddapps.itarugby.MainActivity
 import com.ddapps.itarugby.databinding.EventRowBinding
 import com.ddapps.itarugby.models.Event
 import com.google.firebase.firestore.FieldValue
@@ -22,8 +19,8 @@ import timber.log.Timber
 import java.text.SimpleDateFormat
 import java.util.*
 import android.content.ActivityNotFoundException
-import androidx.core.content.ContextCompat.startActivity
 import com.ddapps.itarugby.R
+import com.ddapps.itarugby.ui.fragments.HomeFragmentDirections
 
 
 /** apaga parcialmente o botão clicado e acende os demais.

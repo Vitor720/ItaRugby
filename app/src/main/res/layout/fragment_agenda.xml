@@ -4,7 +4,7 @@
 <FrameLayout
              android:layout_width="match_parent"
              android:layout_height="match_parent"
-             tools:context=".AgendaFragment"
+             tools:context=".ui.fragments.AgendaFragment"
 >
     <com.wangjie.rapidfloatingactionbutton.RapidFloatingActionLayout
             xmlns:rfal="http://schemas.android.com/apk/res-auto"

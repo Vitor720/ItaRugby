@@ -112,7 +112,7 @@
                         android:id="@+id/textView10"
                         android:textSize="12sp"
                         android:layout_marginStart="12dp"
-                        android:textColor="@color/place_autocomplete_prediction_primary_text"
+                        android:textColor="@color/blue_grey"
                         android:layout_marginTop="4dp"
                         app:layout_constraintStart_toEndOf="@+id/imageViewTime"
                         app:layout_constraintTop_toBottomOf="@+id/event_arrive_time"
@@ -163,7 +163,7 @@
                         app:layout_constraintStart_toEndOf="@+id/imageViewGps"
                         android:layout_marginStart="12dp"
                         android:textSize="12sp"
-                        android:textColor="@color/place_autocomplete_prediction_primary_text"
+                        android:textColor="@color/blue_grey"
                         android:layout_marginTop="3dp"
                 />
 
@@ -199,7 +199,7 @@
                         android:id="@+id/note_explicit"
                         app:layout_constraintTop_toBottomOf="@+id/display_event_notes"
                         android:textSize="12sp"
-                        android:textColor="@color/place_autocomplete_prediction_primary_text"
+                        android:textColor="@color/blue_grey"
                         app:layout_constraintStart_toEndOf="@+id/imageViewCalendar"
                         android:layout_marginStart="8dp"
                         android:layout_marginTop="4dp"
@@ -254,7 +254,7 @@
                         android:layout_height="wrap_content"
                         app:layout_constraintStart_toEndOf="@+id/imageViewOpponents"
                         android:layout_marginStart="8dp"
-                        android:textColor="@color/place_autocomplete_prediction_primary_text"
+                        android:textColor="@color/blue_grey"
                         android:layout_marginTop="2dp"
                         app:layout_constraintTop_toBottomOf="@+id/games"/>
 
@@ -300,7 +300,7 @@
                         app:layout_constraintStart_toEndOf="@+id/imageViewLineUp"
                         android:layout_marginStart="8dp"
                         app:layout_constraintTop_toBottomOf="@+id/lineUp"
-                        android:textColor="@color/place_autocomplete_prediction_primary_text"
+                        android:textColor="@color/blue_grey"
                         android:layout_marginTop="2dp"/>
 
                 <View
@@ -403,7 +403,6 @@
                         app:layout_constraintStart_toStartOf="parent"
                         android:layout_marginStart="108dp"
                         android:layout_marginTop="20dp" app:layout_constraintTop_toBottomOf="@+id/decline_list"/>
-
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>

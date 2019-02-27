@@ -2,22 +2,15 @@ package com.ddapps.itarugby.adapters
 
 import android.annotation.SuppressLint
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
-import androidx.core.view.ViewCompat
-import androidx.core.view.ViewPropertyAnimatorListener
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.Navigation.findNavController
-import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.RecyclerView
-import com.ddapps.itarugby.AgendaFragmentDirections
 import com.ddapps.itarugby.R
+import com.ddapps.itarugby.ui.fragments.AgendaFragmentDirections
 import com.ddapps.itarugby.databinding.AgendaRowBinding
 import com.ddapps.itarugby.models.Event
 import com.google.firebase.firestore.FirebaseFirestore
-import jp.wasabeef.recyclerview.animators.holder.AnimateViewHolder
-import kotlinx.android.synthetic.main.agenda_row.view.*
-import timber.log.Timber
 import java.text.SimpleDateFormat
 import java.util.*
 

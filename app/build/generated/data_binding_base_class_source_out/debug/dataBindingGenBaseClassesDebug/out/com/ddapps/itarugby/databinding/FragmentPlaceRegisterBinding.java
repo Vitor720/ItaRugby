@@ -3,31 +3,45 @@ package com.ddapps.itarugby.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AutoCompleteTextView;
+import android.widget.Button;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.databinding.DataBindingComponent;
 import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
-import com.google.android.material.textfield.TextInputLayout;
+import com.google.android.gms.maps.MapView;
+import com.google.android.material.textfield.TextInputEditText;
 
 public abstract class FragmentPlaceRegisterBinding extends ViewDataBinding {
   @NonNull
-  public final AutoCompleteTextView searchLocation;
+  public final Button mapMarkerButton;
 
   @NonNull
-  public final TextInputLayout textInputLayout2;
+  public final TextInputEditText placeDetails;
 
   @NonNull
-  public final TextInputLayout textInputLayout3;
+  public final TextInputEditText placesName;
+
+  @NonNull
+  public final MapView registerMap;
+
+  @NonNull
+  public final Button registerPlaceButton;
+
+  @NonNull
+  public final TextInputEditText searchLocation;
 
   protected FragmentPlaceRegisterBinding(DataBindingComponent _bindingComponent, View _root,
-      int _localFieldCount, AutoCompleteTextView searchLocation, TextInputLayout textInputLayout2,
-      TextInputLayout textInputLayout3) {
+      int _localFieldCount, Button mapMarkerButton, TextInputEditText placeDetails,
+      TextInputEditText placesName, MapView registerMap, Button registerPlaceButton,
+      TextInputEditText searchLocation) {
     super(_bindingComponent, _root, _localFieldCount);
+    this.mapMarkerButton = mapMarkerButton;
+    this.placeDetails = placeDetails;
+    this.placesName = placesName;
+    this.registerMap = registerMap;
+    this.registerPlaceButton = registerPlaceButton;
     this.searchLocation = searchLocation;
-    this.textInputLayout2 = textInputLayout2;
-    this.textInputLayout3 = textInputLayout3;
   }
 
   @NonNull

@@ -4,7 +4,7 @@
             "outputFile": "/home/vitor/dev-projects/android/kotlin/ItaRugby/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v24/values-v24.xml",
             "map": [
                 {
-                    "source": "/home/vitor/.gradle/caches/transforms-1/files-1.1/media-1.0.0.aar/55aa1964e92fe6ab65798df84a1fd83f/res/values-v24/values-v24.xml",
+                    "source": "/home/vitor/.gradle/caches/transforms-1/files-1.1/media-1.0.0.aar/80e0a569c16ead8a974c643875b3abd7/res/values-v24/values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "/home/vitor/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0.aar/6c05a0d774cd0e6f1ef9d704f8bc2003/res/values-v24/values-v24.xml",
+                    "source": "/home/vitor/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0.aar/d866b323ae02e771c82de60d9db967c1/res/values-v24/values-v24.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",

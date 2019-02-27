@@ -87,6 +87,7 @@
     <string name="googleMapsAPI"></string>
 
 
+
     <string name="permission_denied">Oops! You denied permission!!</string>
     <string name="itaRugby_history">O Clube Ita Rugby foi fundado no dia 30 de outubro de 2015 após
         a ideia surgir em uma conversa despretensiosa entre o Romullo, o Renan, a Larissa e a Fabíola
@@ -129,4 +130,5 @@
     <string name="player_hight">Altura do Jogador</string>
     <string name="event_sucess">Evento criado</string>
     <string name="event_error">Erro</string>
+    <string name="title_activity_maps">Map</string>
 </resources>
