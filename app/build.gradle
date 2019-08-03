@@ -5,11 +5,13 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 
 apply plugin: 'kotlin-kapt'
-apply plugin: 'com.google.gms.google-services'
 apply plugin: 'androidx.navigation.safeargs'
 
 android {
     signingConfigs {
+        config {
+            storeFile file('/home/vitor/Área de trabalho/keyItaRugby.jks')
+        }
     }
     dataBinding {
         enabled = true
@@ -27,8 +29,8 @@ android {
         minSdkVersion 23
         targetSdkVersion 28
         vectorDrawables.useSupportLibrary = true
-        versionCode 9
-        versionName "1.6.2"
+        versionCode 11
+        versionName "1.6.4"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
@@ -44,14 +46,14 @@ dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation "org.jetbrains.kotlin:kotlin-reflect:$kotlin_version"
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
-    implementation 'androidx.constraintlayout:constraintlayout:2.0.0-alpha3'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.0-beta2'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
-    implementation 'androidx.lifecycle:lifecycle-extensions:2.1.0-alpha02'
-    implementation 'com.google.android.gms:play-services-maps:16.1.0'
-    implementation 'androidx.appcompat:appcompat:1.0.0-beta01'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0-alpha02'
+    implementation 'com.google.android.gms:play-services-maps:17.0.0'
+    implementation 'androidx.appcompat:appcompat:1.1.0-rc01'
     testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'androidx.test:runner:1.1.1'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
+    androidTestImplementation 'androidx.test:runner:1.2.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 
     //Rapid Floating Action Button
     implementation 'com.github.wangjiegulu:rfab:2.0.0'
@@ -62,12 +64,13 @@ dependencies {
 
     // circle image view
     implementation 'de.hdodenhof:circleimageview:3.0.0'
+    implementation 'com.mikhaellopez:circularimageview:4.0.1'
 
     //BetterSpinner
     implementation 'com.weiwangcn.betterspinner:library-material:1.1.0'
 
     //Map, Location
-    implementation 'com.google.android.gms:play-services-maps:16.1.0'
+    implementation 'com.google.android.gms:play-services-maps:17.0.0'
 
     //    implementation 'com.google.android.gms:play-services-places:16.0.0'
 
@@ -79,8 +82,9 @@ dependencies {
     //RecyclerView Animations
     implementation 'jp.wasabeef:recyclerview-animators:3.0.0'
 
-    //Picasso
-    implementation 'com.squareup.picasso:picasso:2.71828'
+    //Glide    
+    implementation 'com.github.bumptech.glide:glide:4.9.0'
+    kapt 'com.github.bumptech.glide:compiler:4.9.0'
 
     //ITEM DECORATOR OF RECYCLER VIEW
     implementation 'com.bignerdranch.android:simple-item-decoration:1.0.0'
@@ -92,14 +96,14 @@ dependencies {
     implementation 'com.jakewharton.timber:timber:4.7.1'
 
     //FACEBOOK
-    implementation 'com.facebook.android:facebook-android-sdk:4.39.0'
+    implementation 'com.facebook.android:facebook-android-sdk:5.0.1'
 
     //FIREBASE - LOGIN AUTH
-    implementation 'com.google.firebase:firebase-auth:16.1.0'
+    implementation 'com.google.firebase:firebase-auth:18.1.0'
 
     // FIREBASE - DATABASE
-    implementation 'com.google.firebase:firebase-database:16.0.6'
-    implementation 'com.google.firebase:firebase-firestore:18.0.0'
+    implementation 'com.google.firebase:firebase-database:18.0.0'
+    implementation 'com.google.firebase:firebase-firestore:20.1.0'
 
     //FIREBASE - CLOUD FIRESTONE UI
     implementation 'com.firebaseui:firebase-ui-firestore:4.3.0'
@@ -113,4 +117,10 @@ dependencies {
     implementation 'androidx.recyclerview:recyclerview:1.0.0'
     implementation 'androidx.cardview:cardview:1.0.0'
     implementation project(':library')
+
+    //Ripple effect for views
+    implementation 'com.balysv:material-ripple:1.0.2'
+
+
 }
+apply plugin: 'com.google.gms.google-services'

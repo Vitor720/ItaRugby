@@ -4,43 +4,32 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.databinding.DataBindingComponent;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
+import com.mikhaellopez.circularimageview.CircularImageView;
+import java.lang.Deprecated;
+import java.lang.Object;
 
 public abstract class FragmentDisplayPlayerBinding extends ViewDataBinding {
   @NonNull
-  public final TextView bDay;
+  public final ConstraintLayout constraintLayout;
 
   @NonNull
-  public final View birthdayDivider;
+  public final LinearLayout displayPlayerHeader;
 
   @NonNull
-  public final TextView body;
+  public final View displaySpacer;
 
   @NonNull
-  public final TextView contact;
-
-  @NonNull
-  public final View contactDivider;
+  public final LinearLayout displayStatsHeader;
 
   @NonNull
   public final TextView drill;
-
-  @NonNull
-  public final ImageView imageViewBall;
-
-  @NonNull
-  public final ImageView imageViewBody;
-
-  @NonNull
-  public final ImageView imageViewCake;
-
-  @NonNull
-  public final ImageView imageViewContact;
 
   @NonNull
   public final ImageView imageViewPlayer;
@@ -64,13 +53,10 @@ public abstract class FragmentDisplayPlayerBinding extends ViewDataBinding {
   public final TextView playerBody;
 
   @NonNull
-  public final TextView playerContact;
+  public final TextView playerBodyDesc;
 
   @NonNull
-  public final ImageView playerImageView;
-
-  @NonNull
-  public final View playerInfoDivider;
+  public final CircularImageView playerImageView;
 
   @NonNull
   public final TextView playerName;
@@ -85,12 +71,6 @@ public abstract class FragmentDisplayPlayerBinding extends ViewDataBinding {
   public final TextView playerSince;
 
   @NonNull
-  public final View playerSinceDivider;
-
-  @NonNull
-  public final TextView playerSinceTxt;
-
-  @NonNull
   public final TextView playerStatsHeader;
 
   @NonNull
@@ -103,33 +83,32 @@ public abstract class FragmentDisplayPlayerBinding extends ViewDataBinding {
   public final View redCardsDivider;
 
   @NonNull
+  public final TextView textView3;
+
+  @NonNull
+  public final TextView textView4;
+
+  @NonNull
   public final TextView yellowCards;
 
   @NonNull
   public final View yellowCardsDivider;
 
-  protected FragmentDisplayPlayerBinding(DataBindingComponent _bindingComponent, View _root,
-      int _localFieldCount, TextView bDay, View birthdayDivider, TextView body, TextView contact,
-      View contactDivider, TextView drill, ImageView imageViewBall, ImageView imageViewBody,
-      ImageView imageViewCake, ImageView imageViewContact, ImageView imageViewPlayer,
+  protected FragmentDisplayPlayerBinding(Object _bindingComponent, View _root, int _localFieldCount,
+      ConstraintLayout constraintLayout, LinearLayout displayPlayerHeader, View displaySpacer,
+      LinearLayout displayStatsHeader, TextView drill, ImageView imageViewPlayer,
       ImageView imageViewRedCard, ImageView imageViewYellowCard, TextView lastDrill,
-      View lastDrillDivider, TextView playerBirthday, TextView playerBody, TextView playerContact,
-      ImageView playerImageView, View playerInfoDivider, TextView playerName,
-      TextView playerPosition, TextView playerRedCards, TextView playerSince,
-      View playerSinceDivider, TextView playerSinceTxt, TextView playerStatsHeader,
-      TextView playerYellowCards, TextView redCards, View redCardsDivider, TextView yellowCards,
-      View yellowCardsDivider) {
+      View lastDrillDivider, TextView playerBirthday, TextView playerBody, TextView playerBodyDesc,
+      CircularImageView playerImageView, TextView playerName, TextView playerPosition,
+      TextView playerRedCards, TextView playerSince, TextView playerStatsHeader,
+      TextView playerYellowCards, TextView redCards, View redCardsDivider, TextView textView3,
+      TextView textView4, TextView yellowCards, View yellowCardsDivider) {
     super(_bindingComponent, _root, _localFieldCount);
-    this.bDay = bDay;
-    this.birthdayDivider = birthdayDivider;
-    this.body = body;
-    this.contact = contact;
-    this.contactDivider = contactDivider;
+    this.constraintLayout = constraintLayout;
+    this.displayPlayerHeader = displayPlayerHeader;
+    this.displaySpacer = displaySpacer;
+    this.displayStatsHeader = displayStatsHeader;
     this.drill = drill;
-    this.imageViewBall = imageViewBall;
-    this.imageViewBody = imageViewBody;
-    this.imageViewCake = imageViewCake;
-    this.imageViewContact = imageViewContact;
     this.imageViewPlayer = imageViewPlayer;
     this.imageViewRedCard = imageViewRedCard;
     this.imageViewYellowCard = imageViewYellowCard;
@@ -137,19 +116,18 @@ public abstract class FragmentDisplayPlayerBinding extends ViewDataBinding {
     this.lastDrillDivider = lastDrillDivider;
     this.playerBirthday = playerBirthday;
     this.playerBody = playerBody;
-    this.playerContact = playerContact;
+    this.playerBodyDesc = playerBodyDesc;
     this.playerImageView = playerImageView;
-    this.playerInfoDivider = playerInfoDivider;
     this.playerName = playerName;
     this.playerPosition = playerPosition;
     this.playerRedCards = playerRedCards;
     this.playerSince = playerSince;
-    this.playerSinceDivider = playerSinceDivider;
-    this.playerSinceTxt = playerSinceTxt;
     this.playerStatsHeader = playerStatsHeader;
     this.playerYellowCards = playerYellowCards;
     this.redCards = redCards;
     this.redCardsDivider = redCardsDivider;
+    this.textView3 = textView3;
+    this.textView4 = textView4;
     this.yellowCards = yellowCards;
     this.yellowCardsDivider = yellowCardsDivider;
   }
@@ -160,10 +138,18 @@ public abstract class FragmentDisplayPlayerBinding extends ViewDataBinding {
     return inflate(inflater, root, attachToRoot, DataBindingUtil.getDefaultComponent());
   }
 
+  /**
+   * This method receives DataBindingComponent instance as type Object instead of
+   * type DataBindingComponent to avoid causing too many compilation errors if
+   * compilation fails for another reason.
+   * https://issuetracker.google.com/issues/116541301
+   * @Deprecated Use DataBindingUtil.inflate(inflater, R.layout.fragment_display_player, root, attachToRoot, component)
+   */
   @NonNull
+  @Deprecated
   public static FragmentDisplayPlayerBinding inflate(@NonNull LayoutInflater inflater,
-      @Nullable ViewGroup root, boolean attachToRoot, @Nullable DataBindingComponent component) {
-    return DataBindingUtil.<FragmentDisplayPlayerBinding>inflate(inflater, com.ddapps.itarugby.R.layout.fragment_display_player, root, attachToRoot, component);
+      @Nullable ViewGroup root, boolean attachToRoot, @Nullable Object component) {
+    return ViewDataBinding.<FragmentDisplayPlayerBinding>inflateInternal(inflater, com.ddapps.itarugby.R.layout.fragment_display_player, root, attachToRoot, component);
   }
 
   @NonNull
@@ -171,18 +157,33 @@ public abstract class FragmentDisplayPlayerBinding extends ViewDataBinding {
     return inflate(inflater, DataBindingUtil.getDefaultComponent());
   }
 
+  /**
+   * This method receives DataBindingComponent instance as type Object instead of
+   * type DataBindingComponent to avoid causing too many compilation errors if
+   * compilation fails for another reason.
+   * https://issuetracker.google.com/issues/116541301
+   * @Deprecated Use DataBindingUtil.inflate(inflater, R.layout.fragment_display_player, null, false, component)
+   */
   @NonNull
+  @Deprecated
   public static FragmentDisplayPlayerBinding inflate(@NonNull LayoutInflater inflater,
-      @Nullable DataBindingComponent component) {
-    return DataBindingUtil.<FragmentDisplayPlayerBinding>inflate(inflater, com.ddapps.itarugby.R.layout.fragment_display_player, null, false, component);
+      @Nullable Object component) {
+    return ViewDataBinding.<FragmentDisplayPlayerBinding>inflateInternal(inflater, com.ddapps.itarugby.R.layout.fragment_display_player, null, false, component);
   }
 
   public static FragmentDisplayPlayerBinding bind(@NonNull View view) {
     return bind(view, DataBindingUtil.getDefaultComponent());
   }
 
-  public static FragmentDisplayPlayerBinding bind(@NonNull View view,
-      @Nullable DataBindingComponent component) {
+  /**
+   * This method receives DataBindingComponent instance as type Object instead of
+   * type DataBindingComponent to avoid causing too many compilation errors if
+   * compilation fails for another reason.
+   * https://issuetracker.google.com/issues/116541301
+   * @Deprecated Use DataBindingUtil.bind(view, component)
+   */
+  @Deprecated
+  public static FragmentDisplayPlayerBinding bind(@NonNull View view, @Nullable Object component) {
     return (FragmentDisplayPlayerBinding)bind(component, view, com.ddapps.itarugby.R.layout.fragment_display_player);
   }
 }

@@ -12,6 +12,6 @@ public final class R {
     public static final class id {
         private id() {}
 
-        public static final int dataBinding = 0x7f08008b;
+        public static final int dataBinding = 0x7f0900b6;
     }
 }

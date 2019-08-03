@@ -13,12 +13,16 @@
             android:layout_margin="8sp"
             >
         <LinearLayout android:layout_width="match_parent"
-                      android:layout_height="match_parent">
+
+                      android:layout_height="wrap_content">
 
         <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                >
+                android:background="@color/browser_actions_bg_grey"
+
+
+        >
 
             <ImageView
                     android:layout_width="wrap_content"
@@ -106,7 +110,8 @@
                     android:id="@+id/confirm_button"
                     android:layout_marginStart="8dp"
                     app:layout_constraintBaseline_toBaselineOf="@+id/maybe_button"
-                    app:layout_constraintStart_toStartOf="parent"/>
+                    app:layout_constraintStart_toStartOf="parent"
+                    />
             <Button
                     android:text="@string/maybe"
                     android:layout_width="wrap_content"
@@ -126,7 +131,8 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/map_view"
                     android:layout_marginTop="1dp"
-                    android:layout_marginEnd="4dp"/>
+                    android:layout_marginEnd="4dp"
+                    />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

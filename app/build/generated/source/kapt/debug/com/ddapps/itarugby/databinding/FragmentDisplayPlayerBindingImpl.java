@@ -14,38 +14,32 @@ public class FragmentDisplayPlayerBindingImpl extends FragmentDisplayPlayerBindi
     static {
         sIncludes = null;
         sViewsWithIds = new android.util.SparseIntArray();
-        sViewsWithIds.put(R.id.player_imageView, 1);
-        sViewsWithIds.put(R.id.player_name, 2);
-        sViewsWithIds.put(R.id.player_position, 3);
-        sViewsWithIds.put(R.id.imageViewCake, 4);
-        sViewsWithIds.put(R.id.player_birthday, 5);
-        sViewsWithIds.put(R.id.bDay, 6);
-        sViewsWithIds.put(R.id.birthday_divider, 7);
-        sViewsWithIds.put(R.id.imageViewContact, 8);
-        sViewsWithIds.put(R.id.player_contact, 9);
-        sViewsWithIds.put(R.id.contact, 10);
-        sViewsWithIds.put(R.id.contact_divider, 11);
-        sViewsWithIds.put(R.id.imageViewBody, 12);
-        sViewsWithIds.put(R.id.player_body, 13);
-        sViewsWithIds.put(R.id.body, 14);
-        sViewsWithIds.put(R.id.player_info_divider, 15);
-        sViewsWithIds.put(R.id.player_stats_header, 16);
-        sViewsWithIds.put(R.id.imageViewBall, 17);
-        sViewsWithIds.put(R.id.player_since, 18);
-        sViewsWithIds.put(R.id.player_since_txt, 19);
-        sViewsWithIds.put(R.id.player_since_divider, 20);
-        sViewsWithIds.put(R.id.imageViewPlayer, 21);
-        sViewsWithIds.put(R.id.last_drill, 22);
-        sViewsWithIds.put(R.id.drill, 23);
-        sViewsWithIds.put(R.id.last_drill_divider, 24);
-        sViewsWithIds.put(R.id.imageViewYellowCard, 25);
-        sViewsWithIds.put(R.id.player_yellow_cards, 26);
-        sViewsWithIds.put(R.id.yellow_cards, 27);
-        sViewsWithIds.put(R.id.yellow_cards_divider, 28);
-        sViewsWithIds.put(R.id.imageViewRedCard, 29);
-        sViewsWithIds.put(R.id.player_red_cards, 30);
-        sViewsWithIds.put(R.id.red_cards, 31);
-        sViewsWithIds.put(R.id.red_cards_divider, 32);
+        sViewsWithIds.put(R.id.constraintLayout, 1);
+        sViewsWithIds.put(R.id.display_player_header, 2);
+        sViewsWithIds.put(R.id.player_imageView, 3);
+        sViewsWithIds.put(R.id.player_name, 4);
+        sViewsWithIds.put(R.id.player_position, 5);
+        sViewsWithIds.put(R.id.display_stats_header, 6);
+        sViewsWithIds.put(R.id.player_birthday, 7);
+        sViewsWithIds.put(R.id.textView3, 8);
+        sViewsWithIds.put(R.id.player_since, 9);
+        sViewsWithIds.put(R.id.textView4, 10);
+        sViewsWithIds.put(R.id.player_body, 11);
+        sViewsWithIds.put(R.id.player_body_desc, 12);
+        sViewsWithIds.put(R.id.display_spacer, 13);
+        sViewsWithIds.put(R.id.player_stats_header, 14);
+        sViewsWithIds.put(R.id.imageViewPlayer, 15);
+        sViewsWithIds.put(R.id.last_drill, 16);
+        sViewsWithIds.put(R.id.drill, 17);
+        sViewsWithIds.put(R.id.last_drill_divider, 18);
+        sViewsWithIds.put(R.id.imageViewYellowCard, 19);
+        sViewsWithIds.put(R.id.player_yellow_cards, 20);
+        sViewsWithIds.put(R.id.yellow_cards, 21);
+        sViewsWithIds.put(R.id.yellow_cards_divider, 22);
+        sViewsWithIds.put(R.id.imageViewRedCard, 23);
+        sViewsWithIds.put(R.id.player_red_cards, 24);
+        sViewsWithIds.put(R.id.red_cards, 25);
+        sViewsWithIds.put(R.id.red_cards_divider, 26);
     }
     // views
     @NonNull
@@ -56,42 +50,36 @@ public class FragmentDisplayPlayerBindingImpl extends FragmentDisplayPlayerBindi
     // Inverse Binding Event Handlers
 
     public FragmentDisplayPlayerBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
-        this(bindingComponent, root, mapBindings(bindingComponent, root, 33, sIncludes, sViewsWithIds));
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 27, sIncludes, sViewsWithIds));
     }
     private FragmentDisplayPlayerBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
-            , (android.widget.TextView) bindings[6]
-            , (android.view.View) bindings[7]
-            , (android.widget.TextView) bindings[14]
-            , (android.widget.TextView) bindings[10]
-            , (android.view.View) bindings[11]
-            , (android.widget.TextView) bindings[23]
-            , (android.widget.ImageView) bindings[17]
-            , (android.widget.ImageView) bindings[12]
-            , (android.widget.ImageView) bindings[4]
-            , (android.widget.ImageView) bindings[8]
-            , (android.widget.ImageView) bindings[21]
-            , (android.widget.ImageView) bindings[29]
-            , (android.widget.ImageView) bindings[25]
-            , (android.widget.TextView) bindings[22]
-            , (android.view.View) bindings[24]
-            , (android.widget.TextView) bindings[5]
-            , (android.widget.TextView) bindings[13]
-            , (android.widget.TextView) bindings[9]
-            , (android.widget.ImageView) bindings[1]
-            , (android.view.View) bindings[15]
-            , (android.widget.TextView) bindings[2]
-            , (android.widget.TextView) bindings[3]
-            , (android.widget.TextView) bindings[30]
-            , (android.widget.TextView) bindings[18]
-            , (android.view.View) bindings[20]
-            , (android.widget.TextView) bindings[19]
+            , (androidx.constraintlayout.widget.ConstraintLayout) bindings[1]
+            , (android.widget.LinearLayout) bindings[2]
+            , (android.view.View) bindings[13]
+            , (android.widget.LinearLayout) bindings[6]
+            , (android.widget.TextView) bindings[17]
+            , (android.widget.ImageView) bindings[15]
+            , (android.widget.ImageView) bindings[23]
+            , (android.widget.ImageView) bindings[19]
             , (android.widget.TextView) bindings[16]
-            , (android.widget.TextView) bindings[26]
-            , (android.widget.TextView) bindings[31]
-            , (android.view.View) bindings[32]
-            , (android.widget.TextView) bindings[27]
-            , (android.view.View) bindings[28]
+            , (android.view.View) bindings[18]
+            , (android.widget.TextView) bindings[7]
+            , (android.widget.TextView) bindings[11]
+            , (android.widget.TextView) bindings[12]
+            , (com.mikhaellopez.circularimageview.CircularImageView) bindings[3]
+            , (android.widget.TextView) bindings[4]
+            , (android.widget.TextView) bindings[5]
+            , (android.widget.TextView) bindings[24]
+            , (android.widget.TextView) bindings[9]
+            , (android.widget.TextView) bindings[14]
+            , (android.widget.TextView) bindings[20]
+            , (android.widget.TextView) bindings[25]
+            , (android.view.View) bindings[26]
+            , (android.widget.TextView) bindings[8]
+            , (android.widget.TextView) bindings[10]
+            , (android.widget.TextView) bindings[21]
+            , (android.view.View) bindings[22]
             );
         this.mboundView0 = (android.widget.ScrollView) bindings[0];
         this.mboundView0.setTag(null);

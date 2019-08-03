@@ -8,13 +8,14 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.databinding.Bindable;
-import androidx.databinding.DataBindingComponent;
 import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
 import com.dd.CircularProgressButton;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
 import com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner;
+import java.lang.Deprecated;
+import java.lang.Object;
 
 public abstract class NewEventFragmentBinding extends ViewDataBinding {
   @NonNull
@@ -83,9 +84,9 @@ public abstract class NewEventFragmentBinding extends ViewDataBinding {
   @Bindable
   protected String mGameOpponents;
 
-  protected NewEventFragmentBinding(DataBindingComponent _bindingComponent, View _root,
-      int _localFieldCount, CircularProgressButton addEventButton, TextInputEditText arriveEarly,
-      TextView dateEventID, TextView eventTxtHeader, MaterialBetterSpinner fifthOpponent,
+  protected NewEventFragmentBinding(Object _bindingComponent, View _root, int _localFieldCount,
+      CircularProgressButton addEventButton, TextInputEditText arriveEarly, TextView dateEventID,
+      TextView eventTxtHeader, MaterialBetterSpinner fifthOpponent,
       MaterialBetterSpinner firstOpponent, MaterialBetterSpinner forthOpponent,
       TextView gameDetailsHeader, MaterialBetterSpinner gamesQuantity,
       TextInputEditText newEventDate, TextInputLayout newEventDateLayout,
@@ -131,10 +132,18 @@ public abstract class NewEventFragmentBinding extends ViewDataBinding {
     return inflate(inflater, root, attachToRoot, DataBindingUtil.getDefaultComponent());
   }
 
+  /**
+   * This method receives DataBindingComponent instance as type Object instead of
+   * type DataBindingComponent to avoid causing too many compilation errors if
+   * compilation fails for another reason.
+   * https://issuetracker.google.com/issues/116541301
+   * @Deprecated Use DataBindingUtil.inflate(inflater, R.layout.new_event_fragment, root, attachToRoot, component)
+   */
   @NonNull
+  @Deprecated
   public static NewEventFragmentBinding inflate(@NonNull LayoutInflater inflater,
-      @Nullable ViewGroup root, boolean attachToRoot, @Nullable DataBindingComponent component) {
-    return DataBindingUtil.<NewEventFragmentBinding>inflate(inflater, com.ddapps.itarugby.R.layout.new_event_fragment, root, attachToRoot, component);
+      @Nullable ViewGroup root, boolean attachToRoot, @Nullable Object component) {
+    return ViewDataBinding.<NewEventFragmentBinding>inflateInternal(inflater, com.ddapps.itarugby.R.layout.new_event_fragment, root, attachToRoot, component);
   }
 
   @NonNull
@@ -142,18 +151,33 @@ public abstract class NewEventFragmentBinding extends ViewDataBinding {
     return inflate(inflater, DataBindingUtil.getDefaultComponent());
   }
 
+  /**
+   * This method receives DataBindingComponent instance as type Object instead of
+   * type DataBindingComponent to avoid causing too many compilation errors if
+   * compilation fails for another reason.
+   * https://issuetracker.google.com/issues/116541301
+   * @Deprecated Use DataBindingUtil.inflate(inflater, R.layout.new_event_fragment, null, false, component)
+   */
   @NonNull
+  @Deprecated
   public static NewEventFragmentBinding inflate(@NonNull LayoutInflater inflater,
-      @Nullable DataBindingComponent component) {
-    return DataBindingUtil.<NewEventFragmentBinding>inflate(inflater, com.ddapps.itarugby.R.layout.new_event_fragment, null, false, component);
+      @Nullable Object component) {
+    return ViewDataBinding.<NewEventFragmentBinding>inflateInternal(inflater, com.ddapps.itarugby.R.layout.new_event_fragment, null, false, component);
   }
 
   public static NewEventFragmentBinding bind(@NonNull View view) {
     return bind(view, DataBindingUtil.getDefaultComponent());
   }
 
-  public static NewEventFragmentBinding bind(@NonNull View view,
-      @Nullable DataBindingComponent component) {
+  /**
+   * This method receives DataBindingComponent instance as type Object instead of
+   * type DataBindingComponent to avoid causing too many compilation errors if
+   * compilation fails for another reason.
+   * https://issuetracker.google.com/issues/116541301
+   * @Deprecated Use DataBindingUtil.bind(view, component)
+   */
+  @Deprecated
+  public static NewEventFragmentBinding bind(@NonNull View view, @Nullable Object component) {
     return (NewEventFragmentBinding)bind(component, view, com.ddapps.itarugby.R.layout.new_event_fragment);
   }
 }

@@ -86,12 +86,11 @@ class AgendaFragment : Fragment(), RapidFloatingActionContentLabelList.OnRapidFl
                         val event = document.toObject(Event::class.java)
                         event.docID = document.id
                         eventList.add(event)
-                        Timber.d("Recebido: ${document.id} -> ${document.data}")
-                        Timber.e("EventList dentro da interação está com ${eventList.size}")
                     }
 
                     Timber.e("Events list fora da interação: ${eventList.size}")
                     agendaRecycler.layoutManager = LinearLayoutManager(context)
+
                     // Recycler Animations
                     val alphaAdapter = AlphaInAnimationAdapter(AgendaRecycler(eventList, dataBase))
                     agendaRecycler.adapter = alphaAdapter.apply {

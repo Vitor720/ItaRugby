@@ -18,9 +18,16 @@ import com.ddapps.itarugby.databinding.FragmentLoginBindingImpl;
 import com.ddapps.itarugby.databinding.FragmentNewGameBindingImpl;
 import com.ddapps.itarugby.databinding.FragmentPlaceRegisterBindingImpl;
 import com.ddapps.itarugby.databinding.FragmentRegisterPlayerBindingImpl;
+import com.ddapps.itarugby.databinding.FragmentSponsorsBindingImpl;
 import com.ddapps.itarugby.databinding.FragmentTeamBindingImpl;
+import com.ddapps.itarugby.databinding.FragmentTrophyDisplayBindingImpl;
+import com.ddapps.itarugby.databinding.FragmentTrophyRegisterBindingImpl;
+import com.ddapps.itarugby.databinding.FragmentTrophyRoomBindingImpl;
+import com.ddapps.itarugby.databinding.ItemSliderImageBindingImpl;
 import com.ddapps.itarugby.databinding.NewEventFragmentBindingImpl;
 import com.ddapps.itarugby.databinding.PlayerRowBindingImpl;
+import com.ddapps.itarugby.databinding.RowItemTrophyRoomBindingImpl;
+import com.ddapps.itarugby.databinding.RowSponsorsBindingImpl;
 import java.lang.IllegalArgumentException;
 import java.lang.Integer;
 import java.lang.Object;
@@ -56,13 +63,27 @@ public class DataBinderMapperImpl extends DataBinderMapper {
 
   private static final int LAYOUT_FRAGMENTREGISTERPLAYER = 12;
 
-  private static final int LAYOUT_FRAGMENTTEAM = 13;
+  private static final int LAYOUT_FRAGMENTSPONSORS = 13;
 
-  private static final int LAYOUT_NEWEVENTFRAGMENT = 14;
+  private static final int LAYOUT_FRAGMENTTEAM = 14;
 
-  private static final int LAYOUT_PLAYERROW = 15;
+  private static final int LAYOUT_FRAGMENTTROPHYDISPLAY = 15;
 
-  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(15);
+  private static final int LAYOUT_FRAGMENTTROPHYREGISTER = 16;
+
+  private static final int LAYOUT_FRAGMENTTROPHYROOM = 17;
+
+  private static final int LAYOUT_ITEMSLIDERIMAGE = 18;
+
+  private static final int LAYOUT_NEWEVENTFRAGMENT = 19;
+
+  private static final int LAYOUT_PLAYERROW = 20;
+
+  private static final int LAYOUT_ROWITEMTROPHYROOM = 21;
+
+  private static final int LAYOUT_ROWSPONSORS = 22;
+
+  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(22);
 
   static {
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.ddapps.itarugby.R.layout.activity_main, LAYOUT_ACTIVITYMAIN);
@@ -77,9 +98,16 @@ public class DataBinderMapperImpl extends DataBinderMapper {
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.ddapps.itarugby.R.layout.fragment_new_game, LAYOUT_FRAGMENTNEWGAME);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.ddapps.itarugby.R.layout.fragment_place_register, LAYOUT_FRAGMENTPLACEREGISTER);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.ddapps.itarugby.R.layout.fragment_register_player, LAYOUT_FRAGMENTREGISTERPLAYER);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.ddapps.itarugby.R.layout.fragment_sponsors, LAYOUT_FRAGMENTSPONSORS);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.ddapps.itarugby.R.layout.fragment_team, LAYOUT_FRAGMENTTEAM);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.ddapps.itarugby.R.layout.fragment_trophy_display, LAYOUT_FRAGMENTTROPHYDISPLAY);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.ddapps.itarugby.R.layout.fragment_trophy_register, LAYOUT_FRAGMENTTROPHYREGISTER);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.ddapps.itarugby.R.layout.fragment_trophy_room, LAYOUT_FRAGMENTTROPHYROOM);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.ddapps.itarugby.R.layout.item_slider_image, LAYOUT_ITEMSLIDERIMAGE);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.ddapps.itarugby.R.layout.new_event_fragment, LAYOUT_NEWEVENTFRAGMENT);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.ddapps.itarugby.R.layout.player_row, LAYOUT_PLAYERROW);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.ddapps.itarugby.R.layout.row_item_trophy_room, LAYOUT_ROWITEMTROPHYROOM);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.ddapps.itarugby.R.layout.row_sponsors, LAYOUT_ROWSPONSORS);
   }
 
   @Override
@@ -163,11 +191,41 @@ public class DataBinderMapperImpl extends DataBinderMapper {
           }
           throw new IllegalArgumentException("The tag for fragment_register_player is invalid. Received: " + tag);
         }
+        case  LAYOUT_FRAGMENTSPONSORS: {
+          if ("layout/fragment_sponsors_0".equals(tag)) {
+            return new FragmentSponsorsBindingImpl(component, view);
+          }
+          throw new IllegalArgumentException("The tag for fragment_sponsors is invalid. Received: " + tag);
+        }
         case  LAYOUT_FRAGMENTTEAM: {
           if ("layout/fragment_team_0".equals(tag)) {
             return new FragmentTeamBindingImpl(component, view);
           }
           throw new IllegalArgumentException("The tag for fragment_team is invalid. Received: " + tag);
+        }
+        case  LAYOUT_FRAGMENTTROPHYDISPLAY: {
+          if ("layout/fragment_trophy_display_0".equals(tag)) {
+            return new FragmentTrophyDisplayBindingImpl(component, view);
+          }
+          throw new IllegalArgumentException("The tag for fragment_trophy_display is invalid. Received: " + tag);
+        }
+        case  LAYOUT_FRAGMENTTROPHYREGISTER: {
+          if ("layout/fragment_trophy_register_0".equals(tag)) {
+            return new FragmentTrophyRegisterBindingImpl(component, view);
+          }
+          throw new IllegalArgumentException("The tag for fragment_trophy_register is invalid. Received: " + tag);
+        }
+        case  LAYOUT_FRAGMENTTROPHYROOM: {
+          if ("layout/fragment_trophy_room_0".equals(tag)) {
+            return new FragmentTrophyRoomBindingImpl(component, view);
+          }
+          throw new IllegalArgumentException("The tag for fragment_trophy_room is invalid. Received: " + tag);
+        }
+        case  LAYOUT_ITEMSLIDERIMAGE: {
+          if ("layout/item_slider_image_0".equals(tag)) {
+            return new ItemSliderImageBindingImpl(component, view);
+          }
+          throw new IllegalArgumentException("The tag for item_slider_image is invalid. Received: " + tag);
         }
         case  LAYOUT_NEWEVENTFRAGMENT: {
           if ("layout/new_event_fragment_0".equals(tag)) {
@@ -180,6 +238,18 @@ public class DataBinderMapperImpl extends DataBinderMapper {
             return new PlayerRowBindingImpl(component, view);
           }
           throw new IllegalArgumentException("The tag for player_row is invalid. Received: " + tag);
+        }
+        case  LAYOUT_ROWITEMTROPHYROOM: {
+          if ("layout/row_item_trophy_room_0".equals(tag)) {
+            return new RowItemTrophyRoomBindingImpl(component, view);
+          }
+          throw new IllegalArgumentException("The tag for row_item_trophy_room is invalid. Received: " + tag);
+        }
+        case  LAYOUT_ROWSPONSORS: {
+          if ("layout/row_sponsors_0".equals(tag)) {
+            return new RowSponsorsBindingImpl(component, view);
+          }
+          throw new IllegalArgumentException("The tag for row_sponsors is invalid. Received: " + tag);
         }
       }
     }
@@ -235,7 +305,7 @@ public class DataBinderMapperImpl extends DataBinderMapper {
   }
 
   private static class InnerLayoutIdLookup {
-    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(15);
+    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(22);
 
     static {
       sKeys.put("layout/activity_main_0", com.ddapps.itarugby.R.layout.activity_main);
@@ -250,9 +320,16 @@ public class DataBinderMapperImpl extends DataBinderMapper {
       sKeys.put("layout/fragment_new_game_0", com.ddapps.itarugby.R.layout.fragment_new_game);
       sKeys.put("layout/fragment_place_register_0", com.ddapps.itarugby.R.layout.fragment_place_register);
       sKeys.put("layout/fragment_register_player_0", com.ddapps.itarugby.R.layout.fragment_register_player);
+      sKeys.put("layout/fragment_sponsors_0", com.ddapps.itarugby.R.layout.fragment_sponsors);
       sKeys.put("layout/fragment_team_0", com.ddapps.itarugby.R.layout.fragment_team);
+      sKeys.put("layout/fragment_trophy_display_0", com.ddapps.itarugby.R.layout.fragment_trophy_display);
+      sKeys.put("layout/fragment_trophy_register_0", com.ddapps.itarugby.R.layout.fragment_trophy_register);
+      sKeys.put("layout/fragment_trophy_room_0", com.ddapps.itarugby.R.layout.fragment_trophy_room);
+      sKeys.put("layout/item_slider_image_0", com.ddapps.itarugby.R.layout.item_slider_image);
       sKeys.put("layout/new_event_fragment_0", com.ddapps.itarugby.R.layout.new_event_fragment);
       sKeys.put("layout/player_row_0", com.ddapps.itarugby.R.layout.player_row);
+      sKeys.put("layout/row_item_trophy_room_0", com.ddapps.itarugby.R.layout.row_item_trophy_room);
+      sKeys.put("layout/row_sponsors_0", com.ddapps.itarugby.R.layout.row_sponsors);
     }
   }
 }

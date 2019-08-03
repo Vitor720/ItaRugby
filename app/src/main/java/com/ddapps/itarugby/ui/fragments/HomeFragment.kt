@@ -1,5 +1,6 @@
 package com.ddapps.itarugby.ui.fragments
 
+import android.content.Context
 import android.os.Bundle
 import android.view.*
 import android.widget.Toast
@@ -29,6 +30,7 @@ import com.wangjie.rapidfloatingactionbutton.contentimpl.labellist.RFACLabelItem
 import com.wangjie.rapidfloatingactionbutton.contentimpl.labellist.RapidFloatingActionContentLabelList
 import jp.wasabeef.recyclerview.adapters.AlphaInAnimationAdapter
 import timber.log.Timber
+import java.lang.Exception
 import java.util.*
 
 
@@ -53,7 +55,6 @@ class HomeFragment : Fragment(), RapidFloatingActionContentLabelList.OnRapidFloa
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         // Inflate the layout for this fragment
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_home, container, false)
-
         // floating action button
         sheetLayout = binding.bottomSheet
         sheetLayout.setFabAnimationEndListener(this)
@@ -61,10 +62,12 @@ class HomeFragment : Fragment(), RapidFloatingActionContentLabelList.OnRapidFloa
         fabContent.setOnRapidFloatingActionContentLabelListListener(this)
         rfaLayout = binding.activityMainRfal
         rfaBtn = binding.activityMainRfab
-
         val items: ArrayList<RFACLabelItem<Any>> = arrayListOf()
 
-        // Adiciona os icones do fab
+        /* Adiciona os icones do fab
+        * As cores estão no formato
+        *
+        * */
         items.add(RFACLabelItem<Any>().setLabel("Cadastrar novo local").setResId(R.drawable.icon_location_48)
             .setIconNormalColor(-10510688).setIconPressedColor(-16741493).setWrapper(0))
 
@@ -73,6 +76,9 @@ class HomeFragment : Fragment(), RapidFloatingActionContentLabelList.OnRapidFloa
 
         items.add(RFACLabelItem<Any>().setLabel("Cadastrar novo jogador").setResId(R.drawable.icons8_rugby_sevens_48)
             .setIconNormalColor(-10510688).setIconPressedColor(-16741493).setWrapper(3))
+
+        items.add(RFACLabelItem<Any>().setLabel("Cadastrar novo troféu").setResId(R.drawable.trophyroomicon)
+            .setIconNormalColor(-10510688).setIconPressedColor(-16741493).setWrapper(4))
 
         fabContent.setItems(items).setIconShadowRadius(ABTextUtil.dip2px(context, 5F))
             .setIconShadowColor(-10510688).setIconShadowDy(ABTextUtil.dip2px(context, 5F))
@@ -114,18 +120,25 @@ class HomeFragment : Fragment(), RapidFloatingActionContentLabelList.OnRapidFloa
     }
 
     private fun getUserName() {
-        val userId = FirebaseAuth.getInstance().currentUser!!.uid
-        Timber.e("UserId = $userId")
-        dataBase.collection("male_team").whereEqualTo("uID", userId).get().addOnCompleteListener {
-            if (it.isSuccessful) {
-                if (it.result?.size() != 0) {
-                    val playerData = it.result!!.toObjects(Players::class.java)
-                    userName = playerData[0].name
-                } else {
-                    Toast.makeText(context!!, "Falta cadastro na equipe", Toast.LENGTH_LONG).show()
+        try {
+               val userId: String? = FirebaseAuth.getInstance().currentUser!!.uid
+            Timber.e("UserId = $userId")
+            dataBase.collection("male_team").whereEqualTo("uID", userId).get().addOnCompleteListener {
+                if (it.isSuccessful) {
+                    if (it.result?.size() != 0) {
+                        val playerData = it.result!!.toObjects(Players::class.java)
+                        userName = playerData[0].name
+                    } else {
+                        Toast.makeText(context!!, "Falta cadastro na equipe", Toast.LENGTH_LONG).show()
+                    }
                 }
             }
+
+            } catch (e: Exception){
+            Timber.e("Deu ruim isso $e")
         }
+
+
     }
 
     private fun loadEvents() {
@@ -151,6 +164,7 @@ class HomeFragment : Fragment(), RapidFloatingActionContentLabelList.OnRapidFloa
                     // Recycler Animations
                     val alphaAdapter = AlphaInAnimationAdapter(
                         EventViewRecycler(
+                            context!!,
                             eventList,
                             dataBase,
                             userName,
@@ -208,6 +222,8 @@ class HomeFragment : Fragment(), RapidFloatingActionContentLabelList.OnRapidFloa
             0 -> findNavController().navigate(R.id.action_homeFragment_to_placeRegisterFragment)
             1 -> findNavController().navigate(R.id.action_homeFragment_to_newEventFragment)
             2 -> findNavController().navigate(R.id.action_homeFragment_to_registerPlayerFragment)
+            3 -> findNavController().navigate(R.id.action_homeFragment_to_trophyRegisterFragment)
+
 
             else -> Timber.e("Algo está errado, não foi passada int")
 

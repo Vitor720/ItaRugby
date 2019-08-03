@@ -1,15 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
               xmlns:tools="http://schemas.android.com/tools"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
-              tools:context=".ui.fragments.AboutFragment">
+              tools:context=".ui.fragments.AboutFragment"
+              android:orientation="vertical">
 
-    <!-- TODO: Update blank fragment layout -->
+    <TextView
+            android:text="@string/about_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/about_title"
+            android:textSize="24sp"
+            android:textAlignment="center"/>
+
+    <View
+            android:id="@+id/time_line_divider"
+            android:layout_width="100dp"
+            android:layout_height="1dp"
+
+            android:background="@color/full_black"
+            android:layout_marginStart="155sp"
+            android:layout_marginEnd="300dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="9dp"
+            />
+
+
     <TextView
             android:id="@+id/aboutItaRugby"
             android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/itaRugby_history"
+            android:layout_margin="5dp"/>
+    <ImageView
+        android:contentDescription="TODO" android:src="@drawable/fundoi"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="@string/itaRugby_history"/>
+            android:id="@+id/imageView2"/>
 
 </LinearLayout>

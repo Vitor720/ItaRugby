@@ -4,7 +4,17 @@
             "outputFile": "/home/vitor/dev-projects/android/kotlin/ItaRugby/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-land/values-land.xml",
             "map": [
                 {
-                    "source": "/home/vitor/.gradle/caches/transforms-1/files-1.1/material-1.0.0.aar/b80b8c667ef5651691b68f699d58d4ec/res/values-land/values-land.xml",
+                    "source": "/home/vitor/.gradle/caches/transforms-2/files-2.1/529441fc9a245d4a8084ec79d648f5ec/res/values-land/values-land.xml",
+                    "from": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,125,196",
+                        "endColumns": "69,70,67",
+                        "endOffsets": "120,191,259"
+                    }
+                },
+                {
+                    "source": "/home/vitor/.gradle/caches/transforms-2/files-2.1/f23e90c04529a8511864598e7cd36689/res/values-land/values-land.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -20,16 +30,6 @@
                         "endLines": "8",
                         "endColumns": "10",
                         "endOffsets": "431"
-                    }
-                },
-                {
-                    "source": "/home/vitor/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0.aar/d866b323ae02e771c82de60d9db967c1/res/values-land/values-land.xml",
-                    "from": {
-                        "startLines": "2,3,4",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "55,125,196",
-                        "endColumns": "69,70,67",
-                        "endOffsets": "120,191,259"
                     }
                 }
             ]

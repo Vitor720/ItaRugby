@@ -9,9 +9,10 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.cardview.widget.CardView;
-import androidx.databinding.DataBindingComponent;
 import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
+import java.lang.Deprecated;
+import java.lang.Object;
 
 public abstract class EventRowBinding extends ViewDataBinding {
   @NonNull
@@ -44,10 +45,10 @@ public abstract class EventRowBinding extends ViewDataBinding {
   @NonNull
   public final TextView placeName;
 
-  protected EventRowBinding(DataBindingComponent _bindingComponent, View _root,
-      int _localFieldCount, Button confirmButton, Button declineButton, TextView eventDate,
-      ImageView eventFlag, TextView eventName, CardView eventRowCardView, TextView eventTime,
-      ImageView mapView, Button maybeButton, TextView placeName) {
+  protected EventRowBinding(Object _bindingComponent, View _root, int _localFieldCount,
+      Button confirmButton, Button declineButton, TextView eventDate, ImageView eventFlag,
+      TextView eventName, CardView eventRowCardView, TextView eventTime, ImageView mapView,
+      Button maybeButton, TextView placeName) {
     super(_bindingComponent, _root, _localFieldCount);
     this.confirmButton = confirmButton;
     this.declineButton = declineButton;
@@ -67,10 +68,18 @@ public abstract class EventRowBinding extends ViewDataBinding {
     return inflate(inflater, root, attachToRoot, DataBindingUtil.getDefaultComponent());
   }
 
+  /**
+   * This method receives DataBindingComponent instance as type Object instead of
+   * type DataBindingComponent to avoid causing too many compilation errors if
+   * compilation fails for another reason.
+   * https://issuetracker.google.com/issues/116541301
+   * @Deprecated Use DataBindingUtil.inflate(inflater, R.layout.event_row, root, attachToRoot, component)
+   */
   @NonNull
+  @Deprecated
   public static EventRowBinding inflate(@NonNull LayoutInflater inflater, @Nullable ViewGroup root,
-      boolean attachToRoot, @Nullable DataBindingComponent component) {
-    return DataBindingUtil.<EventRowBinding>inflate(inflater, com.ddapps.itarugby.R.layout.event_row, root, attachToRoot, component);
+      boolean attachToRoot, @Nullable Object component) {
+    return ViewDataBinding.<EventRowBinding>inflateInternal(inflater, com.ddapps.itarugby.R.layout.event_row, root, attachToRoot, component);
   }
 
   @NonNull
@@ -78,17 +87,33 @@ public abstract class EventRowBinding extends ViewDataBinding {
     return inflate(inflater, DataBindingUtil.getDefaultComponent());
   }
 
+  /**
+   * This method receives DataBindingComponent instance as type Object instead of
+   * type DataBindingComponent to avoid causing too many compilation errors if
+   * compilation fails for another reason.
+   * https://issuetracker.google.com/issues/116541301
+   * @Deprecated Use DataBindingUtil.inflate(inflater, R.layout.event_row, null, false, component)
+   */
   @NonNull
+  @Deprecated
   public static EventRowBinding inflate(@NonNull LayoutInflater inflater,
-      @Nullable DataBindingComponent component) {
-    return DataBindingUtil.<EventRowBinding>inflate(inflater, com.ddapps.itarugby.R.layout.event_row, null, false, component);
+      @Nullable Object component) {
+    return ViewDataBinding.<EventRowBinding>inflateInternal(inflater, com.ddapps.itarugby.R.layout.event_row, null, false, component);
   }
 
   public static EventRowBinding bind(@NonNull View view) {
     return bind(view, DataBindingUtil.getDefaultComponent());
   }
 
-  public static EventRowBinding bind(@NonNull View view, @Nullable DataBindingComponent component) {
+  /**
+   * This method receives DataBindingComponent instance as type Object instead of
+   * type DataBindingComponent to avoid causing too many compilation errors if
+   * compilation fails for another reason.
+   * https://issuetracker.google.com/issues/116541301
+   * @Deprecated Use DataBindingUtil.bind(view, component)
+   */
+  @Deprecated
+  public static EventRowBinding bind(@NonNull View view, @Nullable Object component) {
     return (EventRowBinding)bind(component, view, com.ddapps.itarugby.R.layout.event_row);
   }
 }

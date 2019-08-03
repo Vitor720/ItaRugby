@@ -5,6 +5,7 @@ import com.facebook.appevents.AppEventsLogger
 import com.google.firebase.FirebaseApp
 import com.google.firebase.auth.FirebaseAuth
 import timber.log.Timber
+import com.facebook.FacebookSdk
 
 class PusherApplication: Application() {
 

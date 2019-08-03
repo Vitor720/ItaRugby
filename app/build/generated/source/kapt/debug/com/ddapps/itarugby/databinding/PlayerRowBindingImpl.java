@@ -29,7 +29,7 @@ public class PlayerRowBindingImpl extends PlayerRowBinding  {
     }
     private PlayerRowBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
-            , (android.widget.ImageView) bindings[1]
+            , (com.mikhaellopez.circularimageview.CircularImageView) bindings[1]
             , (android.widget.LinearLayout) bindings[0]
             , (android.widget.TextView) bindings[3]
             , (android.widget.TextView) bindings[2]

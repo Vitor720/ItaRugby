@@ -19,6 +19,8 @@
                 app:destination="@id/registerPlayerFragment"/>
         <action android:id="@+id/action_homeFragment_to_placeRegisterFragment"
                 app:destination="@id/placeRegisterFragment"/>
+        <action android:id="@+id/action_homeFragment_to_trophyRegisterFragment"
+                app:destination="@id/trophyRegisterFragment"/>
     </fragment>
     <fragment android:id="@+id/agendaFragment" android:name="com.ddapps.itarugby.ui.fragments.AgendaFragment"
               android:label="fragment_agenda" tools:layout="@layout/fragment_agenda">
@@ -79,4 +81,22 @@
               android:label="PlaceRegisterFragment">
         <action android:id="@+id/action_placeRegisterFragment_to_homeFragment" app:destination="@id/homeFragment"/>
     </fragment>
+
+    <fragment android:id="@+id/trophyRoomFragment" android:name="com.ddapps.itarugby.ui.fragments.TrophyRoomFragment"
+                android:label="TrophyRoomFragment" >
+        <action android:id="@+id/action_trophyRoomFragment_to_trophyDisplayFragment"
+                app:destination="@id/trophyDisplayFragment"/>
+    </fragment>
+
+    <fragment android:id="@+id/trophyRegisterFragment" android:name="com.ddapps.itarugby.ui.fragments.TrophyRegisterFragment"
+              android:label="TrophyRegisterFragment" />
+
+    <fragment android:id="@+id/trophyDisplayFragment" android:name="com.ddapps.itarugby.ui.fragments.TrophyDisplayFragment"
+              android:label="TrophyDisplayFragment" >
+        <argument android:name="trophyID" app:argType="string"/>
+
+        <action android:id="@+id/action_trophyDisplayFragment_to_trophyRoomFragment"
+                app:destination="@id/trophyRoomFragment"/>
+    </fragment>
+
 </navigation>

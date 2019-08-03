@@ -77,8 +77,7 @@ class NewEventFragment : Fragment() {
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-//        val settings = FirebaseFirestoreSettings.Builder().setTimestampsInSnapshotsEnabled(true).build()
-//        dataBase.firestoreSettings = settings
+
 
         binding = DataBindingUtil.inflate<NewEventFragmentBinding>(inflater,
             R.layout.new_event_fragment, container, false)
@@ -86,16 +85,7 @@ class NewEventFragment : Fragment() {
 
         //TIME PICKER
         timeButton = binding.newEventTime
-        timeButton.setOnFocusChangeListener { _, hasFocus ->
-            if (hasFocus){
-                timePicker = TimePickerFragment()
-                timePicker.show(fragmentManager!!, "timePicker")
-            }
-        }
-        timeButton.setOnClickListener {
-            timePicker = TimePickerFragment()
-            timePicker.show(fragmentManager!!, "timePicker")
-        }
+        setTimePicker(timeButton)
 
 
         // SECOND TIME PICKER
@@ -189,6 +179,20 @@ class NewEventFragment : Fragment() {
         return binding.root
     }
 
+    private fun setTimePicker(timeButton: TextInputEditText) {
+        timeButton.setOnFocusChangeListener { _, hasFocus ->
+            if (hasFocus) {
+                timePicker = TimePickerFragment()
+                timePicker.show(fragmentManager!!, "timePicker")
+            }
+        }
+
+        timeButton.setOnClickListener {
+            timePicker = TimePickerFragment()
+            timePicker.show(fragmentManager!!, "timePicker")
+        }
+    }
+
     private fun clearFields(){
         addEventButton.isIndeterminateProgressMode = false
         addEventButton.idleText = "CRIAR NOVO EVENTO"
@@ -271,6 +275,10 @@ class NewEventFragment : Fragment() {
                 dataBase.collection("events").document(binding.dateEventID.text.toString()).set(newEvent).addOnCompleteListener {
                     if (it.isSuccessful){
                         Timber.e("Deu certo")
+                        Timber.e("Certo ** location placename ${location.placeName}")
+                        Timber.i("Certo ** placeButton text ${placesButton.text}")
+                        Timber.e("Certo **  endereço${location.placeAdress}")
+
                         addEventButton.isIndeterminateProgressMode = false
 
                         addEventButton.progress = 100
@@ -284,6 +292,7 @@ class NewEventFragment : Fragment() {
             } else {
                 Timber.e("location placename ${location.placeName}")
                 Timber.i("placeButton text ${placesButton.text}")
+                Timber.e("endereço${location.placeAdress}")
 
             }
         }

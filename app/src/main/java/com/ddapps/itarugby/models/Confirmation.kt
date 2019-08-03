@@ -5,8 +5,6 @@ class Confirmation {
     var name: String? = null
     var confirmation: Int? = null
 
-
-
     constructor(){}
 
     constructor(confirmation: Int){

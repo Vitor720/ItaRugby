@@ -14,23 +14,24 @@ import com.ddapps.itarugby.databinding.EventRowBinding
 import com.ddapps.itarugby.models.Event
 import com.google.firebase.firestore.FieldValue
 import com.google.firebase.firestore.FirebaseFirestore
-import com.squareup.picasso.Picasso
 import timber.log.Timber
 import java.text.SimpleDateFormat
 import java.util.*
 import android.content.ActivityNotFoundException
+import android.content.Context
+import com.bumptech.glide.Glide
 import com.ddapps.itarugby.R
 import com.ddapps.itarugby.ui.fragments.HomeFragmentDirections
 
 
-/** apaga parcialmente o botão clicado e acende os demais.
- * falta ligar o staticmap ao google maps
+/** Recycler View class
+ * Ao clicar em um botão ele tem o fundo e a cor do texto a.
  *
- * Refazer depois
- * **/
+**/
 
 
 class EventViewRecycler(
+     val hereContext: Context,
     private val eventList: MutableList<Event>,
     private val database: FirebaseFirestore,
     private val userName: String? = null,
@@ -55,16 +56,12 @@ class EventViewRecycler(
         val declinedList = eventList[position].declined
         val docID = eventList[position].docID
 
-        if (userName in confirmedList!!){
-            setConfirmed(holder)
-        } else {
-            if (userName in mayBeList!!){
-                setMayBe(holder)
-            } else{
-                if (userName in declinedList!!){
-                    setDeclined(holder)
-                }
-            }
+
+        // para definir se o jogador vai ao treino.
+        when(userName){
+            in confirmedList!! -> setConfirmed(holder)
+            in mayBeList!! -> setMayBe(holder)
+            in declinedList!! -> setDeclined(holder)
         }
 
         val simpleDateFormat = SimpleDateFormat("dd/MM/yyyy")
@@ -87,8 +84,8 @@ class EventViewRecycler(
         url += "&markers=color:orange%7Clabel:Lugar%7C$lat, $lgn"
         url += "&key=AIzaSyDIB97Qpy6IIfJ1lI8DRKJUStzIIjAO1dA"
 
-        Picasso.get().load(url).into(holder.mapView)
-
+        // Ao mudar para glide parou de carregar as imagens
+        Glide.with(hereContext).load(url).into(holder.mapView)
 
 
         holder.mapView.setOnClickListener {
@@ -106,9 +103,7 @@ class EventViewRecycler(
                 } catch (innerEx: ActivityNotFoundException) {
                     Toast.makeText(it.context, "Please install a maps application", Toast.LENGTH_LONG).show()
                 }
-
             }
-
         }
 
 
@@ -168,8 +163,9 @@ class EventViewRecycler(
     }
 
     private fun setConfirmed(holder: EventViewHolder){
-        holder.confirmButton.setBackgroundColor(Color.TRANSPARENT)
-        holder.confirmButton.setTextColor(Color.GRAY)
+
+        holder.confirmButton.setBackgroundResource(R.drawable.btn_rect_primary)
+        holder.confirmButton.setTextColor(Color.WHITE)
 
         holder.maybeButton.setBackgroundResource(android.R.drawable.btn_default)
         holder.maybeButton.setTextColor(Color.BLACK)
@@ -181,8 +177,9 @@ class EventViewRecycler(
     }
 
     private fun setMayBe(holder: EventViewHolder){
-        holder.maybeButton.setBackgroundColor(Color.TRANSPARENT)
-        holder.maybeButton.setTextColor(Color.GRAY)
+
+        holder.maybeButton.setBackgroundResource(R.drawable.btn_rect_primary)
+        holder.maybeButton.setTextColor(Color.WHITE)
 
         holder.confirmButton.setBackgroundResource(android.R.drawable.btn_default)
         holder.confirmButton.setTextColor(Color.BLACK)
@@ -192,8 +189,8 @@ class EventViewRecycler(
     }
 
     private fun setDeclined(holder: EventViewHolder){
-        holder.declineButton.setBackgroundColor(Color.TRANSPARENT)
-        holder.declineButton.setTextColor(Color.GRAY)
+        holder.declineButton.setBackgroundResource(R.drawable.btn_rect_primary)
+        holder.declineButton.setTextColor(Color.WHITE)
 
         holder.maybeButton.setBackgroundResource(android.R.drawable.btn_default)
         holder.maybeButton.setTextColor(Color.BLACK)

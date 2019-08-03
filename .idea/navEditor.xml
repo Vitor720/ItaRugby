@@ -13,8 +13,8 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="-70" />
-                            <option name="y" value="-348" />
+                            <option name="x" value="12" />
+                            <option name="y" value="12" />
                           </Point>
                         </option>
                       </LayoutPositions>
@@ -25,8 +25,8 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="190" />
-                            <option name="y" value="625" />
+                            <option name="x" value="1039" />
+                            <option name="y" value="1185" />
                           </Point>
                         </option>
                         <option name="myPositions">
@@ -56,8 +56,8 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="1762" />
-                            <option name="y" value="-165" />
+                            <option name="x" value="1823" />
+                            <option name="y" value="107" />
                           </Point>
                         </option>
                         <option name="myPositions">
@@ -82,8 +82,8 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="1708" />
-                            <option name="y" value="780" />
+                            <option name="x" value="2057" />
+                            <option name="y" value="91" />
                           </Point>
                         </option>
                         <option name="myPositions">
@@ -108,8 +108,8 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="1090" />
-                            <option name="y" value="-1583" />
+                            <option name="x" value="1476" />
+                            <option name="y" value="616" />
                           </Point>
                         </option>
                         <option name="myPositions">
@@ -129,8 +129,8 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="521" />
-                            <option name="y" value="-55" />
+                            <option name="x" value="1232" />
+                            <option name="y" value="309" />
                           </Point>
                         </option>
                         <option name="myPositions">
@@ -165,6 +165,11 @@
                                 <LayoutPositions />
                               </value>
                             </entry>
+                            <entry key="action_homeFragment_to_trophyRegisterFragment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
                           </map>
                         </option>
                       </LayoutPositions>
@@ -175,8 +180,8 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="92" />
-                            <option name="y" value="88" />
+                            <option name="x" value="988" />
+                            <option name="y" value="12" />
                           </Point>
                         </option>
                         <option name="myPositions">
@@ -196,8 +201,8 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="1879" />
-                            <option name="y" value="378" />
+                            <option name="x" value="1476" />
+                            <option name="y" value="1328" />
                           </Point>
                         </option>
                         <option name="myPositions">
@@ -222,8 +227,8 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="1628" />
-                            <option name="y" value="-742" />
+                            <option name="x" value="1476" />
+                            <option name="y" value="260" />
                           </Point>
                         </option>
                         <option name="myPositions">
@@ -243,8 +248,8 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="1393" />
-                            <option name="y" value="-1171" />
+                            <option name="x" value="1476" />
+                            <option name="y" value="972" />
                           </Point>
                         </option>
                         <option name="myPositions">
@@ -269,8 +274,8 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="340" />
-                            <option name="y" value="-840" />
+                            <option name="x" value="1915" />
+                            <option name="y" value="667" />
                           </Point>
                         </option>
                         <option name="myPositions">
@@ -281,6 +286,60 @@
                               </value>
                             </entry>
                             <entry key="action_teamFragment_to_registerPlayerFragment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                          </map>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
+                  <entry key="trophyDisplayFragment">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="500" />
+                            <option name="y" value="12" />
+                          </Point>
+                        </option>
+                        <option name="myPositions">
+                          <map>
+                            <entry key="action_trophyDisplayFragment_to_trophyRoomFragment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                          </map>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
+                  <entry key="trophyRegisterFragment">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="548" />
+                            <option name="y" value="507" />
+                          </Point>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
+                  <entry key="trophyRoomFragment">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="744" />
+                            <option name="y" value="12" />
+                          </Point>
+                        </option>
+                        <option name="myPositions">
+                          <map>
+                            <entry key="action_trophyRoomFragment_to_trophyDisplayFragment">
                               <value>
                                 <LayoutPositions />
                               </value>

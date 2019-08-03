@@ -53,7 +53,7 @@ class TeamFragment : Fragment() {
                     teamRecycler.layoutManager = LinearLayoutManager(context)
 
                     // Recycler Animations
-                    val alphaAdapter = AlphaInAnimationAdapter(TeamRecycler(playerList, dataBase)).apply {
+                    val alphaAdapter = AlphaInAnimationAdapter(TeamRecycler(playerList, context!!)).apply {
                         setDuration(720)
                     }
                     teamRecycler.adapter = alphaAdapter

@@ -8,9 +8,10 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.databinding.DataBindingComponent;
 import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
+import java.lang.Deprecated;
+import java.lang.Object;
 
 public abstract class FragmentDisplayGameBinding extends ViewDataBinding {
   @NonNull
@@ -112,17 +113,17 @@ public abstract class FragmentDisplayGameBinding extends ViewDataBinding {
   @NonNull
   public final View timeLineDivider;
 
-  protected FragmentDisplayGameBinding(DataBindingComponent _bindingComponent, View _root,
-      int _localFieldCount, TextView confirmationHeader, TextView confirmedList,
-      TextView declineList, TextView displayEventAdress, TextView displayEventNotes,
-      TextView eventAdress, TextView eventArriveTime, TextView eventFullDate,
-      TextView eventLocation, ImageView eventMapView, TextView eventStartEnd, TextView games,
-      View headerLineDivider, ImageView imageViewCalendar, ImageView imageViewConfirmed,
-      ImageView imageViewDecline, ImageView imageViewGps, ImageView imageViewLineUp,
-      ImageView imageViewMayBe, ImageView imageViewOpponents, ImageView imageViewTime,
-      TextView lineUp, Button lineUpButton, View lineUpDivider, TextView lineUpHeader,
-      View locationLineDivider, TextView mayBeList, TextView noteExplicit, View noteLineDivider,
-      TextView opponents, View opponentsDivider, TextView textView10, View timeLineDivider) {
+  protected FragmentDisplayGameBinding(Object _bindingComponent, View _root, int _localFieldCount,
+      TextView confirmationHeader, TextView confirmedList, TextView declineList,
+      TextView displayEventAdress, TextView displayEventNotes, TextView eventAdress,
+      TextView eventArriveTime, TextView eventFullDate, TextView eventLocation,
+      ImageView eventMapView, TextView eventStartEnd, TextView games, View headerLineDivider,
+      ImageView imageViewCalendar, ImageView imageViewConfirmed, ImageView imageViewDecline,
+      ImageView imageViewGps, ImageView imageViewLineUp, ImageView imageViewMayBe,
+      ImageView imageViewOpponents, ImageView imageViewTime, TextView lineUp, Button lineUpButton,
+      View lineUpDivider, TextView lineUpHeader, View locationLineDivider, TextView mayBeList,
+      TextView noteExplicit, View noteLineDivider, TextView opponents, View opponentsDivider,
+      TextView textView10, View timeLineDivider) {
     super(_bindingComponent, _root, _localFieldCount);
     this.confirmationHeader = confirmationHeader;
     this.confirmedList = confirmedList;
@@ -165,10 +166,18 @@ public abstract class FragmentDisplayGameBinding extends ViewDataBinding {
     return inflate(inflater, root, attachToRoot, DataBindingUtil.getDefaultComponent());
   }
 
+  /**
+   * This method receives DataBindingComponent instance as type Object instead of
+   * type DataBindingComponent to avoid causing too many compilation errors if
+   * compilation fails for another reason.
+   * https://issuetracker.google.com/issues/116541301
+   * @Deprecated Use DataBindingUtil.inflate(inflater, R.layout.fragment_display_game, root, attachToRoot, component)
+   */
   @NonNull
+  @Deprecated
   public static FragmentDisplayGameBinding inflate(@NonNull LayoutInflater inflater,
-      @Nullable ViewGroup root, boolean attachToRoot, @Nullable DataBindingComponent component) {
-    return DataBindingUtil.<FragmentDisplayGameBinding>inflate(inflater, com.ddapps.itarugby.R.layout.fragment_display_game, root, attachToRoot, component);
+      @Nullable ViewGroup root, boolean attachToRoot, @Nullable Object component) {
+    return ViewDataBinding.<FragmentDisplayGameBinding>inflateInternal(inflater, com.ddapps.itarugby.R.layout.fragment_display_game, root, attachToRoot, component);
   }
 
   @NonNull
@@ -176,18 +185,33 @@ public abstract class FragmentDisplayGameBinding extends ViewDataBinding {
     return inflate(inflater, DataBindingUtil.getDefaultComponent());
   }
 
+  /**
+   * This method receives DataBindingComponent instance as type Object instead of
+   * type DataBindingComponent to avoid causing too many compilation errors if
+   * compilation fails for another reason.
+   * https://issuetracker.google.com/issues/116541301
+   * @Deprecated Use DataBindingUtil.inflate(inflater, R.layout.fragment_display_game, null, false, component)
+   */
   @NonNull
+  @Deprecated
   public static FragmentDisplayGameBinding inflate(@NonNull LayoutInflater inflater,
-      @Nullable DataBindingComponent component) {
-    return DataBindingUtil.<FragmentDisplayGameBinding>inflate(inflater, com.ddapps.itarugby.R.layout.fragment_display_game, null, false, component);
+      @Nullable Object component) {
+    return ViewDataBinding.<FragmentDisplayGameBinding>inflateInternal(inflater, com.ddapps.itarugby.R.layout.fragment_display_game, null, false, component);
   }
 
   public static FragmentDisplayGameBinding bind(@NonNull View view) {
     return bind(view, DataBindingUtil.getDefaultComponent());
   }
 
-  public static FragmentDisplayGameBinding bind(@NonNull View view,
-      @Nullable DataBindingComponent component) {
+  /**
+   * This method receives DataBindingComponent instance as type Object instead of
+   * type DataBindingComponent to avoid causing too many compilation errors if
+   * compilation fails for another reason.
+   * https://issuetracker.google.com/issues/116541301
+   * @Deprecated Use DataBindingUtil.bind(view, component)
+   */
+  @Deprecated
+  public static FragmentDisplayGameBinding bind(@NonNull View view, @Nullable Object component) {
     return (FragmentDisplayGameBinding)bind(component, view, com.ddapps.itarugby.R.layout.fragment_display_game);
   }
 }

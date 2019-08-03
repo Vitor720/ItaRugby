@@ -8,6 +8,7 @@ import kotlin.collections.ArrayList
 import kotlin.collections.HashMap
 
 class Event {
+
     var docID: String? = null
     var name: String? = null
     var date: String? = null
@@ -24,13 +25,10 @@ class Event {
     var mayBe: ArrayList<String>? = null
     var declined: ArrayList<String>? = null
 
-
-
     var gamesQty: String? = null
     var opponents: ArrayList<String>? = null
     var arriveEarly: String? = null
     var gameNotes: String? = null
-
 
     var firstOpponent: String? = null
     var secondOpponent: String? = null
@@ -46,16 +44,6 @@ class Event {
 
 
     constructor() {}
-
-
-//    constructor(year: Int, month: Int, dayOfMonth: Int) {
-//        val simpleDateFormat = SimpleDateFormat("yyyy-MM-dd")
-//        val date = "$year/$month/$dayOfMonth"
-//        val stringToDate = simpleDateFormat.parse(date)
-//        this.date = stringToDate
-//    }
-
-
 
     constructor(name: String, gameNotes: String, canceled: Boolean, date: String) {
         this.name = name

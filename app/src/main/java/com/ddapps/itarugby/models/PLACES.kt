@@ -5,7 +5,7 @@ import java.util.HashMap
 
 class PLACES  {
 //    private var id: String? = null
-     var placeAddress: String? = null
+     var placeAdress: String? = null
      var placeDetails: String? = null
 
      var geoPoint: GeoPoint? = null
@@ -14,11 +14,11 @@ class PLACES  {
 
     constructor()
 
-    constructor( placeName: String, placeDetails: String, geoPoint: GeoPoint, placeAddress: String){
+    constructor( placeName: String?, placeDetails: String?, geoPoint: GeoPoint?, placeAddress: String?){
         this.placeName = placeName
         this.placeDetails = placeDetails
         this.geoPoint = geoPoint
-        this.placeAddress = placeAddress
+        this.placeAdress = placeAddress
 
     }
 
@@ -28,7 +28,7 @@ class PLACES  {
         result["placeName"] = placeName
         result["placeDetails"] = placeDetails
         result["geoPoint"] = geoPoint
-        result["placeAddress"] = placeAddress
+        result["placeAdress"] = placeAdress
 
         return result
     }
@@ -38,7 +38,7 @@ class PLACES  {
             $placeName
             $placeDetails
             $geoPoint
-            $placeAddress
+            $placeAdress
 
         """.trimIndent()
     }

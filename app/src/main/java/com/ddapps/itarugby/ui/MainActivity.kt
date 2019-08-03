@@ -16,7 +16,7 @@ import timber.log.Timber
 
 
 /** @author: Vitor Vieira
- * @version: 1.6.1
+ * @version: 1.6.3
  *
  *Aplicativo para gerenciamento de equipes de esporte
  *Navegação do aplicativo segue os padrões do Android JetPack, apenas uma activity.
@@ -26,7 +26,6 @@ class MainActivity : AppCompatActivity() {
     private lateinit var drawerLayout: DrawerLayout
     private var accessToken: AccessToken? = null
     private lateinit var auth: FirebaseAuth
-
 
     override fun onStart() {
         super.onStart()
@@ -64,7 +63,6 @@ class MainActivity : AppCompatActivity() {
                 actionBar?.show()
             }
         }
-
     }
 
     fun setActionBarTitle(title: String) {

@@ -7,4 +7,7 @@
     <item android:title="@string/team"
           android:id="@+id/teamFragment"
           android:icon="@drawable/ic_users"/>
+    <item android:title="@string/trophy_room"
+          android:id="@+id/trophyRoomFragment"
+          android:icon="@drawable/trophyroomicon" />
 </menu>

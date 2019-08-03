@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.EditText
 import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
@@ -40,13 +41,20 @@ class PlaceRegisterFragment : Fragment(), OnMapReadyCallback {
     private lateinit var addressList: List<Address>
     private lateinit var locationLatLng: LatLng
     private lateinit var mMapView: MapView
-    private lateinit var defaultLocal: LatLng
+
 
 
     override fun onMapReady(map: GoogleMap) {
 
         var markerTapCounter = 0
-        defaultLocal = LatLng(-22.740806, -42.866389)
+        val defaultLocal = LatLng(-22.740806, -42.866389)
+
+
+        /*
+        * Verificar depois se locationLatLng = defaultLocal não vai ser chamado novamente caso o usuario saia do app
+        * com o mapa marcado e volte e efeue o cadastro do local no sistema
+        */
+        locationLatLng = defaultLocal
         map.moveCamera(CameraUpdateFactory.newLatLng(defaultLocal))
         map.moveCamera(CameraUpdateFactory.newLatLngZoom(defaultLocal, 15.toFloat()))
         setMarkerPosition(map, defaultLocal, "Campo de Treino ItaRugby")
@@ -58,6 +66,7 @@ class PlaceRegisterFragment : Fragment(), OnMapReadyCallback {
 
         placeRegisterButton.setOnClickListener {
             registerPlace()
+            map.clear()
         }
 
         map.setOnMarkerClickListener {
@@ -66,6 +75,7 @@ class PlaceRegisterFragment : Fragment(), OnMapReadyCallback {
                 it.remove()
             }
             true
+
         }
 
         map.setOnMapLongClickListener {
@@ -84,19 +94,36 @@ class PlaceRegisterFragment : Fragment(), OnMapReadyCallback {
         Timber.e("Endereço após converter da latitude é = $addressFromLatLng")
 
 
-        val place = PLACES(addressFromLatLng,placeNameEditText.text.toString(), GeoPoint(locationLatLng.latitude, locationLatLng.longitude), placeDetailsEditText.text.toString())
+        val place = PLACES(placeNameEditText.text.toString(), placeDetailsEditText.text.toString(), GeoPoint(locationLatLng.latitude, locationLatLng.longitude), addressFromLatLng)
 
         try {
             dataBase.collection("locations").document(placeNameEditText.text.toString()).set(place).addOnSuccessListener {
+
+                clearFields()
+
                 Toast.makeText(context!!, "Local registrado com sucesso!", Toast.LENGTH_LONG).show()
 
             }
         } catch (e: Exception){
-            Toast.makeText(context!!, "Erro ao Cadastrar Local!", Toast.LENGTH_LONG).show()
+
+            if (placeNameEditText.text.toString() == ""){
+                Toast.makeText(context!!, "Os Campos Nome e Detalhes são obrigatórios", Toast.LENGTH_LONG).show()
+            } else {
+                Toast.makeText(context!!, "Erro ao Cadastrar Local!", Toast.LENGTH_LONG).show()
+            }
+
+
         }
 
 
         }
+
+    private fun clearFields() {
+        placeDetailsEditText.setText("")
+        placeNameEditText.setText("")
+        searchLocationEditText.setText("")
+
+    }
 
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
@@ -163,7 +190,7 @@ class PlaceRegisterFragment : Fragment(), OnMapReadyCallback {
             outState.putBundle(MAPVIEW_BUNDLE_KEY, mapViewBundle)
         }
 
-        mMapView!!.onSaveInstanceState(mapViewBundle)
+        mMapView.onSaveInstanceState(mapViewBundle)
 
     }
 

@@ -6,11 +6,12 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.databinding.DataBindingComponent;
 import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
 import com.google.android.gms.maps.MapView;
 import com.google.android.material.textfield.TextInputEditText;
+import java.lang.Deprecated;
+import java.lang.Object;
 
 public abstract class FragmentPlaceRegisterBinding extends ViewDataBinding {
   @NonNull
@@ -31,10 +32,9 @@ public abstract class FragmentPlaceRegisterBinding extends ViewDataBinding {
   @NonNull
   public final TextInputEditText searchLocation;
 
-  protected FragmentPlaceRegisterBinding(DataBindingComponent _bindingComponent, View _root,
-      int _localFieldCount, Button mapMarkerButton, TextInputEditText placeDetails,
-      TextInputEditText placesName, MapView registerMap, Button registerPlaceButton,
-      TextInputEditText searchLocation) {
+  protected FragmentPlaceRegisterBinding(Object _bindingComponent, View _root, int _localFieldCount,
+      Button mapMarkerButton, TextInputEditText placeDetails, TextInputEditText placesName,
+      MapView registerMap, Button registerPlaceButton, TextInputEditText searchLocation) {
     super(_bindingComponent, _root, _localFieldCount);
     this.mapMarkerButton = mapMarkerButton;
     this.placeDetails = placeDetails;
@@ -50,10 +50,18 @@ public abstract class FragmentPlaceRegisterBinding extends ViewDataBinding {
     return inflate(inflater, root, attachToRoot, DataBindingUtil.getDefaultComponent());
   }
 
+  /**
+   * This method receives DataBindingComponent instance as type Object instead of
+   * type DataBindingComponent to avoid causing too many compilation errors if
+   * compilation fails for another reason.
+   * https://issuetracker.google.com/issues/116541301
+   * @Deprecated Use DataBindingUtil.inflate(inflater, R.layout.fragment_place_register, root, attachToRoot, component)
+   */
   @NonNull
+  @Deprecated
   public static FragmentPlaceRegisterBinding inflate(@NonNull LayoutInflater inflater,
-      @Nullable ViewGroup root, boolean attachToRoot, @Nullable DataBindingComponent component) {
-    return DataBindingUtil.<FragmentPlaceRegisterBinding>inflate(inflater, com.ddapps.itarugby.R.layout.fragment_place_register, root, attachToRoot, component);
+      @Nullable ViewGroup root, boolean attachToRoot, @Nullable Object component) {
+    return ViewDataBinding.<FragmentPlaceRegisterBinding>inflateInternal(inflater, com.ddapps.itarugby.R.layout.fragment_place_register, root, attachToRoot, component);
   }
 
   @NonNull
@@ -61,18 +69,33 @@ public abstract class FragmentPlaceRegisterBinding extends ViewDataBinding {
     return inflate(inflater, DataBindingUtil.getDefaultComponent());
   }
 
+  /**
+   * This method receives DataBindingComponent instance as type Object instead of
+   * type DataBindingComponent to avoid causing too many compilation errors if
+   * compilation fails for another reason.
+   * https://issuetracker.google.com/issues/116541301
+   * @Deprecated Use DataBindingUtil.inflate(inflater, R.layout.fragment_place_register, null, false, component)
+   */
   @NonNull
+  @Deprecated
   public static FragmentPlaceRegisterBinding inflate(@NonNull LayoutInflater inflater,
-      @Nullable DataBindingComponent component) {
-    return DataBindingUtil.<FragmentPlaceRegisterBinding>inflate(inflater, com.ddapps.itarugby.R.layout.fragment_place_register, null, false, component);
+      @Nullable Object component) {
+    return ViewDataBinding.<FragmentPlaceRegisterBinding>inflateInternal(inflater, com.ddapps.itarugby.R.layout.fragment_place_register, null, false, component);
   }
 
   public static FragmentPlaceRegisterBinding bind(@NonNull View view) {
     return bind(view, DataBindingUtil.getDefaultComponent());
   }
 
-  public static FragmentPlaceRegisterBinding bind(@NonNull View view,
-      @Nullable DataBindingComponent component) {
+  /**
+   * This method receives DataBindingComponent instance as type Object instead of
+   * type DataBindingComponent to avoid causing too many compilation errors if
+   * compilation fails for another reason.
+   * https://issuetracker.google.com/issues/116541301
+   * @Deprecated Use DataBindingUtil.bind(view, component)
+   */
+  @Deprecated
+  public static FragmentPlaceRegisterBinding bind(@NonNull View view, @Nullable Object component) {
     return (FragmentPlaceRegisterBinding)bind(component, view, com.ddapps.itarugby.R.layout.fragment_place_register);
   }
 }

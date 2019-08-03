@@ -79,13 +79,12 @@
 
     <string name="facebook_login">Facebook LogIn</string>
 
-    <string name="facebook_app_id"></string>
-    <string name="fb_login_protocol_scheme"></string>
+    <string name="facebook_app_id">YOUR API</string>
+    <string name="fb_login_protocol_scheme">YOUR API</string>
 
     <!-- Google -->
 
-    <string name="googleMapsAPI"></string>
-
+    <string name="googleMapsAPI">YOUR API</string>
 
 
     <string name="permission_denied">Oops! You denied permission!!</string>
@@ -111,7 +110,7 @@
     <string name="lineUpButton">Criar Escalação</string>
     <string name="adress">Endereço do Evento</string>
     <string name="random_time">08:00</string>
-    <string name="start_end_time">08:00 - 11:00</string>
+    <string name="start_end_time">08:00 – 11:00</string>
     <string name="full_random_date">sabado, fevereiro 13</string>
     <string name="player_photo">Foto do Jogador</string>
     <string name="games">Jogos</string>
@@ -131,4 +130,42 @@
     <string name="event_sucess">Evento criado</string>
     <string name="event_error">Erro</string>
     <string name="title_activity_maps">Map</string>
+    <string name="gallery_season_18">Temporada 2018</string>
+    <string name="about_title">História</string>
+    <string name="yellow_cards_icon">imagem do cartão amarelo</string>
+    <string name="last_drill_icon">icone para ultimo treino</string>
+    <string name="red_cards_icon">icone para cartões vermelhos</string>
+    <string name="map_title">Mapa do local</string>
+    <string name="event_display_image">imagem demonstrativo do local do evento</string>
+    <string name="trophy_title">Nome do Troféu</string>
+    <string name="random_date">20/07/209</string>
+    <string name="trophy_room">Sala de Troféus</string>
+    <string name="new_trophy">Cadastrar Novo Troféu</string>
+    <string name="trophy_name">Nome do Campeonato/Troféu</string>
+    <string name="trophy_date">Data da Conquista</string>
+    <string name="url">Coloque a Url da Imagem</string>
+    <string name="register_trophy">Cadastrar Troféu</string>
+    <string name="fileName">Nome do Arquivo</string>
+    <string name="long_lorem_text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dolor risus, aliquet a erat quis, viverra molestie
+        orci. Suspendisse vehicula porta libero. Nam tincidunt nulla ipsum, vel iaculis risus scelerisque sed. Phasellus
+        venenatis, enim vel placerat blandit, leo eros bibendum erat, at auctor mauris diam ac risus. Aenean sit amet
+        congue neque, sit amet condimentum elit. Fusce lacinia massa vel nisl scelerisque, in scelerisque dolor
+        elementum. Vivamus leo enim, congue dictum congue vitae, porttitor id purus. Sed eu ultricies erat. Morbi
+        hendrerit, mi ac volutpat commodo, magna turpis pretium nibh, at fringilla eros lorem quis tellus. Praesent
+        porttitor purus nibh, ac vestibulum massa fringilla vel. Pellentesque dapibus nulla quis luctus dictum. In
+        scelerisque ut ex sed facilisis. Nunc eu finibus nulla, ut hendrerit sem. Suspendisse accumsan risus vel diam
+        fringilla iaculis.
+        \n\nQuisque facilisis finibus aliquam. Sed mattis, dui fringilla ornare finibus, orci odio blandit risus, ut
+        maximus dui odio non leo. Donec laoreet lacus nisi, a mollis velit suscipit ac. Quisque faucibus ut nisl in
+        congue. Nam sagittis consectetur tempus. Suspendisse eget posuere dui. Donec ultricies velit ex, vel cursus odio
+        sollicitudin in. Nullam faucibus auctor ligula, eu rhoncus dui facilisis a. Curabitur vel feugiat est. Quisque
+        congue at enim eleifend ultrices. Proin dapibus risus lorem, nec condimentum nunc consequat vitae. Quisque
+        sapien lorem, vestibulum vitae justo eget, fringilla eleifend nisi.
+        \n\nVivamus aliquam nisl rutrum orci volutpat porta in ornare est. Quisque ligula ipsum, vulputate id aliquam
+        vitae, semper vitae orci. Nam non pulvinar ligula, eget tincidunt ante. Quisque sapien massa, varius tempus
+        pretium id, vehicula at magna. Ut ut ultrices augue. Nam nec ullamcorper tellus, at finibus lectus. Fusce vel
+        iaculis mauris, id porta nulla. Aenean ac mollis sapien. Morbi imperdiet augue tempus nulla luctus, sit amet
+        feugiat purus elementum.
+    </string>
 </resources>

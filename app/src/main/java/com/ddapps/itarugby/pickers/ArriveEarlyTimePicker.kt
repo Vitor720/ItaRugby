@@ -38,7 +38,4 @@ class ArriveEarlyTimePicker: DialogFragment(), TimePickerDialog.OnTimeSetListene
 
 
     }
-
-
-
 }

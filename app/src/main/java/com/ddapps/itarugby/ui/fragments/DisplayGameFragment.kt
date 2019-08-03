@@ -1,6 +1,8 @@
-package com.ddapps.itarugby.ui.fragments
+package com.ddapps.itarugby.ui.fragments//        dataBase.collection()
+
 
 import android.annotation.SuppressLint
+import android.app.Activity
 import android.content.ActivityNotFoundException
 import android.content.Intent
 import android.net.Uri
@@ -12,11 +14,11 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
+import com.bumptech.glide.Glide
 import com.ddapps.itarugby.R
 import com.ddapps.itarugby.databinding.FragmentDisplayGameBinding
 import com.ddapps.itarugby.models.Event
 import com.google.firebase.firestore.FirebaseFirestore
-import com.squareup.picasso.Picasso
 import timber.log.Timber
 import java.text.SimpleDateFormat
 import java.util.*
@@ -55,7 +57,8 @@ class DisplayGameFragment : Fragment() {
                 url += "&maptype=roadmap"
                 url += "&markers=color:orange%7Clabel:Lugar%7C$lat, $lng"
                 url += "&key=AIzaSyDIB97Qpy6IIfJ1lI8DRKJUStzIIjAO1dA"
-                Picasso.get().load(url).into(image)
+                Glide.with(Activity()).load(url).into(image)
+
 
                 // Abre Goole Maps
                 image.setOnClickListener {
@@ -91,7 +94,7 @@ class DisplayGameFragment : Fragment() {
                 binding.eventFullDate.text = fullDate
                 binding.eventStartEnd.text = "${event.startTime} - ${event.endTime}"
                 binding.eventArriveTime.text = event.arriveEarly
-                binding.displayEventAdress.text = event.location!!.placeAddress
+                binding.displayEventAdress.text = event.location!!.placeAdress
                 binding.displayEventNotes.text = event.notes
 
                 when (event.gamesQty.toString()) {

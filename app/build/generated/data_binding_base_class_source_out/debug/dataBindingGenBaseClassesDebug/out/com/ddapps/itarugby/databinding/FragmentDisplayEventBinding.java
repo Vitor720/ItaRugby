@@ -8,9 +8,10 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.databinding.DataBindingComponent;
 import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
+import java.lang.Deprecated;
+import java.lang.Object;
 
 public abstract class FragmentDisplayEventBinding extends ViewDataBinding {
   @NonNull
@@ -26,34 +27,25 @@ public abstract class FragmentDisplayEventBinding extends ViewDataBinding {
   public final TextView declineList;
 
   @NonNull
-  public final TextView displayEventAdress;
-
-  @NonNull
-  public final TextView displayEventNotes;
-
-  @NonNull
-  public final TextView eventAdress;
+  public final TextView eventAddress;
 
   @NonNull
   public final TextView eventArriveTime;
 
   @NonNull
-  public final TextView eventFullDate;
+  public final TextView eventDate;
 
   @NonNull
-  public final TextView eventLocation;
+  public final TextView eventDescription;
+
+  @NonNull
+  public final ImageView eventImageHeader;
+
+  @NonNull
+  public final LinearLayout eventMap;
 
   @NonNull
   public final ImageView eventMapView;
-
-  @NonNull
-  public final TextView eventStartEnd;
-
-  @NonNull
-  public final View headerLineDivider;
-
-  @NonNull
-  public final ImageView imageViewCalendar;
 
   @NonNull
   public final ImageView imageViewConfirmed;
@@ -62,68 +54,59 @@ public abstract class FragmentDisplayEventBinding extends ViewDataBinding {
   public final ImageView imageViewDecline;
 
   @NonNull
-  public final ImageView imageViewGps;
-
-  @NonNull
   public final ImageView imageViewMayBe;
 
   @NonNull
-  public final ImageView imageViewTime;
+  public final LinearLayout lytAddress;
 
   @NonNull
-  public final View locationLineDivider;
+  public final LinearLayout lytDate;
+
+  @NonNull
+  public final LinearLayout lytDistance;
+
+  @NonNull
+  public final LinearLayout lytWebsite;
 
   @NonNull
   public final TextView mayBeList;
 
   @NonNull
-  public final TextView noteExplicit;
+  public final TextView placeName;
 
   @NonNull
-  public final View noteLineDivider;
+  public final TextView textView2;
 
-  @NonNull
-  public final TextView textView10;
-
-  @NonNull
-  public final View timeLineDivider;
-
-  protected FragmentDisplayEventBinding(DataBindingComponent _bindingComponent, View _root,
-      int _localFieldCount, LinearLayout cardView, TextView confirmationHeader,
-      TextView confirmedList, TextView declineList, TextView displayEventAdress,
-      TextView displayEventNotes, TextView eventAdress, TextView eventArriveTime,
-      TextView eventFullDate, TextView eventLocation, ImageView eventMapView,
-      TextView eventStartEnd, View headerLineDivider, ImageView imageViewCalendar,
-      ImageView imageViewConfirmed, ImageView imageViewDecline, ImageView imageViewGps,
-      ImageView imageViewMayBe, ImageView imageViewTime, View locationLineDivider,
-      TextView mayBeList, TextView noteExplicit, View noteLineDivider, TextView textView10,
-      View timeLineDivider) {
+  protected FragmentDisplayEventBinding(Object _bindingComponent, View _root, int _localFieldCount,
+      LinearLayout cardView, TextView confirmationHeader, TextView confirmedList,
+      TextView declineList, TextView eventAddress, TextView eventArriveTime, TextView eventDate,
+      TextView eventDescription, ImageView eventImageHeader, LinearLayout eventMap,
+      ImageView eventMapView, ImageView imageViewConfirmed, ImageView imageViewDecline,
+      ImageView imageViewMayBe, LinearLayout lytAddress, LinearLayout lytDate,
+      LinearLayout lytDistance, LinearLayout lytWebsite, TextView mayBeList, TextView placeName,
+      TextView textView2) {
     super(_bindingComponent, _root, _localFieldCount);
     this.cardView = cardView;
     this.confirmationHeader = confirmationHeader;
     this.confirmedList = confirmedList;
     this.declineList = declineList;
-    this.displayEventAdress = displayEventAdress;
-    this.displayEventNotes = displayEventNotes;
-    this.eventAdress = eventAdress;
+    this.eventAddress = eventAddress;
     this.eventArriveTime = eventArriveTime;
-    this.eventFullDate = eventFullDate;
-    this.eventLocation = eventLocation;
+    this.eventDate = eventDate;
+    this.eventDescription = eventDescription;
+    this.eventImageHeader = eventImageHeader;
+    this.eventMap = eventMap;
     this.eventMapView = eventMapView;
-    this.eventStartEnd = eventStartEnd;
-    this.headerLineDivider = headerLineDivider;
-    this.imageViewCalendar = imageViewCalendar;
     this.imageViewConfirmed = imageViewConfirmed;
     this.imageViewDecline = imageViewDecline;
-    this.imageViewGps = imageViewGps;
     this.imageViewMayBe = imageViewMayBe;
-    this.imageViewTime = imageViewTime;
-    this.locationLineDivider = locationLineDivider;
+    this.lytAddress = lytAddress;
+    this.lytDate = lytDate;
+    this.lytDistance = lytDistance;
+    this.lytWebsite = lytWebsite;
     this.mayBeList = mayBeList;
-    this.noteExplicit = noteExplicit;
-    this.noteLineDivider = noteLineDivider;
-    this.textView10 = textView10;
-    this.timeLineDivider = timeLineDivider;
+    this.placeName = placeName;
+    this.textView2 = textView2;
   }
 
   @NonNull
@@ -132,10 +115,18 @@ public abstract class FragmentDisplayEventBinding extends ViewDataBinding {
     return inflate(inflater, root, attachToRoot, DataBindingUtil.getDefaultComponent());
   }
 
+  /**
+   * This method receives DataBindingComponent instance as type Object instead of
+   * type DataBindingComponent to avoid causing too many compilation errors if
+   * compilation fails for another reason.
+   * https://issuetracker.google.com/issues/116541301
+   * @Deprecated Use DataBindingUtil.inflate(inflater, R.layout.fragment_display_event, root, attachToRoot, component)
+   */
   @NonNull
+  @Deprecated
   public static FragmentDisplayEventBinding inflate(@NonNull LayoutInflater inflater,
-      @Nullable ViewGroup root, boolean attachToRoot, @Nullable DataBindingComponent component) {
-    return DataBindingUtil.<FragmentDisplayEventBinding>inflate(inflater, com.ddapps.itarugby.R.layout.fragment_display_event, root, attachToRoot, component);
+      @Nullable ViewGroup root, boolean attachToRoot, @Nullable Object component) {
+    return ViewDataBinding.<FragmentDisplayEventBinding>inflateInternal(inflater, com.ddapps.itarugby.R.layout.fragment_display_event, root, attachToRoot, component);
   }
 
   @NonNull
@@ -143,18 +134,33 @@ public abstract class FragmentDisplayEventBinding extends ViewDataBinding {
     return inflate(inflater, DataBindingUtil.getDefaultComponent());
   }
 
+  /**
+   * This method receives DataBindingComponent instance as type Object instead of
+   * type DataBindingComponent to avoid causing too many compilation errors if
+   * compilation fails for another reason.
+   * https://issuetracker.google.com/issues/116541301
+   * @Deprecated Use DataBindingUtil.inflate(inflater, R.layout.fragment_display_event, null, false, component)
+   */
   @NonNull
+  @Deprecated
   public static FragmentDisplayEventBinding inflate(@NonNull LayoutInflater inflater,
-      @Nullable DataBindingComponent component) {
-    return DataBindingUtil.<FragmentDisplayEventBinding>inflate(inflater, com.ddapps.itarugby.R.layout.fragment_display_event, null, false, component);
+      @Nullable Object component) {
+    return ViewDataBinding.<FragmentDisplayEventBinding>inflateInternal(inflater, com.ddapps.itarugby.R.layout.fragment_display_event, null, false, component);
   }
 
   public static FragmentDisplayEventBinding bind(@NonNull View view) {
     return bind(view, DataBindingUtil.getDefaultComponent());
   }
 
-  public static FragmentDisplayEventBinding bind(@NonNull View view,
-      @Nullable DataBindingComponent component) {
+  /**
+   * This method receives DataBindingComponent instance as type Object instead of
+   * type DataBindingComponent to avoid causing too many compilation errors if
+   * compilation fails for another reason.
+   * https://issuetracker.google.com/issues/116541301
+   * @Deprecated Use DataBindingUtil.bind(view, component)
+   */
+  @Deprecated
+  public static FragmentDisplayEventBinding bind(@NonNull View view, @Nullable Object component) {
     return (FragmentDisplayEventBinding)bind(component, view, com.ddapps.itarugby.R.layout.fragment_display_event);
   }
 }

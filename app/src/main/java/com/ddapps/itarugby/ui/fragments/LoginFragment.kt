@@ -27,8 +27,6 @@ import timber.log.Timber
 
 /**
  *  Fragmento de Login
- *
- *
  */
 class LoginFragment : Fragment() {
 
