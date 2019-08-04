@@ -121,7 +121,7 @@ class DisplayEventFragment : Fragment() {
         url += "&size=${Integer.toString(screen_width - 10)}x${Integer.toString(screen_heigh / 8)}"
         url += "&maptype=terrain"
         url += "&markers=color:orange%7Clabel:Lugar%7C$lat, $lng"
-        url += "&key=AIzaSyAIdEUEjkuFli60nq-RS81Zb7TxOvZW3sY"
+        url += ""
         Glide.with(context!!).load(url).into(image)
     }
 

@@ -79,12 +79,12 @@
 
     <string name="facebook_login">Facebook LogIn</string>
 
-    <string name="facebook_app_id">YOUR API</string>
-    <string name="fb_login_protocol_scheme">YOUR API</string>
+    <string name="facebook_app_id"></string>
+    <string name="fb_login_protocol_scheme"></string>
 
     <!-- Google -->
 
-    <string name="googleMapsAPI">YOUR API</string>
+    <string name="googleMapsAPI"></string>
 
 
     <string name="permission_denied">Oops! You denied permission!!</string>

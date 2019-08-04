@@ -21,47 +21,47 @@ import com.bumptech.glide.request.RequestOptions
 import com.bumptech.glide.request.target.Target
 import com.ddapps.itarugby.R
 
-//fun TextView.toTypeface(fontName: String) {
-//    val customTypeface = Typeface.createFromAsset(this.context.resources.assets, "fonts/$fontName.ttf")
-//    typeface = customTypeface
-//}
+fun TextView.toTypeface(fontName: String) {
+    val customTypeface = Typeface.createFromAsset(this.context.resources.assets, "fonts/$fontName.ttf")
+    typeface = customTypeface
+}
 
-fun ImageView.load(activity: Activity, url: String?, postponeTransition: Boolean = false) {
+fun ImageView.load(url: String?) {
     val imageView = this
 
-    var requestOptions = Glide.with(imageView).load(url)
+    val requestOptions = Glide.with(imageView).load(url)
         .apply(
             RequestOptions()
                 .placeholder(ColorDrawable(ContextCompat.getColor(context, R.color.green_800)))
                 .centerCrop()
         )
         .transition(DrawableTransitionOptions.withCrossFade(300))
-
-    if (postponeTransition) {
-        requestOptions = requestOptions.listener(object : RequestListener<Drawable> {
-            override fun onLoadFailed(
-                e: GlideException?,
-                model: Any?,
-                target: Target<Drawable>?,
-                isFirstResource: Boolean
-            ): Boolean {
-                ActivityCompat.startPostponedEnterTransition(activity)
-                return true
-            }
-
-            override fun onResourceReady(
-                resource: Drawable?,
-                model: Any?,
-                target: Target<Drawable>?,
-                dataSource: DataSource?,
-                isFirstResource: Boolean
-            ): Boolean {
-                ActivityCompat.startPostponedEnterTransition(activity)
-                imageView.setImageDrawable(resource)
-                return true
-            }
-        })
-    }
+//
+//    if (postponeTransition) {
+//        requestOptions = requestOptions.listener(object : RequestListener<Drawable> {
+//            override fun onLoadFailed(
+//                e: GlideException?,
+//                model: Any?,
+//                target: Target<Drawable>?,
+//                isFirstResource: Boolean
+//            ): Boolean {
+//                ActivityCompat.startPostponedEnterTransition(activity)
+//                return true
+//            }
+//
+//            override fun onResourceReady(
+//                resource: Drawable?,
+//                model: Any?,
+//                target: Target<Drawable>?,
+//                dataSource: DataSource?,
+//                isFirstResource: Boolean
+//            ): Boolean {
+//                ActivityCompat.startPostponedEnterTransition(activity)
+//                imageView.setImageDrawable(resource)
+//                return true
+//            }
+//        })
+//    }
 
     requestOptions.into(this)
 }

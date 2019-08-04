@@ -82,7 +82,7 @@ class EventViewRecycler(
         url += "&size=${Integer.toString(screen_width)}x${Integer.toString(screen_heigh / 8)}"
         url += "&maptype=road"
         url += "&markers=color:orange%7Clabel:Lugar%7C$lat, $lgn"
-        url += "&key=AIzaSyDIB97Qpy6IIfJ1lI8DRKJUStzIIjAO1dA"
+        url += "&key="
 
         // Ao mudar para glide parou de carregar as imagens
         Glide.with(hereContext).load(url).into(holder.mapView)

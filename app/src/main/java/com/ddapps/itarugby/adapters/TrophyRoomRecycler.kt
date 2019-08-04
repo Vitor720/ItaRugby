@@ -44,7 +44,7 @@ class TrophyRoomRecycler(val trophysList: MutableList<Trophy>) : RecyclerView.Ad
 
         // Criar um switch case para cada colocação onde muda a imagem de cada  troféu  row_item
 
-        holder.trophyImage.load(Activity(), imageMaps)
+        holder.trophyImage.load(imageMaps)
 
         //TODO criar função para trocar a cor de fundo da row de acordo com a classificação da equipe
 //        when(trophy.trophyPosition) {
